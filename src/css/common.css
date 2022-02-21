@@ -1,0 +1,25 @@
+.blind {
+  display: block;
+  position: absolute;
+  top: -99999px;
+  left: 0;
+}
+
+.clearFix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+input {
+  background: none;
+  appearance: none;
+  border: none;
+}
+
+.center {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
