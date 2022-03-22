@@ -24,3 +24,9 @@ input {
   min-width: 1000px;
   margin: 0 auto;
 }
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

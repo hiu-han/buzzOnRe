@@ -4,3 +4,73 @@
 @import url("./font.css");
 @import url("./common.css");
 @import url("./layout.css");
+
+/** SAMPLE **/
+#main .content-section.section-sample {
+  width: 50%;
+}
+#main .content-section.section-sample .section-wrap {
+  height: 300px;
+}
+
+/** COMMON **/
+#main .content-section .section-wrap {
+  width: 100%;
+  padding: 20px 20px 24px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+  box-sizing: border-box;
+}
+.section-wrap .section-wrap-inner {
+  width: 100%;
+}
+.section-wrap-inner .section-title {
+  margin-bottom: 14px;
+}
+.section-wrap-inner .section-title > h3,
+.section-wrap-inner .section-title > .title-more {
+  display: inline-block;
+}
+.section-wrap-inner .section-title > h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.section-wrap-inner .section-title > .title-more {
+  margin-left: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #919191;
+}
+
+/** HOME-PAGE **/
+#main {
+  background-color: #f4f5f5;
+  min-height: 900px;
+}
+#main.intro-page {
+  background-color: #f7f8f8;
+}
+
+#main.intro-page .intro-section .section-content {
+  width: 342px;
+  margin: 0 auto;
+}
+
+.intro-section .section-content .logo {
+  width: 200px;
+  margin: 0 auto 40px;
+}
+.intro-section .section-content .logo img {
+  width: 100%;
+}
+
+.intro-section .section-content .intro-search > input {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid #24cd88;
+  background-color: #fff;
+  text-indent: 24px;
+  font-size: 15px;
+}
