@@ -12,9 +12,9 @@
 }
 
 input {
-  background: none;
+  /* background: none;
   appearance: none;
-  border: none;
+  border: none; */
 }
 
 .center {
@@ -29,4 +29,109 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.link-area {
+  display: block;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* section */
+#main .content-section .section-inner {
+  position: relative;
+}
+#main .content-section .content-article {
+  display: inline-block;
+  width: 100%;
+  padding: 20px 20px 24px;
+  margin-bottom: 24px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+  box-sizing: border-box;
+}
+.content-article .article-title {
+  position: relative;
+  margin-bottom: 16px;
+}
+.content-article .article-title > h3,
+.content-article .article-title > .title-more {
+  display: inline-block;
+}
+.content-article .article-title > h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.content-article .article-title > .title-more {
+  margin-left: 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #919191;
+}
+.content-article .article-title > .title-date {
+  float: right;
+  vertical-align: middle;
+  color: #888;
+}
+#main .content-section .content-article.width-3-2 {
+  width: calc(66.66666% - 12px);
+}
+#main .content-section .content-article.width-3-1 {
+  width: calc(33.33333% - 12px);
+}
+.section-inner::after,
+.content-article .article-title::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.content-article.fl-l {
+  float: left;
+}
+.content-article.fl-r {
+  float: right;
+}
+.content-article.po-r {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.article-list-wrap .thumb-list {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0;
+}
+.article-list-wrap .thumb-item {
+  display: inline-block;
+  width: calc(33.33333% - 7px);
+  font-size: 14px;
+}
+.article-list-wrap .thumb-item .thumb-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.article-list-wrap .thumb-item .thumb-img img {
+  width: 100%;
+}
+.article-list-wrap .thumb-item .thumb-title {
+  margin-top: 6px;
+  line-height: 1.4;
+  font-size: 13px;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* text style */
+.txt-gr {
+  color: #24cd88;
 }
