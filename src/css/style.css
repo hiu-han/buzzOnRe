@@ -15,10 +15,39 @@
 }
 
 /** COMMON **/
+.article-engagement .add-icon::before,
+.article-sentiment .add-icon::before {
+  background-image: url("../img/icon/Icon-chart-pie.svg");
+  width: 16px;
+  height: 18px;
+}
+.article-channel-details .add-icon::before,
+.article-sentiment-keyword .add-icon::before,
+.article-keyword-ranking .add-icon::before,
+.article-keyword-trend .add-icon::before,
+.article-hottest-cafes .add-icon::before,
+.article-hottest-blogers .add-icon::before,
+.article-hottest-influencers .add-icon::before,
+.article-hottest-top10 .add-icon::before {
+  background-image: url("../img/icon/Icon-chart-list.svg");
+}
+.article-sentiment-channels .add-icon::before,
+.article-post-trend .add-icon::before,
+.article-engagement-trend .add-icon::before,
+.article-sentiment-trend .add-icon::before {
+  background-image: url("../img/icon/Icon-chart-stick.svg");
+}
+.article-keyword-association .add-icon::before {
+  background-image: url("../img/icon/Icon-chart-bubble.svg");
+}
 
 /** HOME-PAGE **/
+body {
+  height: auto;
+}
 #wrap {
   width: 100%;
+  height: auto;
   /* background-color: #f4f5f5; */
   background-color: #f7f8f8;
 }
@@ -181,6 +210,7 @@
   width: 60%;
 }
 
+/** CONTENT PAGE **/
 /** CONTENT PAGE >> NOW PAGE **/
 /* CONTENT PAGE >> tab section */
 #main .tab-section {
@@ -193,13 +223,13 @@
   font-size: 14px;
 }
 .tab-article .tab-list {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   font-size: 0;
 }
 .tab-article .tab-list .tab-item {
   display: inline-block;
-  padding: 13px 36px;
-  font-size: 26px;
+  padding: 11px 34px;
+  font-size: 21px;
   font-weight: 600;
   color: #919191;
 }
@@ -226,7 +256,7 @@
 }
 
 #main .tab-section .tab-title-article {
-  height: 146px;
+  height: 126px;
   background-color: #fff;
   padding-left: 36px;
   padding-right: 36px;
@@ -240,8 +270,73 @@
   height: 100%;
 }
 .tab-title-article .tab-title {
-  font-size: 20px;
+  display: inline-block;
+  font-size: 18px;
 }
+
+/* CONTENT PAGE >> engagement article */
+.section-inner > .article-engagement {
+  width: 100%;
+  font-size: 0;
+}
+.article-engagement .article-chart-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.article-engagement .chart-area,
+.article-engagement .chart-info-area {
+  display: inline-block;
+  font-size: 14px;
+}
+.article-engagement .chart-area {
+  width: 40%;
+  height: 234px;
+}
+.article-engagement .chart-info-area {
+  width: 60%;
+  margin-top: -20px;
+}
+.chart-info-area .info-item {
+  display: inline-block;
+  margin-right: 45px;
+}
+.chart-info-area .info-item:last-child {
+  margin-right: 0;
+}
+.chart-info-area .info-item > .item-color {
+  width: 18px;
+  height: 5px;
+  margin-bottom: 4px;
+  border-radius: 10px;
+}
+.chart-info-area .info-item > .item-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #919191;
+}
+.chart-info-area .info-item > .item-num {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* CONTENT PAGE >> channel details article */
+.section-inner > .article-channel-details {
+  width: 100%;
+}
+.article-channel-details .article-list-wrap {
+}
+.detail-item > ul {
+  width: 100%;
+  font-size: 0;
+}
+.detail-item > ul > li {
+  display: inline-block;
+  font-size: 14px;
+}
+
+/* CONTENT PAGE >> sentiment article */
 
 /** CONTENT PAGE >> TREND PAGE **/
 
