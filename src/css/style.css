@@ -327,13 +327,40 @@ body {
 }
 .article-channel-details .article-list-wrap {
 }
-.detail-item > ul {
+.article-list-wrap .detail-item > ul {
   width: 100%;
   font-size: 0;
 }
-.detail-item > ul > li {
+.article-list-wrap .detail-item > ul > li {
   display: inline-block;
-  font-size: 14px;
+  font-size: 15px;
+  text-align: center;
+}
+.article-channel-details .article-list-wrap .detail-item > ul > li {
+  width: 12%;
+}
+.article-channel-details
+  .article-list-wrap
+  .detail-item
+  > ul
+  > li:nth-child(2) {
+  width: 25%;
+}
+.article-channel-details
+  .article-list-wrap
+  .detail-item
+  > ul
+  > li:nth-child(3) {
+  width: 15%;
+}
+.detail-item > .detail-title-list {
+  font-weight: 500;
+}
+.detail-item .detail-subs {
+  color: #8b8d91;
+}
+.detail-item .detail-subs:first-child {
+  color: #313131;
 }
 
 /* CONTENT PAGE >> sentiment article */
