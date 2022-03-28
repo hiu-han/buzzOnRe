@@ -247,6 +247,11 @@ input[type="date"]:hover {
   color: #a0a0a0;
 }
 
+.txt-sizeP {
+  font-size: 1.18em;
+  font-weight: 600;
+  /* vertical-align: top; */
+}
 .txt-highlight {
   display: inline-block;
   position: relative;
@@ -255,12 +260,12 @@ input[type="date"]:hover {
 }
 .txt-highlight::before {
   content: "";
-  display: block;
+  display: inline-block;
   position: absolute;
   top: 40%;
   left: 50%;
   transform: translateX(-50%);
-  width: 102%;
+  width: 101%;
   height: 65%;
   background-color: #dcfef1;
   /* opacity: 0.8; */
@@ -268,6 +273,12 @@ input[type="date"]:hover {
 }
 .txt-num {
   font-size: 1.5em;
+}
+.txt-posit {
+  color: #617ff8;
+}
+.txt-negat {
+  color: #fb6761;
 }
 
 /* chart color */

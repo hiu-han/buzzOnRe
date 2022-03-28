@@ -121,6 +121,7 @@
                 <div class="article-list-wrap detail-list-wrap">
                   <ul class="detail-list">
                     <li class="detail-item item-title">
+                      <!-- 리스트 데이터 명 -->
                       <ul class="item-sub-list detail-title-list">
                         <li class="detail-title title-channel">CHANNEL</li>
                         <li class="detail-title title-posts">POSTS</li>
@@ -132,11 +133,19 @@
                       </ul>
                     </li>
                     <li class="detail-item item-subs sns-subs">
+                      <!-- 항목별 데이터 -->
                       <ul class="item-sub-list detail-subs-list">
+                        <!-- 첫번째 .item-sub-list는 SNS, 블로그, 카페 등의 큰 카테고리 -->
                         <li class="detail-subs subs-channel">SNS</li>
                         <li class="detail-subs subs-posts">
-                          <div class="chert-horizontal">
-
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <!-- 주제어의 총 포스트량 => 100% -->
+                              <p class="mid-posts detailPostSNS">
+                                <!-- SNS의 총 포스트량 => 주제어 대비 비율 -->
+                              </p>
+                            </div>
+                            <span class="posts-num">1,200</span>
                           </div>
                         </li>
                         <li class="detail-subs subs-engagement">307.2</li>
@@ -144,14 +153,98 @@
                         <li class="detail-subs subs-views">17,115</li>
                         <li class="detail-subs subs-likes">17,115</li>
                         <li class="detail-subs subs-shares">17,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <!-- 두번째 .item-sub-list 부터는 채널의 상세 항목 (열고 닫아 열람 가능한 데이터들) -->
+                        <li class="detail-subs subs-channel">트위터</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <!-- 주제어의 총 포스트량 => 100% -->
+                              <p class="mid-posts detailPostSNS">
+                                <!-- SNS의 총 포스트량 => 주제어 대비 비율 -->
+                                <span class="channel-posts detailPostTwit">
+                                  <!-- 트위터의 총 포스트량 => SNS 대비 비율 -->
+                                </span>
+                              </p>
+                            </div>
+                            <!-- 트위터 총 포스트량 => 숫자 -->
+                            <span class="posts-num">100</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">인스타그램</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">유튜브</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostYout">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">400</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">페이스북</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostFaceb">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">100</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
                       </ul>
                     </li>
                     <li class="detail-item item-subs community-subs">
                       <ul class="item-sub-list detail-subs-list">
                         <li class="detail-subs subs-channel">커뮤니티</li>
                         <li class="detail-subs subs-posts">
-                          <div class="chert-horizontal">
-
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostCommu"></p>
+                            </div>
+                            <span class="posts-num">550</span>
                           </div>
                         </li>
                         <li class="detail-subs subs-engagement">307.2</li>
@@ -159,14 +252,150 @@
                         <li class="detail-subs subs-views">17,115</li>
                         <li class="detail-subs subs-likes">17,115</li>
                         <li class="detail-subs subs-shares">17,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">뽐뿌</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostCommu">
+                                <span class="channel-posts detailPostCommu">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">400</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">MLB파크</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">클리앙</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">FM코리아</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">DC</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">루리웹</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">인벤</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
                       </ul>
                     </li>
                     <li class="detail-item item-subs blog-subs">
                       <ul class="item-sub-list detail-subs-list">
                         <li class="detail-subs subs-channel">블로그</li>
                         <li class="detail-subs subs-posts">
-                          <div class="chert-horizontal">
-
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostCommu"></p>
+                            </div>
+                            <span class="posts-num">550</span>
                           </div>
                         </li>
                         <li class="detail-subs subs-engagement">307.2</li>
@@ -174,14 +403,55 @@
                         <li class="detail-subs subs-views">17,115</li>
                         <li class="detail-subs subs-likes">17,115</li>
                         <li class="detail-subs subs-shares">17,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">네이버</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">다음</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
                       </ul>
                     </li>
                     <li class="detail-item item-subs cafe-subs">
                       <ul class="item-sub-list detail-subs-list">
                         <li class="detail-subs subs-channel">카페</li>
                         <li class="detail-subs subs-posts">
-                          <div class="chert-horizontal">
-
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostCommu"></p>
+                            </div>
+                            <span class="posts-num">550</span>
                           </div>
                         </li>
                         <li class="detail-subs subs-engagement">307.2</li>
@@ -190,13 +460,54 @@
                         <li class="detail-subs subs-likes">17,115</li>
                         <li class="detail-subs subs-shares">17,115</li>
                       </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">네이버</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
+                      <ul class="item-sub-list channel-subs-list">
+                        <li class="detail-subs subs-channel">다음</li>
+                        <li class="detail-subs subs-posts">
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostSNS">
+                                <span class="channel-posts detailPostInsta">
+                                </span>
+                              </p>
+                            </div>
+                            <span class="posts-num">600</span>
+                          </div>
+                        </li>
+                        <li class="detail-subs subs-engagement">150</li>
+                        <li class="detail-subs subs-comments">8,115</li>
+                        <li class="detail-subs subs-views">8,115</li>
+                        <li class="detail-subs subs-likes">8,115</li>
+                        <li class="detail-subs subs-shares">8,115</li>
+                      </ul>
                     </li>
                     <li class="detail-item item-subs news-subs">
                       <ul class="item-sub-list detail-subs-list">
                         <li class="detail-subs subs-channel">뉴스</li>
                         <li class="detail-subs subs-posts">
-                          <div class="chert-horizontal">
-
+                          <div class="chart-horizontal">
+                            <div class="total-posts">
+                              <p class="mid-posts detailPostCommu"></p>
+                            </div>
+                            <span class="posts-num">550</span>
                           </div>
                         </li>
                         <li class="detail-subs subs-engagement">307.2</li>
@@ -252,8 +563,64 @@
                 <h3 class="add-icon">SENTIMENT KEYWORD</h3>
               </div>
               <div class="article-content">
-                <div class="article-chart-wrap -wrap">
-
+                <div class="article-rank-wrap">
+                  <ul class="rank-list">
+                    <li class="rank-item item-title">
+                      <p class="item-standing">성향</p>
+                      <span class="item-keyword">단어</span>
+                      <span class="item-num">건수</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-posit">긍정</p>
+                      <span class="item-keyword">따듯하다</span>
+                      <span class="item-num">15,471</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-negat">부정</p>
+                      <span class="item-keyword">지루하다</span>
+                      <span class="item-num">15,221</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-posit">긍정</p>
+                      <span class="item-keyword">소중하다</span>
+                      <span class="item-num">12,117</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-negat">부정</p>
+                      <span class="item-keyword">멍청하다</span>
+                      <span class="item-num">10,227</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-posit">긍정</p>
+                      <span class="item-keyword">착하다</span>
+                      <span class="item-num">9,471</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-negat">부정</p>
+                      <span class="item-keyword">무섭다</span>
+                      <span class="item-num">8,626</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-posit">긍정</p>
+                      <span class="item-keyword">재미있다</span>
+                      <span class="item-num">7,684</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-negat">부정</p>
+                      <span class="item-keyword">지치다</span>
+                      <span class="item-num">6,228</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-negat">부정</p>
+                      <span class="item-keyword">소외되다</span>
+                      <span class="item-num">15,221</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing txt-posit">긍정</p>
+                      <span class="item-keyword">행복하다</span>
+                      <span class="item-num">4,115</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -278,8 +645,64 @@
                 <h3 class="add-icon">KEYWORD RANKING</h3>
               </div>
               <div class="article-content">
-                <div class="article-chart-wrap -wrap">
-
+                <div class="article-rank-wrap">
+                  <ul class="rank-list">
+                    <li class="rank-item item-title">
+                      <p class="item-standing">순위</p>
+                      <span class="item-keyword">단어</span>
+                      <span class="item-num">건수</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">1</p>
+                      <span class="item-keyword">소득</span>
+                      <span class="item-num">15,471</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">2</p>
+                      <span class="item-keyword">갈등</span>
+                      <span class="item-num">15,221</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">3</p>
+                      <span class="item-keyword">기본소득</span>
+                      <span class="item-num">12,117</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">4</p>
+                      <span class="item-keyword">대선</span>
+                      <span class="item-num">10,227</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">5</p>
+                      <span class="item-keyword">공천</span>
+                      <span class="item-num">9,471</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">6</p>
+                      <span class="item-keyword">카카오</span>
+                      <span class="item-num">8,626</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">7</p>
+                      <span class="item-keyword">SKT</span>
+                      <span class="item-num">7,684</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">8</p>
+                      <span class="item-keyword">메타버스</span>
+                      <span class="item-num">6,228</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">9</p>
+                      <span class="item-keyword">디지털자산</span>
+                      <span class="item-num">15,221</span>
+                    </li>
+                    <li class="rank-item item-subs">
+                      <p class="item-standing">10</p>
+                      <span class="item-keyword">NFT</span>
+                      <span class="item-num">4,115</span>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
