@@ -222,6 +222,9 @@ body {
   margin-bottom: 24px;
   font-size: 14px;
 }
+.article-content {
+  /* min-height: 150px; */
+}
 .tab-article .tab-list {
   margin-bottom: 16px;
   font-size: 0;
@@ -229,7 +232,7 @@ body {
 .tab-article .tab-list .tab-item {
   display: inline-block;
   padding: 11px 34px;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   color: #919191;
 }
@@ -272,9 +275,8 @@ body {
 .tab-title-article .tab-title {
   display: inline-block;
   line-height: 1.45;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  /* vertical-align: top; */
   letter-spacing: -0.01rem;
 }
 
@@ -342,11 +344,14 @@ body {
   margin-bottom: 8px;
   line-height: 35px;
   border: 1px solid #fafafa;
-  border-radius: 13px;
+  border-radius: 10px;
   background-color: #fafafa;
   overflow: hidden;
   transition: 0.4s;
   box-sizing: border-box;
+}
+.article-list-wrap .detail-item.item-subs:hover {
+  border: 1px solid #24cd88;
 }
 .article-list-wrap .detail-item.item-subs::before {
   content: "";
@@ -364,7 +369,6 @@ body {
   transition: 0.3s;
 }
 .article-list-wrap .detail-item.item-subs.now-on {
-  /* height: 100%; */
   overflow: unset;
   border: 1px solid #24cd88;
 }
@@ -377,8 +381,7 @@ body {
 }
 .article-list-wrap .detail-item > ul {
   width: 100%;
-  /* border-radius: 13px; */
-  border-radius: 13px 13px 0 0;
+  border-radius: 10px 10px 0 0;
   font-size: 0;
 }
 .article-list-wrap .detail-item.item-subs.now-on .item-sub-list:first-child {
@@ -388,7 +391,6 @@ body {
   display: inline-block;
   font-size: 14px;
   text-align: center;
-  /* vertical-align: middle; */
   vertical-align: top;
 }
 .article-channel-details .article-list-wrap .detail-item > ul > li {
@@ -495,8 +497,13 @@ body {
 .article-rank-wrap .rank-list {
   /* width: 100%; */
 }
-.article-rank-wrap .rank-list > .rank-item {
+.article-rank-wrap .rank-list > .rank-item.item-subs {
+  border: 1px solid #fafafa;
   cursor: pointer;
+  transition: 0.3s;
+}
+.article-rank-wrap .rank-list > .rank-item.item-subs:hover {
+  border: 1px solid #24cd88;
 }
 .article-rank-wrap .rank-list > .item-title {
   font-size: 0;
@@ -528,6 +535,114 @@ body {
 }
 
 /** CONTENT PAGE >> TREND PAGE **/
+.article-keyword-trend {
+}
+.article-keyword-trend .article-rank-wrap {
+  width: 100%;
+  padding: 0 36px;
+  box-sizing: border-box;
+}
+.article-keyword-trend .article-rank-wrap .trend-rank-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.article-keyword-trend .trend-rank-wrap .trend-rank-list {
+  width: 230px;
+  text-align: center;
+}
+.trend-rank-wrap .trend-rank-list > h4 {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #636565;
+}
+.trend-rank-list .rank-list > .rank-item.item-title {
+  font-weight: 400;
+}
+.trend-rank-list .rank-list > .rank-item.item-subs {
+  white-space: nowrap;
+}
+.trend-rank-list .rank-list > .rank-item > .item-standing {
+  width: 16%;
+}
+.trend-rank-list .rank-list > .rank-item > .item-keyword {
+  width: 36%;
+  letter-spacing: -0.05rem;
+}
+.trend-rank-list .rank-list > .rank-item > .item-num {
+  width: 28%;
+}
+.trend-rank-list .rank-list > .rank-item > .item-move {
+  width: 20%;
+}
+
+.item-move > em {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon/icon-rank-up.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  vertical-align: -4px;
+}
+.item-move.none > em,
+.item-move.new > em {
+  display: none;
+}
+.item-move.new,
+.item-move.up {
+  color: #fb6761;
+}
+.item-move.up > em {
+  background-image: url("../img/icon/icon-rank-up.svg");
+}
+.item-move.down {
+  color: #617ff8;
+}
+.item-move.down > em {
+  background-image: url("../img/icon/icon-rank-down.svg");
+}
+
+/* article-content내 좌우 슬라이드 버튼 */
+.article-content .slide-btn-wrap > .slide-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
+}
+.article-content .slide-btn-wrap > .slide-btn.slide-left {
+  left: 0;
+}
+.article-content .slide-btn-wrap > .slide-btn.slide-right {
+  right: 0;
+}
+.article-content .slide-btn-wrap > .slide-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/icon/icon-slide-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.article-content .slide-btn-wrap > .slide-btn.slide-left::after {
+  transform: translate(-50%, -50%) rotate(180deg);
+  left: 48%;
+}
+.article-content .slide-btn-wrap > .slide-btn.slide-right::after {
+  left: 52%;
+}
 
 /** CONTENT PAGE >> HOTTEST PAGE **/
 .article-hottest-wrap > .hottest-list {
@@ -536,38 +651,135 @@ body {
 .article-hottest-wrap > .hottest-list > .hottest-item {
   margin-bottom: 8px;
   font-size: 0px;
+  cursor: pointer;
 }
 .hottest-item > .icon-area,
 .hottest-item > .contents-area {
   display: inline-block;
+  vertical-align: middle;
 }
 .hottest-item > .icon-area {
   width: 26px;
   height: 26px;
   margin-right: 10px;
-  vertical-align: middle;
+  /* vertical-align: baseline; */
   background-image: url("../img/icon/icon-cafe-naver.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
+.hottest-item > .icon-none {
+  background-image: none;
+}
+.hottest-item > .icon-cafe-naver {
+  background-image: url("../img/icon/icon-cafe-naver.svg");
+}
+.hottest-item > .icon-blog-naver {
+  background-image: url("../img/icon/icon-blog-naver.svg");
+}
+.hottest-item > .icon-insta {
+  background-image: url("../img/icon/icon-instagram.svg");
+}
+.hottest-item > .icon-twit {
+  background-image: url("../img/icon/icon-twitter.svg");
+}
 .hottest-item > .contents-area {
   display: inline-block;
   width: calc(100% - 36px);
   height: 34px;
-  background-color: #fafafa;
+  /* padding: 0 14px; */
   font-size: 0;
+  text-align: center;
+}
+.hottest-item.item-title > .contents-area {
+  height: 28px;
+}
+.hottest-item.item-subs > .contents-area {
+  border-radius: 10px;
+  background-color: #fafafa;
+  border: 1px solid #fafafa;
+}
+.hottest-item.item-subs > .contents-area:hover {
+  border: 1px solid #24cd88;
 }
 .hottest-item > .contents-area > * {
   display: inline-block;
+  line-height: 34px;
   font-size: 13px;
 }
 .hottest-item > .contents-area > .item-name {
-  width: 56%;
+  width: 48%;
 }
-.hottest-item > .contents-area > .item-post-num {
-  width: 22%;
+.hottest-item.item-subs > .contents-area > .item-name {
+  text-align: left;
+  padding-left: 14px;
 }
+.hottest-item > .contents-area > .item-post-num,
 .hottest-item > .contents-area > .item-engagement {
-  width: 22%;
+  width: 26%;
+}
+.hottest-item.item-subs > .contents-area > .item-post-num,
+.hottest-item.item-subs > .contents-area > .item-engagement {
+  color: #8b8d91;
+}
+.article-hottest-wrap > .list-more-btn {
+  width: 100%;
+  height: 38px;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  border: 1px solid #24cd88;
+  color: #24cd88;
+  transition: 0.3s;
+}
+.article-hottest-wrap > .list-more-btn:hover {
+  background-color: #24cd88;
+  color: #fff;
+}
+
+/* CONTENT PAGE >> HOTTEST PAGE >> hottest top10 */
+.hottest-wide-list .hottest-item > .contents-area {
+  height: 38px;
+}
+.hottest-wide-list .item-subs > .contents-area {
+  color: #8b8d91;
+}
+.hottest-wide-list .hottest-item > .contents-area > * {
+  line-height: 38px;
+  vertical-align: top;
+}
+.hottest-wide-list .item-title > .contents-area {
+  height: 24px;
+}
+.hottest-wide-list .item-title > .contents-area > * {
+  line-height: 24px;
+}
+.hottest-wide-list .hottest-item > .contents-area .item-post-title {
+  width: 43%;
+  padding-right: 14px;
+}
+.hottest-wide-list .hottest-item > .contents-area .item-date {
+  width: 9%;
+}
+.hottest-wide-list .hottest-item > .contents-area .item-id {
+  width: 12%;
+}
+.hottest-wide-list .hottest-item > .contents-area .item-comments,
+.hottest-wide-list .hottest-item > .contents-area .item-views,
+.hottest-wide-list .hottest-item > .contents-area .item-likes,
+.hottest-wide-list .hottest-item > .contents-area .item-shares {
+  width: 9%;
+}
+.hottest-wide-list .item-subs > .contents-area .item-post-title {
+  padding-left: 14px;
+  text-align: left;
+  color: #313131;
+  /* font-weight: 500; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article-hottest-wrap.hottest-wide > .list-more-btn {
+  height: 42px;
 }

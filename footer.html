@@ -23,7 +23,33 @@
 </footer>
 
 <aside>
+  <div id="goTop">
+    <p class="go-top-btn"><img src="./src/img/icon/icon-go-top.svg" alt="go top"></p>
+  </div>
+
   <div id="modal">
 
   </div>
 </aside>
+
+<script>
+  $(document).ready(function () {
+    const $body = $("html, body");
+
+    /*  GO TOP event  */
+    function goTopEvent() {
+      $("#goTop").on("click", function () {
+
+        const yPos = $body.offset().top;
+
+        $body.stop().animate({
+          scrollTop: yPos
+        }, 500);
+
+        $(this).children().children("img").css("color", "#313131");
+      });
+    }
+
+    goTopEvent();
+  })
+</script>

@@ -208,6 +208,9 @@ input[type="date"]:hover {
   top: 0;
   right: 0;
 }
+.content-article .article-content {
+  position: relative;
+}
 
 .article-list-wrap .thumb-list {
   display: flex;
