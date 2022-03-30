@@ -348,8 +348,9 @@ body {
   border-radius: 10px;
   background-color: #fafafa;
   overflow: hidden;
-  transition: 0.4s;
+  /* transition: 0.4s; */
   box-sizing: border-box;
+  cursor: pointer;
 }
 .article-list-wrap .detail-item.item-subs:hover {
   border: 1px solid #24cd88;
@@ -496,12 +497,11 @@ body {
   width: 100%;
 }
 .article-rank-wrap .rank-list {
-  /* width: 100%; */
 }
 .article-rank-wrap .rank-list > .rank-item.item-subs {
   border: 1px solid #fafafa;
   cursor: pointer;
-  transition: 0.3s;
+  /* transition: 0.3s; */
 }
 .article-rank-wrap .rank-list > .rank-item.item-subs:hover {
   border: 1px solid #24cd88;

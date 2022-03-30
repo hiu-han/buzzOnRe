@@ -34,33 +34,38 @@
     <div id="showAllModal">
       <div class="show-all-wrap">
         <div class="show-all-inner">
-          <div class="show-all-top">
-            <h2 class="show-all-title">"<span class="keyword">베개</span>" 원문보기</h2>
-            <div class="sort-option">
-              <ul class="option-list">
-                <li class="option-item">최신순</li>
-                <li class="option-item">조회수순</li>
-                <li class="option-item">댓글수순</li>
-                <li class="option-item">추천수순</li>
-              </ul>
+          <div class="show-all-top clearFix">
+            <div class="show-all-top-left">
+              <h2 class="show-all-title">"<span class="keyword">베개</span>" 원문보기</h2>
+              <div class="sort-option">
+                <p class="option-selected">최신순</p>
+                <ul class="option-list">
+                  <li class="option-item">최신순</li>
+                  <li class="option-item">조회수순</li>
+                  <li class="option-item">댓글수순</li>
+                  <li class="option-item">추천수순</li>
+                </ul>
+              </div>
+            </div>
+            <div class="show-all-top-right">
               <div class="search-input">
                 <input type="text" id="searchOrigin" placeholder="검색어를 입력하세요">
                 <label for="searchOrigin" class="blind">검색어를 입력하세요</label>
                 <button class="search-btn"></button>
               </div>
-              <div class="file-down-btn">
+              <div id="downAllList" class="file-down-btn">
                 <button class="file-down"></button>
               </div>
-              <div class="modal-cls-btn">
-                <button class="modal-cls">X</button>
+              <div id="clsAllList" class="modal-cls-btn">
+                <button class="cls-btn">X</button>
               </div>
             </div>
           </div>
 
           <div class="show-all-content">
             <div class="content-title-wrap">
+              <p class="title-item title-channel"></p>
               <ul class="title-list">
-                <li class="title-item title-channel"></li>
                 <li class="title-item title-name">TITLE</li>
                 <li class="title-item title-date">DATE</li>
                 <li class="title-item title-views">VIEWS</li>
@@ -73,8 +78,37 @@
             <div class="content-all-wrap">
               <ul class="content-list">
                 <li class="content-item">
+                  <p class="content-channel sns-insta"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
+                    <li class="content-subs-item content-name">이렇게 내용물이 많아도 넘치지 않게 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세
+                      무궁화 삼천리 화려강산 대한사람
+                      대한으로 길이
+                      보전하세</li>
+                    <li class="content-subs-item content-date">2022.03.03</li>
+                    <li class="content-subs-item content-views">598,115</li>
+                    <li class="content-subs-item content-likes">2,788</li>
+                    <li class="content-subs-item content-comments">17,158</li>
+                    <li class="content-subs-item content-shares">370</li>
+                    <li class="content-subs-item content-icon"><a href="#"><img src="./src/img/icon/icon-link.svg"
+                          alt="" target="_blank"></a></li>
+                  </ul>
+                </li>
+                <li class="content-item">
+                  <p class="content-channel sns-insta"></p>
+                  <ul class="content-subs-list">
+                    <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록</li>
+                    <li class="content-subs-item content-date">2022.03.03</li>
+                    <li class="content-subs-item content-views">598,115</li>
+                    <li class="content-subs-item content-likes">2,788</li>
+                    <li class="content-subs-item content-comments">17,158</li>
+                    <li class="content-subs-item content-shares">370</li>
+                    <li class="content-subs-item content-icon"><a href="#"><img src="./src/img/icon/icon-link.svg"
+                          alt="" target="_blank"></a></li>
+                  </ul>
+                </li>
+                <li class="content-item">
+                  <p class="content-channel cafe-naver"></p>
+                  <ul class="content-subs-list">
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -88,8 +122,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-insta"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -103,8 +137,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-twitter"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -118,8 +152,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-twitter"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -133,8 +167,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel blog-naver"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -148,8 +182,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel blog-naver"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -163,8 +197,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel blog-naver"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -178,8 +212,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-insta"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -193,8 +227,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-twitter"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -208,8 +242,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-insta"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -223,8 +257,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-insta"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -238,23 +272,8 @@
                   </ul>
                 </li>
                 <li class="content-item">
+                  <p class="content-channel sns-insta"></p>
                   <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
-                    <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
-                      대한으로 길이
-                      보전하세</li>
-                    <li class="content-subs-item content-date">2022.03.03</li>
-                    <li class="content-subs-item content-views">598,115</li>
-                    <li class="content-subs-item content-likes">2,788</li>
-                    <li class="content-subs-item content-comments">17,158</li>
-                    <li class="content-subs-item content-shares">370</li>
-                    <li class="content-subs-item content-icon"><a href="#"><img src="./src/img/icon/icon-link.svg"
-                          alt="" target="_blank"></a></li>
-                  </ul>
-                </li>
-                <li class="content-item">
-                  <ul class="content-subs-list">
-                    <li class="content-subs-item content-channel channel-sns-insta"></li>
                     <li class="content-subs-item content-name">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
                       대한으로 길이
                       보전하세</li>
@@ -278,14 +297,16 @@
     <div id="showOriginModal">
       <div class="show-origin-wrap">
         <div class="show-origin-inner">
-          <div class="show-origin-top">
-            <div class="origin-top-info">
-              <p class="origin-top-item origin-channel">인스타그램</p>
-              <span class="origin-top-item origin-id">ari******</span>
-              <span class="origin-top-item origin-date">2022.03.02</span>
+          <div class="show-origin-top clearFix">
+            <div class="origin-top-info clearFix">
+              <p class="origin-channel">인스타그램</p>
+              <p class="origin-top-right">
+                <span class="top-right-item origin-id">ari******</span>
+                <span class="top-right-item origin-date">2022.03.02</span>
+              </p>
             </div>
-            <div class="modal-cls-btn">
-              <button class="modal-cls">X</button>
+            <div id="clsOriginList" class="modal-cls-btn">
+              <button class="cls-btn">X</button>
             </div>
           </div>
 
@@ -294,41 +315,41 @@
               <h3>동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</h3>
               <p class="origin-link-wrap">
                 <span class="origin-link">https://www.instagram.com/p/Caj5V0aFVmz/v</span>
-                <span class="go-origin"><a href="https://www.instagram.com/p/Caj5V0aFVmz/v">원문가기</a></span>
+                <span class="go-origin"><a href="https://www.instagram.com/p/Caj5V0aFVmz/v">원문가기<img
+                      src="./src/img/icon/icon-link.svg" alt="원문링크"></a></span>
               </p>
             </div>
             <div class="origin-content-subs">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, tempore quisquam? Sapiente maxime, eos
-              delectus quia corrupti ut iure blanditiis sed sunt numquam quasi consequuntur. Beatae nemo corporis
-              dignissimos animi eum voluptates ipsum expedita omnis dolor provident, nihil nobis voluptatibus eius
-              similique eligendi cum quis quo voluptas officiis nostrum, quaerat ipsam consequuntur assumenda molestias.
-              Deserunt perspiciatis, eligendi doloremque quidem voluptas omnis sunt nam. Mollitia omnis vel voluptas,
-              libero, voluptates obcaecati nam iure aspernatur veniam optio harum facilis quibusdam odit deserunt eum
-              pariatur quas reprehenderit repellendus ratione similique temporibus unde eaque! Voluptate natus
-              voluptatem nihil aut, quisquam inventore, suscipit ab reprehenderit corrupti architecto aliquam error
-              reiciendis in minus? Ab amet mollitia nemo asperiores perspiciatis in nesciunt dolorem aliquam, eum quidem
-              dignissimos quod fugiat accusantium a optio numquam sint similique pariatur, inventore veritatis. Libero,
-              dignissimos! Maxime a rerum, magni neque animi sit fuga. Magnam sed beatae ullam repellendus perferendis
-              voluptates dolorum! Architecto!
+              동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화
+              삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이
+              마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산
+              대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록
+              하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람
+              대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이
+              보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이
+              보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라
+              만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과
+              백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세 동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리
+              화려강산 대한사람 대한으로 길이 보전하세
             </div>
           </div>
 
           <div class="show-origin-bottom">
             <ul class="origin-info-list">
               <li class="origin-info-item">
-                <p class="info-title info-views">VIEWS</p>
+                <p class="info-title info-views">Views</p>
                 <span class="info-num info-views-num">598,115</span>
               </li>
               <li class="origin-info-item">
-                <p class="info-title info-likes">LIKES</p>
+                <p class="info-title info-likes">Likes</p>
                 <span class="info-num info-likes-num">2,788</span>
               </li>
               <li class="origin-info-item">
-                <p class="info-title info-comments">COMMENTS</p>
+                <p class="info-title info-comments">Comments</p>
                 <span class="info-num info-comments-num">17,158</span>
               </li>
               <li class="origin-info-item">
-                <p class="info-title info-shares">SHARES</p>
+                <p class="info-title info-shares">Shares</p>
                 <span class="info-num info-shares-num">370</span>
               </li>
             </ul>
@@ -352,6 +373,8 @@
   $(document).ready(function () {
     const $body = $("html, body");
 
+    const MODALON_CLASSNAME = "modalOn";
+
     /*  GO TOP event  */
     function goTopEvent() {
       $("#goTop").on("click", function () {
@@ -367,5 +390,19 @@
     }
 
     goTopEvent();
+
+    $(".hottest-item").on("click", function () {
+      $("#showAllModal").addClass(MODALON_CLASSNAME);
+    })
+    $("#clsAllList").on("click", function () {
+      $("#showAllModal").removeClass(MODALON_CLASSNAME);
+    })
+    $("#showAllModal .content-item").on("click", function () {
+      $("#showOriginModal").addClass(MODALON_CLASSNAME);
+    })
+    $("#clsOriginList").on("click", function () {
+      $("#showOriginModal").removeClass(MODALON_CLASSNAME);
+    })
+
   })
 </script>
