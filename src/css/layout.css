@@ -96,6 +96,26 @@ header:hover {
 .search-keyword-wrap #detailOpen.now-on::before {
   background: no-repeat center 50%/100% url("../img/icon/icon-minus-24cd88.svg");
 }
+.search-input {
+  position: relative;
+}
+.search-input .search-btn {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: rgba(88, 88, 88, 0);
+  background-image: url("../img/icon/icon-search.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+}
+.search-input .search-btn:hover {
+  background-image: url("../img/icon/icon-search-24cd88.svg");
+}
 .search-area input[type="text"],
 .search-area input[type="date"] {
   width: 230px;
@@ -284,7 +304,8 @@ header:hover {
 .detail-keyword-area .detail-search .detail-option label {
   vertical-align: 2px;
 }
-.detail-keyword-area input[type="text"] {
+/* .detail-keyword-area input[type="text"] { */
+input[type="text"] {
   width: calc(100% - 28px);
   height: 32px;
   border: 1px solid #bbb;
@@ -461,4 +482,42 @@ address > .copyright {
 #modal {
   position: relative;
   z-index: 300;
+}
+
+/* MODAL >> 컨텐츠 원문 리스트 모달 */
+#showAllModal {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+#showAllModal > .show-all-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 972px;
+  height: 75vh;
+  padding: 20px 20px 24px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+  overflow: hidden;
+}
+.show-all-wrap > .show-all-inner {
+}
+
+/* MODAL >> 원문 내용 모달 */
+#showOriginModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.1);
 }
