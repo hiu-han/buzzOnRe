@@ -825,4 +825,14 @@ body {
     height: 45px;
     font-size: 14px;
   }
+
+  #main .content-section .content-article.intro-keyword-now {
+    display: block;
+    width: 300px;
+    /* margin: 0 auto 24px; */
+    margin: 0 auto;
+  }
+  #main .content-section .content-article.intro-keyword-now {
+    padding-bottom: 24px;
+  }
 }

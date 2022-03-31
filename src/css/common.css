@@ -327,6 +327,12 @@ input[type="date"]:hover {
     width: 100%;
   }
 
+  .content-article.fl-l {
+    float: none;
+  }
+  .content-article.fl-r {
+    float: none;
+  }
   .content-article.po-r {
     position: relative;
     top: unset;
@@ -349,6 +355,8 @@ input[type="date"]:hover {
   .article-youtube-hot .article-list-wrap {
     width: calc(100% + 40px);
     margin-left: -20px;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
     overflow-x: auto;
   }
   .article-list-wrap .thumb-list {
@@ -362,10 +370,5 @@ input[type="date"]:hover {
   }
   .article-list-wrap .thumb-item:last-child {
     margin-right: 20px;
-  }
-
-  #main .content-section .content-article.intro-keyword-now {
-    width: 300px;
-    margin: 0 auto 24px;
   }
 }

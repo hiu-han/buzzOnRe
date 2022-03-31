@@ -1,8 +1,16 @@
 <header>
-  <div class="header-inner">
+  <div class="header-inner clearFix">
     <h1 class="logo"><a href="index.html"><img src="./src/img/common/logo.png" alt="buzzOn logo"></a></h1>
+    <p class="mobile-menu-btn">
+      <a href="#" class="link-area">
+        <span class="menu-dot"></span>
+        <span class="menu-dot"></span>
+        <span class="menu-dot"></span>
+      </a>
+    </p>
+    <button class="search-slide-btn"></button>
 
-    <div class="search-area clearFix">
+    <div class=" search-area clearFix">
       <div class="search-keyword-wrap">
         <div class="search-input">
           <input type="text" id="searchWord" placeholder="검색어를 입력하세요">
@@ -160,6 +168,22 @@
                 </div>
               </div>
             </fieldset>
+          </div>
+
+          <div class="search-area clearFix">
+            <div class="search-date-wrap">
+              <p class="search-date date-start">
+                <span class="date-title">시작일</span>
+                <!-- value, min >> 기획에 따라 초기 값 설정 -->
+                <input type="date" id="startDate" value="2022-02-15" min="2021-05-13" pattern="\d{4}-\d{2}-\d{2}">
+              </p>
+              <p class="search-date date-end">
+                <span class="date-title">종료일</span>
+                <!-- value, max >> 오늘 날짜로 설정
+                    min >> 시작일의 초기값 혹은 시작일 선택 시 시작일로 설정 -->
+                <input type="date" id="endDate" value="2022-03-15" max="2022-03-15" min="2022-02-15">
+              </p>
+            </div>
           </div>
 
           <div class="detail-area detail-keyword-area clearFix">

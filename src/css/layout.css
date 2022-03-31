@@ -209,6 +209,10 @@ header:hover {
   top: 14px;
 }
 
+.detail-slider .search-area {
+  display: none;
+}
+
 .slider-inner .detail-area-wrap {
   font-size: 0;
 }
@@ -901,6 +905,44 @@ address > .copyright {
 }
 
 @media all and (max-width: 480px) {
+  /** HEADER **/
+  .header-inner {
+    max-width: unset;
+    min-width: unset;
+    height: 48px;
+    padding-top: 11px;
+  }
+  .header-inner .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94px;
+    padding-top: 3px;
+    margin-right: 0;
+  }
+  .header-inner > .search-area,
+  .header-inner > .user-area {
+    display: none;
+  }
+
+  .header-inner > .mobile-menu-btn,
+  .header-inner > .search-slide-btn {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-color: lightblue;
+  }
+  .header-inner > .search-slide-btn {
+    float: right;
+    border: none;
+  }
+
+  /* HEADER >> detail slider */
+  .detail-slider .search-area {
+    display: block;
+  }
+
   /** FOOTER 480px **/
   .footer-inner {
     max-width: unset;
