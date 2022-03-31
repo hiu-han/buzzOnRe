@@ -264,6 +264,7 @@ input[type="date"]:hover {
 .txt-highlight::before {
   content: "";
   display: inline-block;
+  display: none;
   position: absolute;
   top: 40%;
   left: 50%;
