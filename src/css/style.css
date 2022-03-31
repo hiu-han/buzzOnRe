@@ -837,15 +837,32 @@ body {
 
   /** CONTENT PAGE 480px **/
   /** CONTENT PAGE >> NOW PAGE 480px **/
+  #main .content-article {
+    margin-bottom: 14px;
+  }
+
   .tab-section article {
     width: 100%;
     margin-bottom: 14px;
   }
+  .tab-article .tab-list {
+    margin-bottom: 0;
+  }
   .tab-article .tab-list .tab-item {
-    padding: 8px 24px;
+    padding: 8px 20px;
     font-size: 20px;
   }
-  #main .content-article {
-    margin-bottom: 14px;
+  .tab-article .tab-list .tab-item.now-on {
+    border-radius: 15px;
+  }
+  .tab-article .tab-info-list {
+    display: none;
+  }
+  #main .tab-section .tab-title-article {
+    height: auto;
+    padding: 20px 24px 24px;
+  }
+  .tab-title-article .article-content {
+    display: block;
   }
 }
