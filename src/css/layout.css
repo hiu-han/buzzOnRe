@@ -999,6 +999,12 @@ address > .copyright {
   .detail-slider input[type="date"] {
     font-size: 14px;
     height: 36px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+  }
+  .detail-slider input[type="text"]:focus,
+  .detail-slider input[type="date"]:focus {
+    border: 1px solid #24cd88;
   }
 
   .detail-slider > .slider-inner {
@@ -1019,14 +1025,76 @@ address > .copyright {
     order: 3;
   }
   .detail-area-wrap .detail-channel-area > h3 {
+    display: inline-block;
     position: relative;
     top: unset;
     left: unset;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
   }
+  .detail-area-wrap .detail-channel-area > h3::after {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+    background-image: url("../img/icon/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .detail-area-wrap .detail-channel-area > h3.now-on::after {
+    background-image: url("../img/icon/icon-minus.svg");
+  }
+  .detail-channel-area > fieldset {
+    display: none;
+    padding: 20px 14px;
+    background-color: #f5f5f5;
+  }
+  .detail-channel-area > fieldset.now-on {
+    display: block;
+  }
+  .detail-channel-area .search-group {
+    display: block;
+    width: 100%;
+    border-right: none;
+  }
+
   .detail-slider .search-area {
     display: block;
+    margin-top: 34px;
+    margin-bottom: 34px;
     order: 2;
   }
+  .detail-slider .search-date-wrap {
+    width: 100%;
+    font-size: 0;
+  }
+  .search-area input[type="date"] {
+    width: 100%;
+    padding-right: 5px;
+    text-indent: 8px;
+  }
+  .search-date-wrap > .search-date {
+    width: 48%;
+    margin-right: 0;
+  }
+  .search-date-wrap > .search-date:first-child {
+    margin-right: 2%;
+  }
+  .search-date-wrap .date-title {
+    position: relative;
+    top: unset;
+    left: unset;
+    transform: unset;
+    margin-bottom: 6px;
+    color: #313131;
+    font-weight: 500;
+    font-size: 15px;
+  }
+
   .detail-area-wrap .detail-keyword-area {
     padding: 0;
     order: 1;
@@ -1043,6 +1111,7 @@ address > .copyright {
   }
   .detail-keyword-area .detail-search .detail-title {
     left: 0;
+    font-size: 15px;
   }
   .detail-keyword-area .detail-search .detail-input {
     right: 0;
