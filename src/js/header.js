@@ -11,4 +11,17 @@ $(document).ready(function () {
     $("#detailOpen").removeClass(NOWON_CLASSNAME);
     $(".detail-slider").removeClass(NOWON_CLASSNAME);
   });
+
+  let sT = 0;
+  $(window).scroll(function (e) {
+    sT = $(this).scrollTop();
+    console.log(sT);
+    
+    if(sT > 62) {
+      $("#header").addClass(NOWON_CLASSNAME);
+    } else {
+      $("#header").removeClass(NOWON_CLASSNAME);
+    }
+  });
+
 })
