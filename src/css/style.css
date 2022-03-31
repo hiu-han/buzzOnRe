@@ -792,3 +792,37 @@ body {
 .article-hottest-wrap.hottest-wide > .list-more-btn {
   height: 42px;
 }
+
+@media all and (max-width: 1024px) {
+}
+
+@media all and (max-width: 768px) {
+}
+
+@media all and (max-width: 480px) {
+  #main {
+    width: 100%;
+  }
+  #main.intro-page {
+    width: 100%;
+  }
+
+  /** INTRO PAGE 480px **/
+  /* INTRO PAGE > login section 480px */
+  #main.intro-page .intro-section {
+    margin-bottom: 120px;
+  }
+  #main.intro-page .intro-section .section-content {
+    width: 300px;
+  }
+
+  .intro-section .section-content .logo {
+    width: 150px;
+    margin-bottom: 24px;
+  }
+  .intro-section .section-content .intro-search > input,
+  .intro-section .section-content .intro-login > button {
+    height: 45px;
+    font-size: 14px;
+  }
+}
