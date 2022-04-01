@@ -1040,10 +1040,10 @@ address > .copyright {
   }
 
   .slider-inner .detail-area-wrap {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
   }
   .detail-area-wrap .detail-area {
     width: 316px;
