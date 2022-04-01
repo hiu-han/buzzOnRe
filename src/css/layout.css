@@ -333,6 +333,7 @@ input[type="date"]:hover {
 
 .detail-keyword-area .detail-input .add-btn {
   position: relative;
+  display: inline-block;
   width: 20px;
   height: 20px;
   margin-left: 6px;
