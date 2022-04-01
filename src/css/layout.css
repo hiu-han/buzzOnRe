@@ -49,11 +49,11 @@ input[type="date"] {
 input[type="date"] {
   color: #888;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+/* input[type="date"]::-webkit-calendar-picker-indicator {
   border-radius: 2px;
   background-image: url("../img/icon/Icon-calendar.svg");
   color: #666;
-}
+} */
 
 /** HEADER **/
 #header {
@@ -186,10 +186,10 @@ header:hover {
   width: 220px;
   text-indent: 36px;
 }
-.search-area input[type="date"]:hover::-webkit-calendar-picker-indicator,
+/* .search-area input[type="date"]:hover::-webkit-calendar-picker-indicator,
 .search-area input[type="date"]:focus::-webkit-calendar-picker-indicator {
   background-image: url("../img/icon/Icon-calendar-24cd88.svg");
-}
+} */
 .search-area > .search-date-wrap > .search-date {
   position: relative;
 }
