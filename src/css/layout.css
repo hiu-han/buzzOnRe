@@ -131,7 +131,7 @@ header:hover {
 }
 .search-area input[type="date"]:hover::-webkit-calendar-picker-indicator,
 .search-area input[type="date"]:focus::-webkit-calendar-picker-indicator {
-  background-image: url(../img/icon/Icon-calendar-24cd88.svg);
+  background-image: url("../img/icon/Icon-calendar-24cd88.svg");
 }
 .search-area > .search-date-wrap > .search-date {
   position: relative;
@@ -1022,8 +1022,11 @@ address > .copyright {
   }
 
   .detail-slider > .slider-inner {
+    height: 100vh;
     max-width: unset;
     min-width: unset;
+    /* height: 100vh; */
+    overflow-y: auto;
   }
 
   .slider-inner .detail-area-wrap {
