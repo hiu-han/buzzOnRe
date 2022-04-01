@@ -138,8 +138,10 @@ input[type="date"]:hover {
   display: inline-block;
 }
 .content-article .article-title > h3 {
-  font-size: 18px;
-  font-weight: 600;
+  /* font-size: 18px;
+  font-weight: 600; */
+  font-size: 20px;
+  font-weight: 700;
 }
 .content-article .article-title > .title-more {
   margin-left: 14px;
@@ -243,6 +245,9 @@ input[type="date"]:hover {
 }
 
 /* text style */
+.item-num {
+  /* font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif"; */
+}
 .txt-gr {
   color: #24cd88;
 }
@@ -251,32 +256,35 @@ input[type="date"]:hover {
 }
 
 .txt-sizeP {
-  font-size: 1.18em;
-  font-weight: 600;
+  /* font-size: 1.1em; */
+  font-weight: 700;
+  transform: skew(-0.01deg);
   /* vertical-align: top; */
 }
 .txt-highlight {
   display: inline-block;
   position: relative;
-  font-weight: 600;
+  font-weight: 800;
   z-index: 1;
 }
 .txt-highlight::before {
   content: "";
   display: inline-block;
-  display: none;
+  display: block;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
   width: 101%;
   height: 65%;
   background-color: #dcfef1;
-  /* opacity: 0.8; */
+  opacity: 0.8;
   z-index: -1;
 }
 .txt-num {
-  font-size: 1.5em;
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif";
+  font-size: 1.3em;
+  vertical-align: -3px;
 }
 .txt-posit {
   color: #617ff8;

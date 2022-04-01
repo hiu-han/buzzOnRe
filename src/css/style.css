@@ -233,9 +233,11 @@ body {
 .tab-article .tab-list .tab-item {
   display: inline-block;
   padding: 11px 34px;
-  font-size: 22px;
-  font-weight: 600;
+  /* font-size: 22px;
+  font-weight: 600; */
   color: #919191;
+  font-size: 23px;
+  font-weight: 700;
 }
 .tab-article .tab-list .tab-hottest {
   padding: 13px 28px;
@@ -252,7 +254,7 @@ body {
 .tab-article .tab-info-list .tab-info-item {
   display: none;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
 }
 .tab-article .tab-info-list .tab-info-item.now-on {
@@ -276,7 +278,8 @@ body {
 .tab-title-article .tab-title {
   display: inline-block;
   line-height: 1.45;
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: -0.01rem;
 }
@@ -319,11 +322,13 @@ body {
   border-radius: 10px;
 }
 .chart-info-area .info-item > .item-title {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: #919191;
+  vertical-align: middle;
 }
 .chart-info-area .info-item > .item-num {
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif";
   font-size: 22px;
   font-weight: 600;
 }
@@ -518,9 +523,12 @@ body {
 }
 .rank-list > .rank-item > * {
   display: inline-block;
-  font-size: 13px;
-  text-align: center;
   line-height: 34px;
+  /* font-size: 13px; */
+  font-size: 14px;
+  font-weight: 500;
+  transform: skew(-0.01deg);
+  text-align: center;
 }
 .rank-list > .rank-item > .item-standing {
   width: 26%;
@@ -556,7 +564,7 @@ body {
 .trend-rank-wrap .trend-rank-list > h4 {
   margin-bottom: 8px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   color: #636565;
 }
 .trend-rank-list .rank-list > .rank-item.item-title {
@@ -709,7 +717,8 @@ body {
 .hottest-item > .contents-area > * {
   display: inline-block;
   line-height: 34px;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .hottest-item > .contents-area > .item-name {
   width: 52%;
