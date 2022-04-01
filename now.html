@@ -20,7 +20,252 @@
 <body>
   <div id="wrap">
     <div id="header" class="contents-page now-page">
+      <header>
+        <div class="header-inner clearFix">
+          <h1 class="logo"><a href="index.html"><img src="./src/img/common/logo.svg" alt="buzzOn logo"></a></h1>
+          <p class="mobile-menu-btn">
+            <a href="#" class="link-area">
+              <span class="menu-line line-1"></span>
+              <span class="menu-line line-2"></span>
+              <span class="menu-line line-3"></span>
+            </a>
+          </p>
+          <button id="moDetailOpen" class="search-slide-btn"></button>
 
+          <div class=" search-area clearFix">
+            <div class="search-keyword-wrap">
+              <div class="search-input">
+                <input type="text" id="searchWord" placeholder="검색어를 입력하세요">
+                <label for="searchWord" class="blind">검색어를 입력하세요</label>
+                <button class="search-btn"></button>
+              </div>
+              <p class="search-detail-btn">
+                <button id="detailOpen" class="">상세검색</button>
+              </p>
+            </div>
+
+            <div class="search-date-wrap">
+              <p class="search-date date-start">
+                <span class="date-title">시작일</span>
+                <!-- value, min >> 기획에 따라 초기 값 설정 -->
+                <input type="date" id="startDate" value="2022-02-15" min="2021-05-13" pattern="\d{4}-\d{2}-\d{2}">
+              </p>
+              <p class="search-date date-end">
+                <span class="date-title">종료일</span>
+                <!-- value, max >> 오늘 날짜로 설정
+                    min >> 시작일의 초기값 혹은 시작일 선택 시 시작일로 설정 -->
+                <input type="date" id="endDate" value="2022-03-15" max="2022-03-15" min="2022-02-15">
+              </p>
+            </div>
+          </div>
+
+          <div class="user-area">
+            <a href="#" class="link-area">
+              <p class="user-profile"></p>
+              <span class="user-name">야무진진눈깨비</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 상세검색 슬라이더 start -->
+        <div class="detail-slider">
+          <div class="slider-inner">
+            <button class="cls-btn">X</button>
+            <form action="">
+              <div class="detail-area-wrap">
+                <div class="detail-area detail-channel-area">
+                  <h3 id="moChannelOpen" class="blind">검색 대상 채널 설정</h3>
+                  <fieldset>
+                    <legend class="blind">검색 대상 채널 설정</legend>
+                    <div class="search-group search-group-sns">
+                      <h3 class="group-title">SNS</h3>
+                      <p class="all-btn">
+                        <input type="checkbox" id="allCheckSns" class="all-check-btn" checked>
+                        <label for="allCheckSns">All</label>
+                      </p>
+                      <div class="search-group-box">
+                        <div class="input-group sns-group sns-twitter">
+                          <input type="checkbox" id="chkSnsTwitter" checked>
+                          <label for="chkSnsTwitter">트위터</label>
+                        </div>
+                        <div class="input-group sns-group sns-insta">
+                          <input type="checkbox" id="chkSnsInstagram" checked>
+                          <label for="chkSnsInstagram">인스타그램</label>
+                        </div>
+                        <div class="input-group sns-group sns-youtube">
+                          <input type="checkbox" id="chkSnsYoutube" checked>
+                          <label for="chkSnsYoutube">유튜브</label>
+                        </div>
+                        <div class="input-group sns-group sns-facebook">
+                          <input type="checkbox" id="chkSnsFacebook" checked>
+                          <label for="chkSnsFacebook">페이스북</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group search-group-cafe">
+                      <h3 class="group-title">CAFE</h3>
+                      <p class="all-btn">
+                        <input type="checkbox" id="allCheckCafe" class="all-check-btn" checked>
+                        <label for="allCheckCafe">All</label>
+                      </p>
+                      <div class="search-group-box">
+                        <div class="input-group cafe-group cafe-naver">
+                          <input type="checkbox" id="chkCafeNaver" class="helo" checked>
+                          <label for="chkCafeNaver">네이버</label>
+                        </div>
+                        <div class="input-group cafe-group cafe-daum">
+                          <input type="checkbox" id="chkCafeDaum" checked>
+                          <label for="chkCafeDaum">다음</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group search-group-blog">
+                      <h3 class="group-title">BLOG</h3>
+                      <p class="all-btn">
+                        <input type="checkbox" id="allCheckBlog" class="all-check-btn" checked>
+                        <label for="allCheckBlog">All</label>
+                      </p>
+                      <div class="search-group-box">
+                        <div class="input-group blog-group blog-naver">
+                          <input type="checkbox" id="chkBlogNaver" checked>
+                          <label for="chkBlogNaver">네이버</label>
+                        </div>
+                        <div class="input-group blog-group blog-tstory">
+                          <input type="checkbox" id="chkBlogTstory" checked>
+                          <label for="chkBlogTstory">티스토리</label>
+                        </div>
+                        <div class="input-group blog-group blog-daum">
+                          <input type="checkbox" id="chkBlogDaum" checked>
+                          <label for="chkBlogDaum">다음</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group search-group-community">
+                      <h3 class="group-title">COMMUNITY</h3>
+                      <p class="all-btn">
+                        <input type="checkbox" id="allCheckCommu" class="all-check-btn" checked>
+                        <label for="allCheckCommu">All</label>
+                      </p>
+                      <div class="search-group-box">
+                        <div class="input-group commu-group commu-ppom">
+                          <input type="checkbox" id="chkCommuPpomppu" checked>
+                          <label for="chkCommuPpomppu">뽐뿌</label>
+                        </div>
+                        <div class="input-group commu-group commu-mlb">
+                          <input type="checkbox" id="chkCommuMlbpark" checked>
+                          <label for="chkCommuMlbpark">MLB파크</label>
+                        </div>
+                        <div class="input-group commu-group commu-clien">
+                          <input type="checkbox" id="chkCommuClien" checked>
+                          <label for="chkCommuClien">클리앙</label>
+                        </div>
+                        <div class="input-group commu-group commu-fm">
+                          <input type="checkbox" id="chkCommuFm" checked>
+                          <label for="chkCommuFm">FM코리아</label>
+                        </div>
+                        <div class="input-group commu-group commu-dc">
+                          <input type="checkbox" id="chkCommuDc" checked>
+                          <label for="chkCommuDc">DC</label>
+                        </div>
+                        <div class="input-group commu-group commu-ruli">
+                          <input type="checkbox" id="chkCommuRuliweb" checked>
+                          <label for="chkCommuRuliweb">루리웹</label>
+                        </div>
+                        <div class="input-group commu-group commu-inven">
+                          <input type="checkbox" id="chkCommuInven" checked>
+                          <label for="chkCommuInven">인벤</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="search-group search-group-news">
+                      <h3 class="group-title">NEWS</h3>
+                      <p class="all-btn">
+                        <input type="checkbox" id="allCheckNews" class="all-check-btn" checked>
+                        <label for="allCheckNews">All</label>
+                      </p>
+                      <div class="search-group-box">
+                        <div class="input-group news-group news-naver">
+                          <input type="checkbox" id="chkNewsNaver" class="helo" checked>
+                          <label for="chkNewsNaver">네이버</label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="detail-area search-area clearFix">
+                  <div class="search-date-wrap">
+                    <p class="search-date date-start">
+                      <span class="date-title">시작일</span>
+                      <!-- value, min >> 기획에 따라 초기 값 설정 -->
+                      <input type="date" id="startDate" value="2022-02-15" min="2021-05-13" pattern="\d{4}-\d{2}-\d{2}">
+                    </p>
+                    <p class="search-date date-end">
+                      <span class="date-title">종료일</span>
+                      <!-- value, max >> 오늘 날짜로 설정
+                          min >> 시작일의 초기값 혹은 시작일 선택 시 시작일로 설정 -->
+                      <input type="date" id="endDate" value="2022-03-15" max="2022-03-15" min="2022-02-15">
+                    </p>
+                  </div>
+                </div>
+
+                <div class="detail-area detail-keyword-area clearFix">
+                  <fieldset>
+                    <legend class="blind">검색어 상세 설정</legend>
+                    <div class="detail-search detail-keyword">
+                      <h4 class="detail-title">검색어</h4>
+                      <div class="detail-input">
+                        <input type="text" placeholder="검색어를 입력하세요">
+                      </div>
+                    </div>
+
+                    <div class="detail-search detail-include clearFix">
+                      <h4 class="detail-title">포함어</h4>
+                      <div class="detail-option">
+                        <input type="radio" name="includeOption" class="include-option" id="includeOr"
+                          value="include-or" checked="checked">
+                        <label for="includeOr">또는</label>
+                        <input type="radio" name="includeOption" class="include-option" id="includeAnd"
+                          value="include-and">
+                        <label for="includeAnd">그리고</label>
+                      </div>
+                      <div class="detail-input">
+                        <input type="text" placeholder="포함어를 입력하세요 (최대3개)">
+                        <button class="add-btn">+</button>
+                      </div>
+                    </div>
+
+                    <div class="detail-search detail-except clearFix">
+                      <h4 class="detail-title">제외어</h4>
+                      <div class="detail-option">
+                        <input type="radio" name="exceptOption" class="except-option" id="exceptOr" value="except-or"
+                          checked="checked">
+                        <label for="exceptOr">또는</label>
+                        <input type="radio" name="exceptOption" class="except-option" id="exceptAnd" value="except-and">
+                        <label for="exceptAnd">그리고</label>
+                      </div>
+                      <div class="detail-input">
+                        <input type="text" placeholder="포함어를 입력하세요 (최대3개)">
+                        <button class="add-btn">+</button>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+              </div>
+
+              <div class="detail-btn-area">
+                <p class="preset-btn">
+                  <a href="#" class="add-icon">검색설정 가져오기</a>
+                </p>
+                <button type="submit" ID="detailSubmit" class="submit-btn">검색 결과 보기</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- 상세검색 슬라이더 end -->
+
+
+      </header>
     </div>
 
     <div id="main" class="contents-page now-page">
@@ -720,6 +965,7 @@
   <script src='./src/js/jquery-3.5.1.js'></script>
   <script src="./src/js/include.js"></script>
   <script src="./src/js/main.js"></script>
+  <script src="./src/js/header.js"></script>
 </body>
 
 </html>

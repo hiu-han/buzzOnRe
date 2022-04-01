@@ -76,16 +76,11 @@ header:hover {
 .search-keyword-wrap #detailOpen::before {
   content: "";
   display: inline-block;
-  /* position: absolute; */
-  /* top: 48%; */
-  /* left: 0; */
   width: 8px;
   height: 8px;
   margin-right: 5px;
   background: no-repeat center 100% url("../img/icon/icon-plus.svg");
-  /* transform: translateY(-50%); */
   font-size: 20px;
-  /* vertical-align: -2px; */
 }
 .search-keyword-wrap #detailOpen:hover {
   color: #24cd88;
@@ -130,12 +125,6 @@ header:hover {
   border: 1px solid #ddd;
 }
 
-/* .search-area input[type="text"]:focus,
-.search-area input[type="date"]:focus,
-.search-area input[type="text"]:hover,
-.search-area input[type="date"]:hover {
-  border: 1px solid #24cd88;
-} */
 .search-area input[type="date"] {
   width: 220px;
   text-indent: 36px;
