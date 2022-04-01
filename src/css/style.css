@@ -79,10 +79,12 @@ button:hover {
   display: inline-block;
 }
 .content-article .article-title > h3 {
-  /* font-size: 18px;
-  font-weight: 600; */
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif";
+  transform: skew(-0.01deg);
+  /* font-size: 20px; */
+  /* font-weight: 700; */
 }
 .content-article .article-title > .title-more {
   margin-left: 14px;
@@ -1248,7 +1250,7 @@ body {
     font-size: 14px;
   }
   .chart-info-area .info-item > .item-num {
-    margin-top: -3px;
+    margin-top: -2px;
     font-size: 19px;
   }
 }
