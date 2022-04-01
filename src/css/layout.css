@@ -1,3 +1,60 @@
+/** COMMON **/
+.cls-btn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 10px;
+  background: none;
+  background-color: #fff;
+  text-indent: -99999px;
+}
+.cls-btn:hover {
+  box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
+}
+.cls-btn::before,
+.cls-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 28px;
+  background-color: #555;
+}
+.cls-btn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.cls-btn::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+input[type="text"]::-webkit-input-placeholder {
+  color: #ccc;
+}
+input[type="text"]::-ms-input-placeholder {
+  color: #ccc;
+}
+input[type="text"]::placeholder {
+  color: #ccc;
+  font-weight: 300;
+}
+input[type="text"],
+input[type="date"] {
+  background-color: #f7f8f8;
+}
+input[type="date"] {
+  color: #888;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  border-radius: 2px;
+  background-image: url("../img/icon/Icon-calendar.svg");
+  color: #666;
+}
+
 /** HEADER **/
 #header {
   position: fixed;
