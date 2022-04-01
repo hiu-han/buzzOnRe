@@ -1271,14 +1271,12 @@ body {
     width: calc(100% + 40px);
     margin-left: -20px;
     overflow-x: scroll;
-    /* overflow: hidden; */
   }
   .detail-card-list {
     width: calc(210px * 5 + 14px * 4 + 40px);
     padding: 0 20px;
     font-size: 0;
     margin-bottom: 12px;
-    /* margin-left: -24px; */
   }
   .detail-card-list > .card-item {
     display: inline-block;

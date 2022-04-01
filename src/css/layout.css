@@ -1213,4 +1213,20 @@ address > .copyright {
     max-width: unset;
     min-width: unset;
   }
+
+  /** MODAL **/
+  /** MODAL >> 원문 리스트 모달 **/
+  #showAllModal > .show-all-wrap {
+    width: calc(100% - 14px);
+    margin: 0 auto;
+  }
+  .show-all-content .content-item .content-subs-item {
+    transform: skew(-0.01deg);
+  }
+
+  /** MODAL >> 원문 내용 모달 **/
+  #showOriginModal > .show-origin-wrap {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+  }
 }
