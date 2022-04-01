@@ -16,8 +16,7 @@ input,
 textarea,
 select,
 button {
-  font-family: "Pretendard", "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic,
-    "sans-serif";
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif";
   /* font-family: "Noto Sans KR", Apple Gothic, "sans-serif"; */
   font-size: 14px;
   /* color: #2a2a2a; */
