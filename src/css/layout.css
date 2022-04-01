@@ -1087,10 +1087,10 @@ address > .copyright {
     font-size: 0;
   }
   .search-area input[type="date"] {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    display: block;
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 0; */
     width: 100%;
     padding-right: 5px;
     text-indent: 8px;
@@ -1105,8 +1105,9 @@ address > .copyright {
   }
   .search-date-wrap .date-title {
     display: block;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: unset;
+    left: unset;
     transform: unset;
     margin-bottom: 6px;
     color: #313131;
