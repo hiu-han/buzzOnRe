@@ -177,7 +177,7 @@ header:hover {
 
 /* detail slider */
 .detail-slider {
-  display: none;
+  /* display: none; */
   position: absolute;
   top: 63px;
   left: 0;
@@ -1086,15 +1086,6 @@ address > .copyright {
     width: 100%;
     font-size: 0;
   }
-  .search-area input[type="date"] {
-    display: block;
-    /* position: absolute; */
-    /* left: 0; */
-    /* bottom: 0; */
-    width: 100%;
-    padding-right: 5px;
-    text-indent: 8px;
-  }
   .search-date-wrap > .search-date {
     width: 48%;
     height: 60px;
@@ -1113,6 +1104,18 @@ address > .copyright {
     color: #313131;
     font-weight: 500;
     font-size: 15px;
+  }
+  .search-area .date-input {
+    display: block;
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 0; */
+    width: 100%;
+  }
+  .search-area .date-input > input {
+    width: 100%;
+    text-indent: 4px;
+    padding-right: 4px;
   }
 
   .detail-area-wrap .detail-keyword-area {

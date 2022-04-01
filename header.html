@@ -23,17 +23,22 @@
       </div>
 
       <div class="search-date-wrap">
-        <p class="search-date date-start">
+        <div class="search-date date-start">
           <span class="date-title">시작일</span>
           <!-- value, min >> 기획에 따라 초기 값 설정 -->
-          <input type="date" id="startDate" value="2022-02-15" min="2021-05-13" pattern="\d{4}-\d{2}-\d{2}">
-        </p>
-        <p class="search-date date-end">
+          <div class="date-input">
+            <input type="date" id="startDate" value="2022-02-15" min="2021-05-13" pattern="\d{4}-\d{2}-\d{2}">
+          </div>
+        </div>
+        <div class="search-date date-end">
           <span class="date-title">종료일</span>
           <!-- value, max >> 오늘 날짜로 설정
               min >> 시작일의 초기값 혹은 시작일 선택 시 시작일로 설정 -->
-          <input type="date" id="endDate" value="2022-03-15" max="2022-03-15" min="2022-02-15">
-        </p>
+          <div class="date-input">
+            <input type="date" id="endDate" value="2022-03-15" max="2022-03-15" min="2022-02-15"
+              pattern="\d{4}-\d{2}-\d{2}">
+          </div>
+        </div>
       </div>
     </div>
 
@@ -173,19 +178,25 @@
 
           <div class="detail-area search-area clearFix">
             <div class="search-date-wrap">
-              <p class="search-date date-start">
+              <div class="search-date date-start">
                 <span class="date-title">시작일</span>
                 <!-- value, min >> 기획에 따라 초기 값 설정 -->
-                <input type="date" id="startDate" value="2022-02-15" min="2021-05-13" pattern="\d{4}-\d{2}-\d{2}">
-              </p>
-              <p class="search-date date-end">
+                <div class="date-input">
+                  <input type="date" id="startDate" value="2022-02-15" min="2021-05-13" pattern="\d{4}-\d{2}-\d{2}">
+                </div>
+              </div>
+              <div class="search-date date-end">
                 <span class="date-title">종료일</span>
                 <!-- value, max >> 오늘 날짜로 설정
                     min >> 시작일의 초기값 혹은 시작일 선택 시 시작일로 설정 -->
-                <input type="date" id="endDate" value="2022-03-15" max="2022-03-15" min="2022-02-15">
-              </p>
+                <div class="date-input">
+                  <input type="date" id="endDate" value="2022-03-15" max="2022-03-15" min="2022-02-15"
+                    pattern="\d{4}-\d{2}-\d{2}">
+                </div>
+              </div>
             </div>
           </div>
+
 
           <div class="detail-area detail-keyword-area clearFix">
             <fieldset>
@@ -229,15 +240,16 @@
             </fieldset>
           </div>
         </div>
-
-        <div class="detail-btn-area">
-          <p class="preset-btn">
-            <a href="#" class="add-icon">검색설정 가져오기</a>
-          </p>
-          <button type="submit" ID="detailSubmit" class="submit-btn">검색 결과 보기</button>
-        </div>
-      </form>
     </div>
+
+    <div class="detail-btn-area">
+      <p class="preset-btn">
+        <a href="#" class="add-icon">검색설정 가져오기</a>
+      </p>
+      <button type="submit" ID="detailSubmit" class="submit-btn">검색 결과 보기</button>
+    </div>
+    </form>
+  </div>
   </div>
   <!-- 상세검색 슬라이더 end -->
 
