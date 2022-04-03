@@ -34,7 +34,7 @@ $(document).ready(function () {
   let sT = 0;
   $(window).scroll(function (e) {
     sT = $(this).scrollTop();
-    console.log(sT);
+    // console.log(sT);
     
     if(sT > 62) {
       $("#header").addClass(NOWON_CLASSNAME);
