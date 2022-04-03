@@ -703,6 +703,16 @@ body {
 /* CONTENT PAGE >> sentiment article */
 
 /* CONTENT PAGE >> keyword ranking article */
+.article-keyword-association {
+  order: 2;
+}
+.article-sentiment-keyword {
+  order: 1;
+}
+.article-keyword-ranking {
+  order: 3;
+}
+
 .article-rank-wrap {
   width: 100%;
 }
@@ -1268,5 +1278,14 @@ body {
   .card-sub-list > .sub-item .sub-subs {
     float: right;
     color: #8b8d91;
+  }
+
+  .article-keyword-association {
+  }
+  .article-sentiment-keyword,
+  .article-keyword-ranking {
+    display: inline-block;
+  }
+  .article-keyword-ranking {
   }
 }
