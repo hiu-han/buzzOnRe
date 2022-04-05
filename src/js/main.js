@@ -1,20 +1,62 @@
 $(document).ready(function () {
+  let winWidth = 0;
+  $(window).on("resize", function () {
+    winWidth = window.innerWidth;
+    return winWidth;
+  })
+  
   const NOWON_CLASSNAME = "now-on";
 
-  $(".article-list-wrap .item-subs").on("click", function () {
-    let thisH = $(this).children("ul").length;
-    if (thisH > 1) {
+  $(".article-list-wrap .item-subs > .item-subs-opener").on("click", function () {
+    let itemH = $(this).parent().children("ul").length;
+    console.log(itemH);
+    if (itemH > 1) {
       // $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);  
-      $(this).toggleClass(NOWON_CLASSNAME);
-      $(this).css("height", thisH * 38);
+      $(this).parent().toggleClass(NOWON_CLASSNAME);
+      $(this).parent().css("height", itemH * 38);
 
-      if(!$(this).hasClass(NOWON_CLASSNAME)) {
-        $(this).css("height", 38);
+      if(!$(this).parent().hasClass(NOWON_CLASSNAME)) {
+        $(this).parent().css("height", 38);
       }
     }
   });
 
+  $(".article-list-wrap .item-subs .total-posts").on("click", function () {
+    console.log("clicked");
+  })
 
+  // swiper test >> Trend page 시작
+  const slide = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    breakpoints: {
+      481: {
+        slidesPerView: 4,
+      }
+    },
+    debugger: true,
+    mousewheel:true,
+    loop:false,
+    centeredSlide: true,
+    
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  })
+  // swiper test >> Trend page 끝
+
+  
   // 임시 데이터
   $(".detailPostSNS").css("width", "40%");
   $(".detailPostTwit").css("width", "12%");
