@@ -786,6 +786,44 @@ body {
 }
 
 /** CONTENT PAGE >> TREND PAGE **/
+.article-content > .article-content-top {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: right;
+  margin: -10px 0 8px;
+}
+.article-content-top > .period-select {
+  /* width: 195px; */
+}
+.article-content-top .period-list {
+  font-size: 0;
+}
+.article-content-top .period-list > .period-item {
+  display: inline-block;
+  /* width: 65px; */
+  /* max-width: 65px; */
+  padding: 2px 10px 0;
+  margin-left: 6px;
+  line-height: 18px;
+  font-size: 11px;
+  text-align: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.article-content-top .period-list > .period-item:first-child {
+  margin-left: 0;
+}
+.article-content-top .period-list > .period-item:hover {
+  border: 1px solid #ccc;
+}
+.article-content-top .period-list > .period-item.now-on {
+  border: 1px solid #24cd88;
+  color: #24cd88;
+  cursor: default;
+}
+
 .article-keyword-trend .article-rank-wrap {
   width: 100%;
   padding: 0 36px;

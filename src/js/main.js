@@ -25,6 +25,14 @@ $(document).ready(function () {
     console.log("clicked");
   })
 
+
+  // 차트 기간 설정 버튼
+  $(".period-item").on("click", function() {
+    $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+  })
+
+
+  // swiper test >> Trend page 시작
   const stmtTrdSwp = new Swiper('#postTrdSwpContainer, #stmtTrdSwpContainer, #enggTrdSwpContainer', {
     slidesPerView: 1,
     spaceBetween: 24,
@@ -40,7 +48,7 @@ $(document).ready(function () {
 
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      clickable: false,
     },
     
     navigation: {
@@ -49,7 +57,6 @@ $(document).ready(function () {
     },
   })
 
-  // swiper test >> Trend page 시작
   const kwdTrdSwp = new Swiper('#kwdTrdSwpContainer', {
     slidesPerView: 1,
     spaceBetween: 24,
@@ -70,7 +77,7 @@ $(document).ready(function () {
 
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      clickable: false,
     },
     
     navigation: {
