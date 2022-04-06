@@ -26,10 +26,24 @@ $(document).ready(function () {
   })
 
 
+  // 차트 방식 성정 버튼
+  $(".mehtod-item").on("click", function() {
+    $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
+  });
   // 차트 기간 설정 버튼
   $(".period-item").on("click", function() {
     $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
-  })
+  });
+
+  
+  // 임시 데이터
+  $(".detailPostSNS").css("width", "40%");
+  $(".detailPostTwit").css("width", "12%");
+  $(".detailPostInsta").css("width", "50%");
+  $(".detailPostYout").css("width", "26%");
+  $(".detailPostFaceb").css("width", "12%");
+  
+  $(".detailPostCommu").css("width", "45%");
 
 
   // swiper test >> Trend page 시작
@@ -55,7 +69,7 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  })
+  });
 
   const kwdTrdSwp = new Swiper('#kwdTrdSwpContainer', {
     slidesPerView: 1,
@@ -84,16 +98,8 @@ $(document).ready(function () {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-  })
+  });
   // swiper test >> Trend page 끝
 
   
-  // 임시 데이터
-  $(".detailPostSNS").css("width", "40%");
-  $(".detailPostTwit").css("width", "12%");
-  $(".detailPostInsta").css("width", "50%");
-  $(".detailPostYout").css("width", "26%");
-  $(".detailPostFaceb").css("width", "12%");
-  
-  $(".detailPostCommu").css("width", "45%");
 })
