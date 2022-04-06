@@ -55,9 +55,9 @@
 }
 
 .flex-center {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; */
 }
 
 .link-area {
