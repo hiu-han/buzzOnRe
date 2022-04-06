@@ -836,6 +836,43 @@ body {
   border-radius: 10px;
   vertical-align: 1px;
 }
+.article-content-top .color-item-sns > .item-color {
+  background-color: #db9bee;
+}
+.article-content-top .color-item-community > .item-color {
+  background-color: #a9f9d6;
+}
+.article-content-top .color-item-blog > .item-color {
+  background-color: #9ec0f3;
+}
+.article-content-top .color-item-cafe > .item-color {
+  background-color: #f3f394;
+}
+.article-content-top .color-item-news > .item-color {
+  background-color: #f3bd9a;
+}
+.article-content-top .color-item-views > .item-color {
+  background-color: #69f1b6;
+}
+.article-content-top .color-item-comments > .item-color {
+  background-color: #699ff1;
+}
+.article-content-top .color-item-likes > .item-color {
+  background-color: #f1f169;
+}
+.article-content-top .color-item-shares > .item-color {
+  background-color: #f19f69;
+}
+.article-content-top .color-item-posit > .item-color {
+  background-color: #617ff8;
+}
+.article-content-top .color-item-neutral > .item-color {
+  background-color: #f9f959;
+}
+.article-content-top .color-item-negat > .item-color {
+  background-color: #fb6761;
+}
+
 .article-content-top .color-item > .item-name {
   margin-left: 2px;
   line-height: 22px;
