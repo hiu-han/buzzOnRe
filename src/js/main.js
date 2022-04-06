@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
   // 차트 방식 성정 버튼
-  $(".mehtod-item").on("click", function() {
+  $(".method-item").on("click", function() {
     $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
   });
   // 차트 기간 설정 버튼
@@ -47,7 +47,7 @@ $(document).ready(function () {
 
 
   // swiper test >> Trend page 시작
-  const stmtTrdSwp = new Swiper('#postTrdSwpContainer, #stmtTrdSwpContainer, #enggTrdSwpContainer', {
+  const stmtTrdSwp = new Swiper('#kwdRnkContainer, #postTrdSwpContainer, #stmtTrdSwpContainer, #enggTrdSwpContainer', {
     slidesPerView: 1,
     spaceBetween: 24,
     debugger: true,
