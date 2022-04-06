@@ -524,6 +524,7 @@ address > .copyright {
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
+  z-index: 150;
 }
 #goTop > .go-top-btn {
   width: 100%;

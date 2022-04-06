@@ -25,8 +25,32 @@ $(document).ready(function () {
     console.log("clicked");
   })
 
+  const stmtTrdSwp = new Swiper('#postTrdSwpContainer, #stmtTrdSwpContainer, #enggTrdSwpContainer', {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    debugger: true,
+    mousewheel:true,
+    loop:false,
+    centeredSlide: true,
+    
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  })
+
   // swiper test >> Trend page 시작
-  const slide = new Swiper('.swiper-container', {
+  const kwdTrdSwp = new Swiper('#kwdTrdSwpContainer', {
     slidesPerView: 1,
     spaceBetween: 24,
     breakpoints: {
