@@ -35,7 +35,7 @@
       <div class="show-all-wrap">
         <div class="show-all-inner">
           <div class="show-all-top clearFix">
-            <div class="show-all-top-left">
+            <div class="show-all-top-inner clearFix">
               <h2 class="show-all-title">"<span class="keyword">베개</span>" 원문보기</h2>
               <div class="sort-option">
                 <p class="option-selected">최신순</p>
@@ -46,8 +46,6 @@
                   <li class="option-item">추천수순</li>
                 </ul>
               </div>
-            </div>
-            <div class="show-all-top-right">
               <div class="search-input">
                 <input type="text" id="searchOrigin" placeholder="검색어를 입력하세요">
                 <label for="searchOrigin" class="blind">검색어를 입력하세요</label>
@@ -56,9 +54,9 @@
               <div id="downAllList" class="file-down-btn">
                 <button class="file-down"></button>
               </div>
-              <div id="clsAllList" class="modal-cls-btn">
-                <button class="cls-btn">X</button>
-              </div>
+            </div>
+            <div id="clsAllList" class="modal-cls-btn">
+              <button class="cls-btn">X</button>
             </div>
           </div>
 
@@ -369,7 +367,7 @@
 
   </div>
 </aside>
-
+<script src="./src/js/footer.js"></script>
 <script>
   $(document).ready(function () {
     const $body = $("html, body");
