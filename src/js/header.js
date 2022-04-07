@@ -43,4 +43,77 @@ $(document).ready(function () {
     }
   });
 
+  
 })
+
+// channel All chk
+function allChked () {
+  let allOfChkBox = document.querySelectorAll('.detail-channel-area input[type="checkbox"]');
+  for (let i = 0, len = allOfChkBox.length; i < len; i++) {
+    allOfChkBox[i].checked = true;
+  }
+}
+allChked();
+
+function channelChk (a, g) {
+  let allChkBox = document.getElementById(`allCheck${g}`);
+  let e = document.querySelectorAll(`.${g}-group input[type="checkbox"]`);
+  // console.log(e.length);
+
+  for (let i = 0, len = e.length; i < len; i++) {
+    if (!e[i].checked) {
+      allChkBox.checked = false;
+      return;
+    }
+  }
+  allChkBox.checkd = true;
+}
+
+function toggleChk(source, g) {
+  let e = document.querySelectorAll(`.${g}-group input[type="checkbox"]`);
+
+  for (let i = 0, len = e.length; i < len; i++) {
+    e[i].checked = source.checked;
+  }
+}
+
+/*
+function channelChk () {
+  let allChkBox = document.getElementById("allCheckSns");
+  let e = document.querySelectorAll('.sns-group input[type="checkbox"]');
+  console.log(e.length);
+  for (let i = 0, len = e.length; i < len; i++) {
+    if (!e[i].checked) {
+      allChkBox.checked = false;
+      return;
+    }
+  }
+  allChkBox.checkd = true;
+}
+
+ function toggleChk(source) {
+   let e = document.querySelectorAll('.sns-group input[type="checkbox"]');
+
+   for (let i = 0, len = e.length; i < len; i++) {
+     e[i].checked = source.checked;
+   }
+ }
+*/
+
+/*
+const allChkHandler =  {
+  snsChannelChk: function () {
+
+  },
+  snsToggleChk: function () {
+
+  },
+  cafeChannelChk: function () {
+
+  },
+  cafeToggleChk: function () {
+
+  },
+  ......
+}
+*/

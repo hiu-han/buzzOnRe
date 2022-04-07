@@ -836,6 +836,8 @@ body {
   border-radius: 10px;
   vertical-align: 1px;
 }
+
+/* TREND page 내 차트 아이템 구분 색상 */
 .article-content-top .color-item-sns > .item-color {
   background-color: #db9bee;
 }
@@ -1482,5 +1484,38 @@ body {
   }
   .article-content .slide-btn-wrap > .slide-btn.slide-right {
     right: -16px;
+  }
+
+  /** CONTENT page >> HOTTEST page **/
+
+  /* HOTTEST page >> cafe top10 */
+  .hottest-item.item-subs > .contents-area > .item-name {
+    padding-left: 8px;
+  }
+
+  /* HOTTEST page >> post top10 */
+  .hottest-item > .icon-area {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+  .hottest-wide-list .item-subs > .contents-area .item-post-title {
+    padding-left: 8px;
+  }
+  .hottest-wide-list .hottest-item > .contents-area .item-post-title {
+    padding-right: 8px;
+  }
+  .article-hottest-top10 .hottest-item .item-date,
+  .article-hottest-top10 .hottest-item .item-id,
+  .article-hottest-top10 .hottest-item .item-comments,
+  .article-hottest-top10 .hottest-item .item-likes,
+  .article-hottest-top10 .hottest-item .item-shares {
+    display: none;
+  }
+  .hottest-wide-list .hottest-item > .contents-area .item-post-title {
+    width: 74%;
+  }
+  .hottest-wide-list .hottest-item > .contents-area .item-views {
+    width: 26%;
   }
 }

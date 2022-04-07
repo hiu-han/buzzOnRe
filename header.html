@@ -66,24 +66,24 @@
               <div class="search-group search-group-sns">
                 <h3 class="group-title">SNS</h3>
                 <p class="all-btn">
-                  <input type="checkbox" id="allCheckSns" class="all-check-btn" checked>
-                  <label for="allCheckSns">All</label>
+                  <input type="checkbox" id="allChecksns" class="all-check-btn" onclick="toggleChk(this,'sns');">
+                  <label for="allChecksns">All</label>
                 </p>
                 <div class="search-group-box">
                   <div class="input-group sns-group sns-twitter">
-                    <input type="checkbox" id="chkSnsTwitter" checked>
+                    <input type="checkbox" id="chkSnsTwitter" onclick="channelChk(this,'sns');">
                     <label for="chkSnsTwitter">트위터</label>
                   </div>
                   <div class="input-group sns-group sns-insta">
-                    <input type="checkbox" id="chkSnsInstagram" checked>
+                    <input type="checkbox" id="chkSnsInstagram" onclick="channelChk(this,'sns');">
                     <label for="chkSnsInstagram">인스타그램</label>
                   </div>
                   <div class="input-group sns-group sns-youtube">
-                    <input type="checkbox" id="chkSnsYoutube" checked>
+                    <input type="checkbox" id="chkSnsYoutube" onclick="channelChk(this,'sns');">
                     <label for="chkSnsYoutube">유튜브</label>
                   </div>
                   <div class="input-group sns-group sns-facebook">
-                    <input type="checkbox" id="chkSnsFacebook" checked>
+                    <input type="checkbox" id="chkSnsFacebook" onclick="channelChk(this,'sns');">
                     <label for="chkSnsFacebook">페이스북</label>
                   </div>
                 </div>
@@ -91,16 +91,16 @@
               <div class="search-group search-group-cafe">
                 <h3 class="group-title">CAFE</h3>
                 <p class="all-btn">
-                  <input type="checkbox" id="allCheckCafe" class="all-check-btn" checked>
-                  <label for="allCheckCafe">All</label>
+                  <input type="checkbox" id="allCheckcafe" class="all-check-btn" onclick="toggleChk(this,'cafe');">
+                  <label for="allCheckcafe">All</label>
                 </p>
                 <div class="search-group-box">
                   <div class="input-group cafe-group cafe-naver">
-                    <input type="checkbox" id="chkCafeNaver" class="helo" checked>
+                    <input type="checkbox" id="chkCafeNaver" class="helo" onclick="channelChk(this,'cafe');">
                     <label for="chkCafeNaver">네이버</label>
                   </div>
                   <div class="input-group cafe-group cafe-daum">
-                    <input type="checkbox" id="chkCafeDaum" checked>
+                    <input type="checkbox" id="chkCafeDaum" onclick="channelChk(this,'cafe');">
                     <label for="chkCafeDaum">다음</label>
                   </div>
                 </div>
@@ -108,20 +108,20 @@
               <div class="search-group search-group-blog">
                 <h3 class="group-title">BLOG</h3>
                 <p class="all-btn">
-                  <input type="checkbox" id="allCheckBlog" class="all-check-btn" checked>
-                  <label for="allCheckBlog">All</label>
+                  <input type="checkbox" id="allCheckblog" class="all-check-btn" onclick="toggleChk(this,'blog');">
+                  <label for="allCheckblog">All</label>
                 </p>
                 <div class="search-group-box">
                   <div class="input-group blog-group blog-naver">
-                    <input type="checkbox" id="chkBlogNaver" checked>
+                    <input type="checkbox" id="chkBlogNaver" onclick="channelChk(this,'blog');">
                     <label for="chkBlogNaver">네이버</label>
                   </div>
                   <div class="input-group blog-group blog-tstory">
-                    <input type="checkbox" id="chkBlogTstory" checked>
+                    <input type="checkbox" id="chkBlogTstory" onclick="channelChk(this,'blog');">
                     <label for="chkBlogTstory">티스토리</label>
                   </div>
-                  <div class="input-group blog-group blog-daum">
-                    <input type="checkbox" id="chkBlogDaum" checked>
+                  <div class="input-group blog-group blog-daum" onclick="channelChk(this,'blog');">
+                    <input type="checkbox" id="chkBlogDaum">
                     <label for="chkBlogDaum">다음</label>
                   </div>
                 </div>
@@ -129,36 +129,36 @@
               <div class="search-group search-group-community">
                 <h3 class="group-title">COMMUNITY</h3>
                 <p class="all-btn">
-                  <input type="checkbox" id="allCheckCommu" class="all-check-btn" checked>
-                  <label for="allCheckCommu">All</label>
+                  <input type="checkbox" id="allCheckcommu" class="all-check-btn" onclick="toggleChk(this,'commu');">
+                  <label for="allCheckcommu">All</label>
                 </p>
                 <div class="search-group-box">
                   <div class="input-group commu-group commu-ppom">
-                    <input type="checkbox" id="chkCommuPpomppu" checked>
+                    <input type="checkbox" id="chkCommuPpomppu" onclick="channelChk(this,'commu');">
                     <label for="chkCommuPpomppu">뽐뿌</label>
                   </div>
                   <div class="input-group commu-group commu-mlb">
-                    <input type="checkbox" id="chkCommuMlbpark" checked>
+                    <input type="checkbox" id="chkCommuMlbpark" onclick="channelChk(this,'commu');">
                     <label for="chkCommuMlbpark">MLB파크</label>
                   </div>
                   <div class="input-group commu-group commu-clien">
-                    <input type="checkbox" id="chkCommuClien" checked>
+                    <input type="checkbox" id="chkCommuClien" onclick="channelChk(this,'commu');">
                     <label for="chkCommuClien">클리앙</label>
                   </div>
                   <div class="input-group commu-group commu-fm">
-                    <input type="checkbox" id="chkCommuFm" checked>
+                    <input type="checkbox" id="chkCommuFm" onclick="channelChk(this,'commu');">
                     <label for="chkCommuFm">FM코리아</label>
                   </div>
                   <div class="input-group commu-group commu-dc">
-                    <input type="checkbox" id="chkCommuDc" checked>
+                    <input type="checkbox" id="chkCommuDc" onclick="channelChk(this,'commu');">
                     <label for="chkCommuDc">DC</label>
                   </div>
                   <div class="input-group commu-group commu-ruli">
-                    <input type="checkbox" id="chkCommuRuliweb" checked>
+                    <input type="checkbox" id="chkCommuRuliweb" onclick="channelChk(this,'commu');">
                     <label for="chkCommuRuliweb">루리웹</label>
                   </div>
                   <div class="input-group commu-group commu-inven">
-                    <input type="checkbox" id="chkCommuInven" checked>
+                    <input type="checkbox" id="chkCommuInven" onclick="channelChk(this,'commu');">
                     <label for="chkCommuInven">인벤</label>
                   </div>
                 </div>
@@ -166,12 +166,12 @@
               <div class="search-group search-group-news">
                 <h3 class="group-title">NEWS</h3>
                 <p class="all-btn">
-                  <input type="checkbox" id="allCheckNews" class="all-check-btn" checked>
-                  <label for="allCheckNews">All</label>
+                  <input type="checkbox" id="allChecknews" class="all-check-btn" onclick="toggleChk(this,'news');">
+                  <label for="allChecknews">All</label>
                 </p>
                 <div class="search-group-box">
                   <div class="input-group news-group news-naver">
-                    <input type="checkbox" id="chkNewsNaver" class="helo" checked>
+                    <input type="checkbox" id="chkNewsNaver" class="helo" onclick="channelChk(this,'news');">
                     <label for="chkNewsNaver">네이버</label>
                   </div>
                 </div>
