@@ -148,6 +148,20 @@ button {
   letter-spacing: -0.02rem;
 }
 
+/* input[type="password"], */
+/* input[type="email"], */
+input[type="text"],
+input[type="date"],
+textarea,
+button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+}
+
 button {
   background-color: none;
 }
