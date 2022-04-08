@@ -692,8 +692,9 @@ body {
   > .detail-subs
   > .chart-horizontal
   > .total-posts:hover {
-  transform: scale(1.05, 3);
+  /* transform: scale(1.05, 3); */
   /* box-shadow: 1px 3px 12px rgb(128 128 128 / 20%); */
+  border: 1px solid #888;
 }
 .detail-item
   > .item-sub-list
@@ -816,7 +817,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.article-content-top > .color-list {
+.article-content-top .color-list {
 }
 .article-content-top .color-item {
   display: inline-block;
@@ -836,7 +837,6 @@ body {
   border-radius: 10px;
   vertical-align: 1px;
 }
-
 /* TREND page 내 차트 아이템 구분 색상 */
 .article-content-top .color-item-sns > .item-color {
   background-color: #db9bee;
@@ -874,7 +874,6 @@ body {
 .article-content-top .color-item-negat > .item-color {
   background-color: #fb6761;
 }
-
 .article-content-top .color-item > .item-name {
   margin-left: 2px;
   line-height: 22px;
@@ -1468,6 +1467,45 @@ body {
   }
 
   /** CONTENT PAGE >> TREND PAGE **/
+
+  .article-content > .article-content-top {
+    height: auto;
+    margin-top: 0;
+  }
+  .article-content-top > .period-select,
+  .article-content-top > .method-select {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .article-content-top > .color-info {
+    position: static;
+    top: unset;
+    left: unset;
+    transform: none;
+  }
+  .article-content-top .color-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .article-content-top .color-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .article-content-top .color-item > .item-color {
+    /* display: inline-block; */
+    width: 14px;
+  }
+  .article-content-top .color-item > .item-name {
+    margin-left: 4px;
+    line-height: 1;
+    font-size: 11px;
+  }
 
   /* TREND PAGE >> keyword trend */
   .article-keyword-trend .article-rank-wrap .trend-rank-wrap {

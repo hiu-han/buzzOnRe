@@ -152,6 +152,7 @@ button {
 /* input[type="email"], */
 input[type="text"],
 input[type="date"],
+/* input, */
 textarea,
 button {
   appearance: none;
@@ -160,6 +161,15 @@ button {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+}
+select::-ms-expand {
+  display: none;
+}
+select {
+  -o-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 button {
