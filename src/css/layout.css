@@ -417,30 +417,42 @@ input[type="date"]:hover {
   float: right;
   margin-top: 20px;
 }
-.detail-btn-area > .preset-btn,
-.detail-btn-area > .submit-btn {
+.detail-btn-area .detail-preset-wrap,
+.detail-btn-area .preset-btn,
+.detail-btn-area .submit-btn {
   display: inline-block;
 }
-.detail-btn-area > .preset-btn {
+.detail-btn-area .preset-btn {
   height: 40px;
   padding: 0 14px;
   border-radius: 8px;
   line-height: 40px;
 }
-.detail-btn-area > .preset-btn:hover {
+.detail-btn-area .preset-btn:hover {
   box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
 }
-.detail-btn-area > .preset-btn > .add-icon {
+.detail-btn-area .preset-btn > .add-icon {
   color: #909090;
   font-size: 13px;
 }
-.detail-btn-area > .preset-btn > .add-icon::before {
+.detail-btn-area .preset-btn > .add-icon::before {
   width: 16px;
   height: 16px;
   background-image: url("../img/icon/icon-preset-24cd88.svg");
   vertical-align: -4px;
 }
-.detail-btn-area > .submit-btn {
+.detail-btn-area .detail-btn-wrap {
+  display: inline-block;
+}
+.detail-btn-area .cancel-btn {
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 8px;
+  border: none;
+}
+.detail-btn-area .submit-btn {
   width: 196px;
   height: 40px;
   margin-left: 14px;
@@ -1163,11 +1175,13 @@ address > .copyright {
     height: 100vh;
     max-width: unset;
     min-width: unset;
+    padding-top: 50px;
     /* height: 100vh; */
     overflow-y: auto;
   }
 
-  .slider-inner .detail-area-wrap {
+  .slider-inner .detail-area-wrap,
+  .slider-inner .detail-btn-area {
     display: flex;
     flex-wrap: wrap;
     /* align-items: center; */
@@ -1298,7 +1312,27 @@ address > .copyright {
     width: 82%;
   }
   .slider-inner .detail-btn-area {
+    /* width: 316px; */
     padding-bottom: 60px;
+  }
+  .detail-btn-area .detail-preset-wrap {
+    width: 316px;
+    margin: 0 auto 4px;
+    text-align: right;
+  }
+  .detail-btn-area .preset-btn {
+    /* width: 316px; */
+    padding: 0;
+  }
+  .detail-btn-area .detail-btn-wrap {
+    display: flex;
+    width: 316px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .detail-btn-area .submit-btn {
+    display: inline-block;
+    margin-right: 0;
   }
 
   /** FOOTER 480px **/
