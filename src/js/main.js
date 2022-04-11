@@ -76,10 +76,10 @@ $(document).ready(function () {
     spaceBetween: 24,
     breakpoints: {
       481: {
-        slidesPerView: 4,
-      },
-      768: {
         slidesPerView: 3,
+      },
+      769: {
+        slidesPerView: 4,
       },
     },
     debugger: true,
