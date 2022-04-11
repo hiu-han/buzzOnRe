@@ -1188,7 +1188,7 @@ body {
 @media all and (max-width: 768px) {
   #main {
     width: 100%;
-    min-width: unset;
+    padding: 65px 14px 30px;
   }
   #main.intro-page {
     width: 100%;
@@ -1203,10 +1203,86 @@ body {
 
   /** CONTENT PAGE >> NOW page 768px **/
   /* NOW page 768px */
+  .tab-article .tab-list {
+    font-size: 0;
+  }
   .tab-article .tab-list .tab-item {
+    display: inline-block;
+    position: relative;
+    width: 33.33333%;
+    height: 46px;
     font-size: 20px;
     padding: 9px 28px;
   }
+  .tab-article .tab-list .tab-item > a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* NOW page >> ENGAGEMENT 768px */
+
+  /* NOW page >> CHANNEL DETAILS 768px */
+  .article-list-wrap .detail-item.item-title {
+    line-height: 1;
+  }
+  .article-list-wrap .detail-item.item-title > ul {
+    height: 36px;
+    /* vertical-align: middle; */
+  }
+  .article-list-wrap .detail-item.item-title > ul > li {
+    display: inline-block;
+    line-height: 1.3;
+    font-size: 13px;
+    vertical-align: middle;
+  }
+  .article-channel-details .article-list-wrap .detail-item > ul > li {
+    width: 10%;
+  }
+  .article-channel-details
+    .article-list-wrap
+    .detail-item
+    > ul
+    > li:nth-child(1) {
+    padding-left: 16px;
+    width: 18%;
+  }
+  .article-list-wrap .detail-item.item-subs > .item-subs-opener {
+    left: 8px;
+  }
+  .article-channel-details
+    .article-list-wrap
+    .detail-item
+    > ul
+    > li:nth-child(2) {
+    width: 25%;
+  }
+
+  /* NOW page >> KEYWORD ASSOCIATION 768px */
+  #main .content-section.now-ranking-section .section-inner {
+    flex-wrap: wrap;
+  }
+  #main .content-article.width-4-2.article-keyword-association {
+    width: 100%;
+  }
+  #main .content-article.width-4-1.article-sentiment-keyword,
+  #main .content-article.width-4-1.article-keyword-ranking {
+    width: calc(50% - 12px);
+  }
+  .article-keyword-association {
+    order: 1;
+  }
+  .article-sentiment-keyword {
+    order: 2;
+  }
+  .article-keyword-ranking {
+    order: 3;
+  }
+
+  /* NOW page >> SENTIMENT KEYWORD 768px */
+
+  /* NOW page >> KEYWORD KEYWORD RANKING 768px */
 }
 
 @media all and (max-width: 480px) {
