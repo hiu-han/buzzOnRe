@@ -77,7 +77,10 @@ $(document).ready(function () {
     breakpoints: {
       481: {
         slidesPerView: 4,
-      }
+      },
+      768: {
+        slidesPerView: 3,
+      },
     },
     debugger: true,
     mousewheel:true,

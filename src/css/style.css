@@ -1221,7 +1221,32 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .tab-article .tab-info-list .tab-info-item {
+    font-size: 16px;
+  }
+
+  .tab-title-article .tab-title {
+    font-size: 16px;
+  }
+
   /* NOW page >> ENGAGEMENT 768px */
+  .article-engagement .chart-area {
+    /* width: 35%; */
+  }
+  .article-engagement .chart-info-area {
+    position: relative;
+    width: 65%;
+    margin-top: 55px;
+  }
+  .chart-info-area .info-item {
+    margin-right: 30px;
+  }
+  .chart-info-area .info-item.info-engagement {
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+  }
 
   /* NOW page >> CHANNEL DETAILS 768px */
   .article-list-wrap .detail-item.item-title {
@@ -1259,12 +1284,23 @@ body {
     width: 25%;
   }
 
+  /* NOW page >> SENTIMENT 768px */
+  #main .content-article.width-3-1.article-sentiment {
+    width: calc(50% - 12px);
+  }
+
+  /* NOW page >> SENTIMENT BY CHANNEL 768px */
+  #main .content-article.width-3-2.article-sentiment-channels {
+    width: calc(50% - 12px);
+  }
+
   /* NOW page >> KEYWORD ASSOCIATION 768px */
   #main .content-section.now-ranking-section .section-inner {
     flex-wrap: wrap;
   }
   #main .content-article.width-4-2.article-keyword-association {
     width: 100%;
+    margin-bottom: 0;
   }
   #main .content-article.width-4-1.article-sentiment-keyword,
   #main .content-article.width-4-1.article-keyword-ranking {
@@ -1283,6 +1319,46 @@ body {
   /* NOW page >> SENTIMENT KEYWORD 768px */
 
   /* NOW page >> KEYWORD KEYWORD RANKING 768px */
+
+  /** CONTENT PAGE >> TREND PAGE 768px **/
+  .article-content > .article-content-top {
+    height: auto;
+    margin-top: 0;
+  }
+  .article-content-top > .period-select,
+  .article-content-top > .method-select {
+    float: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .article-content-top > .color-info {
+    position: static;
+    top: unset;
+    left: unset;
+    transform: none;
+  }
+  .article-content-top .color-list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .article-content-top .color-item {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .article-content-top .color-item > .item-color {
+    /* display: inline-block; */
+    width: 14px;
+  }
+  .article-content-top .color-item > .item-name {
+    margin-left: 4px;
+    line-height: 1;
+    font-size: 11px;
+  }
 }
 
 @media all and (max-width: 480px) {
@@ -1462,6 +1538,7 @@ body {
   }
   .chart-info-area .info-item.info-engagement {
     position: absolute;
+    left: unset;
     right: 10px;
     bottom: 130px;
     display: block;
@@ -1549,23 +1626,32 @@ body {
     color: #8b8d91;
   }
 
-  #main .article-keyword-association {
-    /* width: 50%; */
+  /* NOW page >> SENTIMENT 480px */
+  #main .content-article.width-3-1.article-sentiment {
+    width: 100%;
+  }
+
+  /* NOW page >> SENTIMENT BY CHANNEL 480px */
+  #main .content-article.width-3-2.article-sentiment-channels {
+    width: 100%;
+  }
+
+  /* NOW page >> KEYWORD ASSOCIATION 480px */
+  #main .content-article.width-4-2.article-keyword-association {
+    margin-bottom: 14px;
+  }
+  #main .content-article.width-4-1.article-sentiment-keyword,
+  #main .content-article.width-4-1.article-keyword-ranking {
+    width: 100%;
   }
   .article-sentiment-keyword,
   .article-keyword-ranking {
     display: inline-block;
   }
-  .article-keyword-ranking {
-  }
 
-  #main .now-ranking-section > .section-inner {
-    /* width: 200%; */
-  }
+  /** CONTENT PAGE >> TREND PAGE 480px **/
 
-  /** CONTENT PAGE >> TREND PAGE **/
-
-  .article-content > .article-content-top {
+  /* .article-content > .article-content-top {
     height: auto;
     margin-top: 0;
   }
@@ -1595,14 +1681,13 @@ body {
     align-items: center;
   }
   .article-content-top .color-item > .item-color {
-    /* display: inline-block; */
     width: 14px;
   }
   .article-content-top .color-item > .item-name {
     margin-left: 4px;
     line-height: 1;
     font-size: 11px;
-  }
+  } */
 
   /* TREND PAGE >> keyword trend */
   .article-keyword-trend .article-rank-wrap .trend-rank-wrap {
