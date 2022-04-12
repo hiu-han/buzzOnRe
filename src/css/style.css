@@ -481,9 +481,12 @@ body {
 }
 .tab-article .tab-info-list .tab-info-item {
   display: none;
+  padding-right: 40px;
   line-height: 1.5;
   font-size: 18px;
   font-weight: 400;
+  word-break: keep-all;
+  box-sizing: border-box;
 }
 .tab-article .tab-info-list .tab-info-item.now-on {
   display: block;
@@ -1235,6 +1238,7 @@ body {
   }
 
   .tab-article .tab-info-list .tab-info-item {
+    padding-right: 0px;
     font-size: 17px;
   }
 
