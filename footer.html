@@ -32,6 +32,7 @@
 
     <!-- 컨텐츠 원문 리스트 모달 -->
     <div id="showAllModal">
+      <div class="modalBg"></div>
       <div class="show-all-wrap">
         <div class="show-all-inner">
           <div class="show-all-top clearFix">
@@ -49,9 +50,9 @@
               <div class="sort-select-box">
                 <select name="sortModalList" id="sortModalList" class="sort-select">
                   <option value="latest" selected>최신순</option>
-                  <option value="views" selected>조회수순</option>
-                  <option value="comments" selected>댓글수순</option>
-                  <option value="likes" selected>추천수순</option>
+                  <option value="views">조회수순</option>
+                  <option value="comments">댓글수순</option>
+                  <option value="likes">추천수순</option>
                 </select>
                 <span class="icon-arrow"></span>
               </div>
@@ -302,6 +303,7 @@
 
     <!-- 원문 내용 모달 -->
     <div id="showOriginModal">
+      <div class="modalBg"></div>
       <div class="show-origin-wrap">
         <div class="show-origin-inner">
           <div class="show-origin-top clearFix">
@@ -369,6 +371,7 @@
 
     <!-- 로그인 모달 -->
     <div id="loginModal">
+      <div class="modalBg"></div>
       <div class="login-wrap">
 
       </div>
@@ -379,38 +382,8 @@
 <script src="./src/js/footer.js"></script>
 <script>
   $(document).ready(function () {
-    const $body = $("html, body");
 
-    const MODALON_CLASSNAME = "modalOn";
 
-    /*  GO TOP event  */
-    function goTopEvent() {
-      $("#goTop").on("click", function () {
-
-        const yPos = $body.offset().top;
-
-        $body.stop().animate({
-          scrollTop: yPos
-        }, 500);
-
-        $(this).children().children("img").css("color", "#313131");
-      });
-    }
-
-    goTopEvent();
-
-    $(".hottest-item").on("click", function () {
-      $("#showAllModal").addClass(MODALON_CLASSNAME);
-    })
-    $("#clsAllList").on("click", function () {
-      $("#showAllModal").removeClass(MODALON_CLASSNAME);
-    })
-    $("#showAllModal .content-item").on("click", function () {
-      $("#showOriginModal").addClass(MODALON_CLASSNAME);
-    })
-    $("#clsOriginList").on("click", function () {
-      $("#showOriginModal").removeClass(MODALON_CLASSNAME);
-    })
 
   })
 </script>

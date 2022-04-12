@@ -87,6 +87,7 @@ header:hover {
 .header-inner > .mobile-menu-btn,
 .header-inner > .search-slide-btn {
   display: none;
+  cursor: pointer;
 }
 .header-inner > div,
 .header-inner .logo {
@@ -127,6 +128,7 @@ header:hover {
   background-color: #fff;
   font-size: 13px;
   color: #9a9a9a;
+  cursor: pointer;
 }
 .search-keyword-wrap #detailOpen::before {
   content: "";
@@ -166,6 +168,7 @@ header:hover {
   background-size: contain;
   background-repeat: no-repeat;
   border: none;
+  cursor: pointer;
 }
 .search-input .search-btn:hover {
   background-image: url("../img/icon/icon-search-24cd88.svg");
@@ -254,6 +257,7 @@ header:hover {
 }
 .slider-inner > .cls-btn {
   top: 14px;
+  cursor: pointer;
 }
 
 .detail-slider .search-area {
@@ -389,6 +393,7 @@ input[type="date"]:hover {
   border: none;
   border-radius: 4px;
   text-indent: -99999px;
+  cursor: pointer;
 }
 .detail-keyword-area .detail-input .add-btn::before,
 .detail-keyword-area .detail-input .add-btn::after {
@@ -448,19 +453,23 @@ input[type="date"]:hover {
   display: inline-block;
   width: 100px;
   height: 40px;
+  line-height: 40px;
   background-color: #ddd;
   border-radius: 8px;
   border: none;
+  text-align: center;
 }
 .detail-btn-area .submit-btn {
   width: 196px;
   height: 40px;
+  line-height: 40px;
   margin-left: 14px;
   margin-right: 14px;
   background-color: #24cd88;
   border: none;
   border-radius: 8px;
   color: #fff;
+  text-align: center;
 }
 
 /** FOOTER **/
@@ -554,6 +563,14 @@ address > .copyright {
 }
 
 /* MODAL >> 컨텐츠 원문 리스트 모달 */
+.modalBg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 #showAllModal {
   display: none;
   position: fixed;
@@ -1096,6 +1113,11 @@ address > .copyright {
 }
 .origin-info-item > .info-num {
   color: #888;
+}
+
+/** 로그인 모달 **/
+#loginModal {
+  display: none;
 }
 
 @media all and (max-width: 1024px) {
