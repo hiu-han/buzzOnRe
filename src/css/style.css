@@ -72,10 +72,11 @@ button:hover {
 /* section */
 #main .content-section .section-inner {
   display: flex;
-  position: relative;
-  flex-wrap: nowrap;
+  /* position: relative; */
+  /* flex-wrap: nowrap; */
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 24px;
+  /* gap: 24px; */
 }
 
 #main .content-article {
@@ -99,7 +100,7 @@ button:hover {
 }
 .content-article .article-title > h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif";
   transform: skew(-0.01deg);
 }
@@ -204,10 +205,14 @@ button:hover {
 
 /* text style */
 .txt-gr {
-  color: #24cd88;
+  /* color: #24cd88; */
+  color: #42d31a;
 }
 .txt-grey {
   color: #a0a0a0;
+}
+.txt-red {
+  color: #ff0000;
 }
 
 .txt-sizeP {
@@ -276,6 +281,7 @@ button:hover {
 .article-hottest-cafes .add-icon::before,
 .article-hottest-blogers .add-icon::before,
 .article-hottest-influencers .add-icon::before,
+.article-hottest-youtube .add-icon::before,
 .article-hottest-top10 .add-icon::before {
   background-image: url("../img/icon/Icon-chart-list.svg");
 }
@@ -1080,14 +1086,26 @@ body {
 .hottest-item > .icon-cafe-naver {
   background-image: url("../img/icon/icon-cafe-naver.svg");
 }
+.hottest-item > .icon-cafe-daum {
+  background-image: url("../img/icon/icon-cafe-daum.svg");
+}
 .hottest-item > .icon-blog-naver {
   background-image: url("../img/icon/icon-blog-naver.svg");
+}
+.hottest-item > .icon-blog-tstory {
+  background-image: url("../img/icon/icon-blog-tstory.svg");
+}
+.hottest-item > .icon-blog-daum {
+  background-image: url("../img/icon/icon-blog-daum.svg");
 }
 .hottest-item > .icon-insta {
   background-image: url("../img/icon/icon-instagram.svg");
 }
 .hottest-item > .icon-twit {
   background-image: url("../img/icon/icon-twitter.svg");
+}
+.hottest-item > .icon-youtube {
+  background-image: url("../img/icon/icon-youtube.svg");
 }
 .hottest-item > .contents-area {
   display: inline-block;

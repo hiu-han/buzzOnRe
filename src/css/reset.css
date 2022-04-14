@@ -200,3 +200,7 @@ button {
   border-top: 3px solid #999;
   background-color: #dfdfdf;
 }
+
+.txt-red {
+  color: #ff0000;
+}
