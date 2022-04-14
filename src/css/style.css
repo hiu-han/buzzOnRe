@@ -1215,6 +1215,28 @@ body {
   height: 42px;
 }
 
+/** USER PAGE **/
+.user-page-profile {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  /* background-image: url("../img/icon/icon-user-default.svg"); */
+  background-image: url("../img/main/profile.PNG");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.content-article .article-title > h3.user-page-name {
+  display: inline-block;
+  line-height: 55px;
+  font-size: 30px;
+  font-weight: bolder;
+  vertical-align: top;
+}
+
+/** USER PAGE >> USER PRESET page **/
+
 @media all and (max-width: 1024px) {
 }
 
