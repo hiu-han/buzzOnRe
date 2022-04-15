@@ -2,51 +2,47 @@ $(document).ready(function () {
   const NOWON_CLASSNAME = "now-on"; 
 
 
-  // detail-slider 핸들러
-  $("#detailOpen").on("click", function () {
-    $(this).toggleClass(NOWON_CLASSNAME);
-    $(".detail-slider").toggleClass(NOWON_CLASSNAME);
-  });
-  $(".detail-slider .cls-btn").on("click", function () {
-    $("#detailOpen").removeClass(NOWON_CLASSNAME);
-    $(".detail-slider").removeClass(NOWON_CLASSNAME);
-  });
-  
-  $("#moDetailOpen").on("click", function () {
-    $(this).toggleClass(NOWON_CLASSNAME);
-    $(".detail-slider").toggleClass(NOWON_CLASSNAME);
-  });
-  $(".detail-slider .cls-btn").on("click", function () {
-    $("#moDetailOpen").removeClass(NOWON_CLASSNAME);
-    $(".detail-slider").removeClass(NOWON_CLASSNAME);
-  });
-  
-  $("#moChannelOpen").on("click", function () {
-    $(this).toggleClass(NOWON_CLASSNAME);
-    $(".detail-channel-area > fieldset").toggleClass(NOWON_CLASSNAME);
-  });
-  // $(".detail-slider .cls-btn").on("click", function () {
-  //   $("#detailOpen").removeClass(NOWON_CLASSNAME);
-  //   $(".detail-channel-area > fieldset").removeClass(NOWON_CLASSNAME);
-  // });
+  // detail-slider 핸들러, 시작
+  const detailSlider = {
+    slideToggle: function (clicker, openName) {
+      $(clicker).on("click", function () {
+        $(clicker).toggleClass(NOWON_CLASSNAME);
+        $(openName).toggleClass(NOWON_CLASSNAME);
+      });
+    },
+    slideCls: function (clicker, clsName, openClicker) {
+      $(clicker).on("click", function () {
+        $(clsName).removeClass(NOWON_CLASSNAME);
+        $(openClicker).removeClass(NOWON_CLASSNAME);
+      })
+    },
+  }
 
+  detailSlider.slideToggle("#detailOpen", ".detail-slider");
+  detailSlider.slideToggle("#moDetailOpen", ".detail-slider");
+  detailSlider.slideCls(".detail-slider .cls-btn",".detail-slider", "#detailOpen, #moDetailOpen");
+  detailSlider.slideCls(".detail-btn-area .cancel-btn",".detail-slider", "#detailOpen, #moDetailOpen");
+  
+  detailSlider.slideToggle("#moChannelOpen", ".detail-channel-area > fieldset");
+  // detail-slider 핸들러, 끝
 
-  let sT = 0;
+  // , 시작
+  let scrT = 0;
   $(window).scroll(function (e) {
-    sT = $(this).scrollTop();
+    scrT = $(this).scrollTop();
     // console.log(sT);
     
-    if(sT > 62) {
+    if(scrT > 62) {
       $("#header").addClass(NOWON_CLASSNAME);
     } else {
       $("#header").removeClass(NOWON_CLASSNAME);
     }
   });
-
+  // , 끝
   
 })
 
-// channel All chk
+// 채널 셀렉트 전체선택 관련, 시작
 function allChked () {
   let allOfChkBox = document.querySelectorAll('.detail-channel-area input[type="checkbox"]');
   for (let i = 0, len = allOfChkBox.length; i < len; i++) {
@@ -76,6 +72,7 @@ function toggleChk(source, g) {
     e[i].checked = source.checked;
   }
 }
+// 채널 셀렉트 전체선택 관련, 끝
 
 /*
 function channelChk () {
