@@ -1356,7 +1356,7 @@ body {
   }
   #main .content-article.width-4-2.article-keyword-association {
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 24px;
   }
   #main .content-article.width-4-1.article-sentiment-keyword,
   #main .content-article.width-4-1.article-keyword-ranking {

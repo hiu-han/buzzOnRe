@@ -74,6 +74,15 @@ function toggleChk(source, g) {
 }
 // 채널 셀렉트 전체선택 관련, 끝
 
+
+// 포함어, 제외어 핸들러, 시작
+
+// 포함어, 제외어 핸들러, 끝
+
+
+
+
+
 /*
 function channelChk () {
   let allChkBox = document.getElementById("allCheckSns");
