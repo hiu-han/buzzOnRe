@@ -56,4 +56,14 @@ $(document).ready(function () {
   sModHandler.modOn('#showAllModal .content-item', '#showOriginModal');
   sModHandler.modOff('#clsOriginList', '#showOriginModal');
 
+  function showAllModOn (e) {
+    $("#showAllModal").addClass(MODALON_CLASSNAME);
+    e.preventDefault();
+    $("#showAllModal").on("scroll touchmove mousewheel", function () {
+      e.preventDefault();
+      e.stopPropagation();
+      return false;
+    });
+  };
+
 })

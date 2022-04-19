@@ -70,6 +70,60 @@
           <article class="content-article article-engagement">
             <div class="article-inner">
               <div class="article-title">
+                <h3 class="add-icon blind">ENGAGEMENT</h3>
+              </div>
+              <div class="article-content">
+                <div class="article-chart-wrap main-chart-wrap">
+                  <!-- div class="chart-sample chart-area">
+                    <div class="chart-pie">
+                      <div class="value-engagement">
+                        <div class="item-color cht-grey"></div>
+                        <h4 class="item-title">ENGAGEMENT</h4>
+                        <p class="item-num">150,329</p>
+                      </div>
+                    </div>
+                  </div -->
+                  <div class="chart-info-area">
+                    <ul class="chart-info-list">
+                      <li class="info-item info-engagement">
+                        <!-- <div class="item-color cht-grey"></div> -->
+                        <h4 class="item-title">ENGAGEMENT</h4>
+                        <p class="item-num">150,329</p>
+                      </li>
+                      <li class="info-item info-views">
+                        <!-- <div class="item-color cht-gr"></div> -->
+                        <h4 class="item-title">VIEWS</h4>
+                        <p class="item-num">120,000</p>
+                      </li>
+                      <li class="info-item info-comments">
+                        <!-- <div class="item-color cht-bl"></div> -->
+                        <h4 class="item-title">COMMENTS</h4>
+                        <p class="item-num">20,000</p>
+                      </li>
+                      <li class="info-item info-likes">
+                        <!-- <div class="item-color cht-yl"></div> -->
+                        <h4 class="item-title">LIKES</h4>
+                        <p class="item-num">9,872</p>
+                      </li>
+                      <li class="info-item info-shares">
+                        <!-- <div class="item-color cht-or"></div> -->
+                        <h4 class="item-title">SHARES</h4>
+                        <p class="item-num">457</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- section class="content-section">
+        <div class="section-inner">
+          <article class="content-article article-engagement">
+            <div class="article-inner">
+              <div class="article-title">
                 <h3 class="add-icon">ENGAGEMENT</h3>
               </div>
               <div class="article-content">
@@ -85,11 +139,6 @@
                   </div>
                   <div class="chart-info-area">
                     <ul class="chart-info-list">
-                      <!-- <li class="info-item info-engagement">
-                        <div class="item-color cht-grey"></div>
-                        <h4 class="item-title">ENGAGEMENT</h4>
-                        <p class="item-num">150,329</p>
-                      </li> -->
                       <li class="info-item info-views">
                         <div class="item-color cht-gr"></div>
                         <h4 class="item-title">VIEWS</h4>
@@ -117,7 +166,7 @@
             </div>
           </article>
         </div>
-      </section>
+      </section -->
 
       <section class="content-section pc-section">
         <div class="section-inner">
@@ -149,7 +198,7 @@
                         <li class="detail-subs subs-channel">SNS</li>
                         <li class="detail-subs subs-posts">
                           <div class="chart-horizontal">
-                            <div class="total-posts" id="detailPostSNS">
+                            <div class="total-posts" id="detailPostSNS" onclick="showAllModOn();">
                               <!-- 주제어의 총 포스트량 => 100% -->
                               <p class="mid-posts detailPostSNS">
                                 <!-- SNS의 총 포스트량 => 주제어 대비 비율 -->
@@ -975,6 +1024,20 @@
   <script src='./src/js/jquery-3.5.1.js'></script>
   <script src="./src/js/include.js"></script>
   <script src="./src/js/main.js"></script>
+
+  <!-- <script>
+    $(document).ready(function () {
+      function showAllModOn(e) {
+        $("#showAllModal").addClass(MODALON_CLASSNAME);
+        e.preventDefault();
+        $("#showAllModal").on("scroll touchmove mousewheel", function () {
+          e.preventDefault();
+          e.stopPropagation();
+          return false;
+        });
+      };
+    })
+  </script> -->
 </body>
 
 </html>

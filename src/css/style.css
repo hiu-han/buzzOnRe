@@ -526,9 +526,9 @@ body {
   font-size: 0;
 }
 .article-engagement .article-chart-wrap {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
+  /* display: flex; */
+  /* flex-wrap: nowrap; */
+  /* justify-content: flex-start; */
   align-items: center;
 }
 .article-engagement .chart-area,
@@ -563,7 +563,8 @@ body {
 }
 .article-engagement .chart-info-area {
   width: 60%;
-  margin-top: -20px;
+  /* margin-top: -20px; */
+  margin-top: -16px;
 }
 .chart-info-area .info-item {
   display: inline-block;
