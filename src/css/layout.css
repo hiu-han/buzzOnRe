@@ -436,6 +436,7 @@ input[type="date"]:hover {
 .slider-inner .detail-btn-area {
   float: right;
   margin-top: 20px;
+  font-size: 0;
 }
 .detail-btn-area .detail-preset-wrap {
   display: inline-block;
@@ -511,8 +512,9 @@ input[type="date"]:hover {
   background-color: #24cd88;
   border: none;
   border-radius: 8px;
-  color: #fff;
   text-align: center;
+  font-size: 14px;
+  color: #fff;
   cursor: pointer;
 }
 .detail-btn-area .submit-btn:hover {
