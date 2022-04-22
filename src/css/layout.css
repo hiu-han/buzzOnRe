@@ -83,6 +83,7 @@ header:hover {
   min-width: 1200px;
   margin: 0 auto;
   box-sizing: border-box;
+  font-size: 0;
 }
 .header-inner > .mobile-menu-btn,
 .header-inner > .search-slide-btn {
@@ -93,6 +94,7 @@ header:hover {
 .header-inner .logo {
   display: inline-block;
   vertical-align: top;
+  font-size: 0;
 }
 
 .header-inner .logo {
@@ -107,7 +109,9 @@ header:hover {
 /* HEADER > search area */
 .header-inner .search-area {
   width: 900px;
-  margin-top: 10px;
+  height: inherit;
+  padding-top: 10px;
+  /* margin-top: 10px; */
 }
 .search-area > .search-keyword-wrap {
   display: inline-block;
@@ -115,7 +119,7 @@ header:hover {
 }
 .search-area > .search-keyword-wrap > * {
   display: inline-block;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 .search-keyword-wrap #detailOpen {
   position: relative;
@@ -171,6 +175,7 @@ header:hover {
 }
 .search-input .search-btn:hover {
   background-image: url("../img/icon/icon-search-24cd88.svg");
+  font-size: 0;
 }
 
 .search-area > .search-date-wrap {
