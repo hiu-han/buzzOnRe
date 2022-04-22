@@ -497,6 +497,7 @@ input[type="date"]:hover {
   border-radius: 8px;
   border: none;
   text-align: center;
+  font-size: 14px;
   cursor: pointer;
 }
 .detail-btn-area .cancel-btn:hover {
