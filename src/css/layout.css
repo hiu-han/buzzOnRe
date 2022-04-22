@@ -1034,8 +1034,15 @@ address > .copyright {
 }
 .show-origin-top .origin-top-right {
   float: right;
-  color: #aaa;
   vertical-align: top;
+  font-size: 0;
+  color: #aaa;
+}
+.origin-top-right .top-right-item {
+  font-size: 14px;
+}
+.origin-top-right .top-right-item:first-child {
+  margin-right: 14px;
 }
 /* .show-origin-top > #clsOriginList {
   float: right;
