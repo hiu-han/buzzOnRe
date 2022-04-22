@@ -882,6 +882,7 @@ body {
   transform: translateX(-50%);
 }
 .article-content-top .color-list {
+  font-size: 0;
 }
 .article-content-top .color-item {
   display: inline-block;
@@ -939,7 +940,7 @@ body {
   background-color: #fb6761;
 }
 .article-content-top .color-item > .item-name {
-  margin-left: 2px;
+  margin-left: 6px;
   line-height: 22px;
   font-size: 12px;
   font-weight: 500;
