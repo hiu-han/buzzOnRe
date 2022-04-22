@@ -1232,6 +1232,14 @@ body {
   line-height: 38px;
   vertical-align: top;
 }
+.hottest-wide-list .hottest-item > .contents-area > span {
+  font-family: "Spoqa Han Sans Neo", "Pretendard", "Noto Sans KR", Apple Gothic,
+    "sans-serif";
+}
+.hottest-wide-list .hottest-item > .contents-area > span.item-id {
+  font-family: "Pretendard", "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic,
+    "sans-serif";
+}
 .hottest-wide-list .item-title > .contents-area {
   height: 24px;
 }
