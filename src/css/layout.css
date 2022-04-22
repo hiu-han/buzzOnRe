@@ -106,13 +106,11 @@ header:hover {
 
 /* HEADER > search area */
 .header-inner .search-area {
-  width: 850px;
+  /* width: 850px; */
   margin-top: 10px;
 }
-.header-inner .search-area > div {
-  display: inline-block;
-}
 .search-area > .search-keyword-wrap {
+  display: inline-block;
   margin-right: 40px;
 }
 .search-area > .search-keyword-wrap > * {
@@ -174,6 +172,10 @@ header:hover {
 .search-input .search-btn:hover {
   background-image: url("../img/icon/icon-search-24cd88.svg");
 }
+
+.search-area > .search-date-wrap {
+  display: inline-block;
+}
 .search-area input[type="text"],
 .search-area input[type="date"] {
   width: 230px;
@@ -213,8 +215,9 @@ header:hover {
 
 .header-inner > .user-area {
   float: right;
-  width: 130px;
+  width: 145px;
   margin-top: 10px;
+  text-align: right;
 }
 .user-area > .link-area {
   display: inline-block;
