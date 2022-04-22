@@ -1138,6 +1138,17 @@ address > .copyright {
   display: none;
 }
 
+@media all and (max-width: 1400px) {
+  /* HEADER > search area 1400px */
+  .search-area > .search-keyword-wrap {
+    margin-right: 20px;
+  }
+
+  .search-area input[type="date"] {
+    width: 200px;
+  }
+}
+
 /* @media all and (max-width: 1024px) {
 } */
 
