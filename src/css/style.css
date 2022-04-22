@@ -887,6 +887,7 @@ body {
 .article-content-top .color-item {
   display: inline-block;
   margin-left: 10px;
+  font-size: 0;
 }
 .article-content-top .color-item:first-child {
   margin-left: 0;
