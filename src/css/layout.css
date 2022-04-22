@@ -364,6 +364,8 @@ header:hover {
 }
 .detail-keyword-area .detail-search .detail-option {
   float: right;
+  width: 100px;
+  white-space: nowrap;
   font-size: 12px;
 }
 .detail-keyword-area .detail-search .detail-option input[type="radio"] {
@@ -1146,7 +1148,7 @@ address > .copyright {
 @media all and (max-width: 1400px) {
   /* HEADER > search area 1400px */
   .search-area > .search-keyword-wrap {
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
 
   .search-area input[type="date"] {
