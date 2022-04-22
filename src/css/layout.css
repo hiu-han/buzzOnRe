@@ -106,7 +106,7 @@ header:hover {
 
 /* HEADER > search area */
 .header-inner .search-area {
-  /* width: 850px; */
+  width: 900px;
   margin-top: 10px;
 }
 .search-area > .search-keyword-wrap {
@@ -214,9 +214,12 @@ header:hover {
 }
 
 .header-inner > .user-area {
-  float: right;
+  /* float: right; */
+  position: absolute;
+  top: 10px;
+  right: 14px;
   width: 145px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-align: right;
 }
 .user-area > .link-area {
