@@ -125,13 +125,16 @@ button:hover {
   width: calc(33.33333% - 12px);
 }
 #main .content-article.width-4-3 {
-  width: calc(75% - 12px);
+  width: calc(75% - 24px);
 }
 #main .content-article.width-4-2 {
-  width: calc(50% - 12px);
+  width: calc(50% - 24px);
 }
 #main .content-article.width-4-1 {
   width: calc(25% - 12px);
+}
+#main .content-article.width-5-1 {
+  width: calc(20% - 12px);
 }
 
 .add-icon {
@@ -318,8 +321,8 @@ body {
   box-sizing: border-box;
 }
 #main.intro-page {
-  width: 1000px;
-  padding: 12vh 14px 0;
+  /* width: 1000px; */
+  /* padding: 12vh 14px 0; */
 }
 
 /** INTRO PAGE **/
@@ -413,6 +416,13 @@ body {
 }
 
 /* INTRO PAGE > contents section */
+#main.intro-page .content-section.intro-keyword-section .section-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+}
 #main .content-section .content-article.intro-keyword-now {
   padding-bottom: 16px;
 }
