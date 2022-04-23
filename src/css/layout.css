@@ -1048,6 +1048,9 @@ address > .copyright {
   box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
   overflow: hidden;
 }
+.show-origin-wrap > .show-origin-inner {
+  padding: 0 14px;
+}
 .show-origin-inner > .show-origin-top {
   height: 35px;
   line-height: 35px;
@@ -1123,9 +1126,11 @@ address > .copyright {
   vertical-align: -1px;
 }
 .show-origin-content > .origin-content-subs {
+  width: calc(100% + 28px);
   min-height: 140px;
   max-height: 400px;
-  padding: 14px 15px;
+  padding: 14px 10px 14px 14px;
+  margin-left: -14px;
   background-color: #f5f5f5;
   border-radius: 13px;
   font-size: 14px;
