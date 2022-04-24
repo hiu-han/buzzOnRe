@@ -154,7 +154,6 @@ button:hover {
   vertical-align: -1px;
 }
 
-#main.intro-page .section-inner::after,
 .tab-section .section-inner::after,
 .content-article .article-title::after {
   content: "";
@@ -427,7 +426,7 @@ body {
   padding-bottom: 16px;
 }
 #main.intro-page .section-inner {
-  display: block;
+  /* display: block; */
 }
 .intro-keyword-now .rank-list {
   width: 82%;
@@ -1011,10 +1010,18 @@ body {
   padding: 0 36px;
   box-sizing: border-box;
 }
+.article-keyword-news .article-rank-wrap .trend-rank-wrap,
 .article-keyword-trend .article-rank-wrap .trend-rank-wrap {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+}
+.article-keyword-news .article-rank-wrap .trend-rank-wrap {
+  gap: 20px;
+}
+.article-keyword-news .trend-rank-wrap .trend-rank-list {
+  width: 20%;
+  text-align: center;
 }
 .article-keyword-trend .trend-rank-wrap .trend-rank-list {
   width: 230px;
@@ -1032,10 +1039,33 @@ body {
 .trend-rank-list .rank-list > .rank-item.item-subs {
   white-space: nowrap;
 }
-.trend-rank-list .rank-list > .rank-item > .item-standing {
+.article-keyword-news .trend-rank-list .rank-list > .rank-item.item-subs {
+  padding: 0 14px;
+}
+.article-keyword-news
+  .trend-rank-list
+  .rank-list
+  > .rank-item
+  > .item-standing {
+  width: 45%;
+}
+.article-keyword-news .trend-rank-list .rank-list > .rank-item > .item-keyword {
+  width: 55%;
+  letter-spacing: -0.05rem;
+  white-space: nowrap;
+}
+.article-keyword-trend
+  .trend-rank-list
+  .rank-list
+  > .rank-item
+  > .item-standing {
   width: 16%;
 }
-.trend-rank-list .rank-list > .rank-item > .item-keyword {
+.article-keyword-trend
+  .trend-rank-list
+  .rank-list
+  > .rank-item
+  > .item-keyword {
   width: 36%;
   letter-spacing: -0.05rem;
   white-space: nowrap;
