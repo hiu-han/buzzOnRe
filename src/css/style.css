@@ -320,8 +320,8 @@ body {
   box-sizing: border-box;
 }
 #main.intro-page {
-  /* width: 1000px; */
-  /* padding: 12vh 14px 0; */
+  width: 1000px;
+  padding: 12vh 14px 0;
 }
 
 /** INTRO PAGE **/
