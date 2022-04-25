@@ -87,5 +87,37 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
   });
+
+  const buzzNewsSwp = new Swiper('#buzzNewsSwpContainer', {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    breakpoints: {
+      481: {
+        slidesPerView: 1.8,
+      },
+      769: {
+        slidesPerView: 1.8,
+      },
+    },
+    debugger: true,
+    mousewheel:true,
+    loop: true,
+    centeredSlide: true,
+    
+    // autoplay: {
+    //   delay: 3500,
+    //   disableOnInteraction: true,
+    // },
+
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+    
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
   // swiper test >> Trend page 끝
 })
