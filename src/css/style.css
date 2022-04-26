@@ -1046,19 +1046,28 @@ body {
   text-align: center;
 }
 .article-keyword-trend .trend-rank-wrap .trend-rank-list {
-  width: 230px;
-  text-align: center;
+  /* width: 230px; */
+  /* text-align: center; */
+  text-align: left;
 }
-.trend-rank-wrap .trend-rank-list > h4 {
+.trend-rank-wrap .trend-rank-list > .trend-rank-title {
+}
+.trend-rank-wrap .trend-rank-list h4 {
   display: inline-block;
   position: relative;
   margin-bottom: 14px;
   font-size: 16px;
   font-weight: 700;
-  /* color: #24cd88; */
   z-index: 10;
 }
-.trend-rank-wrap .trend-rank-list > h4:after {
+.trend-rank-wrap .trend-rank-list .trend-term {
+  float: right;
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #aaa;
+}
+.trend-rank-wrap .trend-rank-list h4:after {
   content: "";
   display: block;
   position: absolute;
@@ -1068,7 +1077,7 @@ body {
   width: 120%;
   height: 10px;
   background-color: #b6ffe2;
-  opacity: 0.6;
+  opacity: 0.35;
   z-index: -1;
 }
 .article-keyword-news .trend-rank-list > h4 {

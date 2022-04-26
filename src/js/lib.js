@@ -26,7 +26,7 @@ $(document).ready(function () {
 
   const kwdTrdSwp = new Swiper('#kwdTrdSwpContainer', {
     slidesPerView: 1,
-    spaceBetween: 24,
+    spaceBetween: 36,
     breakpoints: {
       481: {
         slidesPerView: 3,
