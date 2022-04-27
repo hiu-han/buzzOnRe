@@ -1039,7 +1039,7 @@ body {
   justify-content: space-between;
 }
 .article-keyword-news .article-rank-wrap .trend-rank-wrap {
-  gap: 24px;
+  /* gap: 24px; */
 }
 .article-keyword-news .trend-rank-wrap .trend-rank-list {
   width: 20%;
@@ -1121,6 +1121,10 @@ body {
   letter-spacing: -0.05rem;
   white-space: nowrap;
 }
+.article-keyword-news .slide-btn-wrap {
+  display: none;
+}
+
 .article-keyword-trend
   .trend-rank-list
   .rank-list
@@ -1581,6 +1585,12 @@ body {
     margin-left: 4px;
     line-height: 1;
     font-size: 11px;
+  }
+}
+
+@media all and (max-width: 680px) {
+  .article-keyword-news .slide-btn-wrap {
+    display: block;
   }
 }
 
