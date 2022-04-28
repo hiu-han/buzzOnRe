@@ -43,7 +43,7 @@ $(document).ready(function () {
     return winWidth;
   });
   
-  let menu = ['정치', '경제', '사회', 'IT·과학', '연예'];
+  let indexTrdMenu = ['정치', '경제', '사회', 'IT·과학', '연예'];
 
   const idxTrdSwp = new Swiper('#idxTrdSwpContainer', {
     slidesPerView: 1.5,
@@ -55,14 +55,14 @@ $(document).ready(function () {
     
     autoplay: {
       delay: 5000,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
 
     pagination: {
-      el: ".swiper-pagination",
+      el: "#idxTrdSwpPagination.swiper-pagination",
       clickable: true,
       renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        return '<span class="' + className + '">' + (indexTrdMenu[index]) + '</span>';
       },
     },
     
@@ -99,10 +99,10 @@ $(document).ready(function () {
     //   disableOnInteraction: false,
     // },
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: false,
+    // },
     
     navigation: {
       nextEl: ".swiper-button-next",
@@ -131,10 +131,10 @@ $(document).ready(function () {
     //   disableOnInteraction: false,
     // },
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: false,
+    // },
     
     navigation: {
       nextEl: ".swiper-button-next",
@@ -163,10 +163,10 @@ $(document).ready(function () {
       disableOnInteraction: true,
     },
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: false,
+    // },
     
     navigation: {
       nextEl: false,
@@ -195,10 +195,10 @@ $(document).ready(function () {
       disableOnInteraction: true,
     },
 
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: false,
-    },
+    // pagination: {
+    //   el: ".swiper-pagination",
+    //   clickable: false,
+    // },
     
     navigation: {
       nextEl: false,
