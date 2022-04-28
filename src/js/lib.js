@@ -43,6 +43,8 @@ $(document).ready(function () {
     return winWidth;
   });
   
+  let menu = ['정치', '경제', '사회', 'IT·과학', '연예'];
+
   const idxTrdSwp = new Swiper('#idxTrdSwpContainer', {
     slidesPerView: 1.5,
     spaceBetween: 24,
@@ -58,7 +60,10 @@ $(document).ready(function () {
 
     pagination: {
       el: ".swiper-pagination",
-      clickable: false,
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (menu[index]) + '</span>';
+      },
     },
     
     navigation: {
@@ -119,7 +124,7 @@ $(document).ready(function () {
     debugger: true,
     mousewheel:true,
     loop:false,
-    centeredSlides: true,
+    centeredSlides: false,
     
     // autoplay: {
     //   delay: 2500,
