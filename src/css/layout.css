@@ -607,6 +607,107 @@ address > .copyright {
   margin-top: 13px;
 }
 
+/**  LOADING ANIMATION  **/
+#loading {
+  display: none;
+  /* position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+  /* z-index: 300; */
+}
+.loading-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 14px;
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+  z-index: 300;
+}
+.loading-bg .loading-title {
+  margin-top: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  z-index: 310;
+}
+.dots-flow:before {
+  content: "";
+  height: 16px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40px);
+  transform: translate(-50%, -40px);
+  width: 16px;
+  border-radius: 100%;
+  animation: dots-flow 0.85s infinite ease;
+  -webkit-animation: dots-flow 0.85s infinite ease;
+  z-index: 320;
+}
+
+@-webkit-keyframes dots-flow {
+  0%,
+  100% {
+    -webkit-box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white,
+      26px 32px 0 0 white;
+    box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white, 26px 32px 0 0 white;
+  }
+  35% {
+    -webkit-box-shadow: -26px 32px 0 4px #0ece81, 0px 32px 0 0 white,
+      26px 32px 0 0 white;
+    box-shadow: -26px 32px 0 4px #0ece81, 0px 32px 0 0 white,
+      26px 32px 0 0 white;
+  }
+  50% {
+    -webkit-box-shadow: -26px 32px 0 0 white, 0px 32px 0 4px #0ece81,
+      26px 32px 0 0 white;
+    box-shadow: -26px 32px 0 0 white, 0px 32px 0 4px #0ece81,
+      26px 32px 0 0 white;
+  }
+  65% {
+    -webkit-box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white,
+      26px 32px 0 4px #0ece81;
+    box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white,
+      26px 32px 0 4px #0ece81;
+  }
+}
+
+@keyframes dots-flow {
+  0%,
+  100% {
+    -webkit-box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white,
+      26px 32px 0 0 white;
+    box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white, 26px 32px 0 0 white;
+  }
+  35% {
+    -webkit-box-shadow: -26px 32px 0 4px #0ece81, 0px 32px 0 0 white,
+      26px 32px 0 0 white;
+    box-shadow: -26px 32px 0 4px #0ece81, 0px 32px 0 0 white,
+      26px 32px 0 0 white;
+  }
+  50% {
+    -webkit-box-shadow: -26px 32px 0 0 white, 0px 32px 0 4px #0ece81,
+      26px 32px 0 0 white;
+    box-shadow: -26px 32px 0 0 white, 0px 32px 0 4px #0ece81,
+      26px 32px 0 0 white;
+  }
+  65% {
+    -webkit-box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white,
+      26px 32px 0 4px #0ece81;
+    box-shadow: -26px 32px 0px 0 white, 0px 32px 0 0 white,
+      26px 32px 0 4px #0ece81;
+  }
+}
+
+/**  MODAL  **/
 /* ASIDE >> MODAL */
 #modal {
   position: relative;
