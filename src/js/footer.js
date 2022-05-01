@@ -56,6 +56,13 @@ $(document).ready(function () {
   sModHandler.modOn('#showAllModal .content-item', '#showOriginModal');
   sModHandler.modOff('#clsOriginList', '#showOriginModal');
 
+  // INTRO page 로그인 모달 여닫기
+  sModHandler.modOn('#introLogin', '#loginModal');
+  sModHandler.modOff('#loginClsBtn', '#loginModal');
+  $("#loginClsBtn").on("click", function () {
+    console.log("clicked");
+  })
+
   function showAllModOn(e) {
     $("#showAllModal").addClass(MODALON_CLASSNAME);
     e.preventDefault();

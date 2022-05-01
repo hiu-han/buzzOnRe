@@ -372,10 +372,34 @@
 
 
     <!-- 로그인 모달 -->
-    <div id="loginModal">
+    <div id="loginModal" class="modal-section">
       <div class="modalBg"></div>
       <div class="login-wrap">
-
+        <div class="login-box">
+          <div class="login-box_inner clearFix">
+            <h3 class="logo-title"><a href="./index.html"><img src="./src/img/common/logo.svg" alt=""></a></h3>
+            <div class="login-form">
+              <form name='login-form' method='post' action="#">
+                <fieldset>
+                  <legend class='blind'>로그인 폼</legend>
+                  <ul>
+                    <li><input type="text" id='loginId' name='loginId' class='input-email' placeholder='아이디를 입력해주세요'>
+                    </li>
+                    <li><input type="text" id='loginPass' class='input-pw' placeholder='비밀번호를 입력해주세요'></li>
+                  </ul>
+                  <div class="btn-wrap">
+                    <div id="loginClsBtn" class="cancel-btn"><a href="#" class='btn'>닫기</a></div>
+                    <div id="loginBtn"><a href="#" class='btn'>로그인</a></div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <!-- <div class="info-user">
+              <span class='go-join'><a href="./join.html">회원가입</a></span>
+              <span class='go-find-pw'><a href="./find_pw.html">비밀번호 찾기</a></span>
+            </div> -->
+          </div>
+        </div>
       </div>
     </div>
 

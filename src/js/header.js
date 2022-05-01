@@ -54,8 +54,6 @@ allChked();
 function channelChk (a, g) {
   let allChkBox = document.getElementById(`allCheck${g}`);
   let e = document.querySelectorAll(`.${g}-group input[type="checkbox"]`);
-  // console.log(e.length);
-
   for (let i = 0, len = e.length; i < len; i++) {
     if (!e[i].checked) {
       allChkBox.checked = false;

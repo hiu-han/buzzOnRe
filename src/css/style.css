@@ -221,7 +221,6 @@ button:hover {
 /* text style */
 .txt-gr {
   color: #24cd88;
-  /* color: #42d31a; */
 }
 .txt-grey {
   color: #a0a0a0;
@@ -255,7 +254,7 @@ button:hover {
   z-index: -1;
 }
 .txt-num {
-  /* font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif"; */
+  font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif";
   /* font-size: 1.3em; */
   /* vertical-align: -3px; */
 }
@@ -317,7 +316,6 @@ body {
 #wrap {
   width: 100%;
   height: auto;
-  /* background-color: #f4f5f5; */
   background-color: #f7f8f8;
 }
 
@@ -392,7 +390,6 @@ body {
 
 .intro-section .section-content .intro-login-option {
   margin-top: 14px;
-  /* text-align: right; */
   font-size: 0;
 }
 .intro-section .section-content .intro-login-option > p {
@@ -434,9 +431,7 @@ body {
 #main .content-section .content-article.intro-keyword-now {
   padding-bottom: 16px;
 }
-#main.intro-page .section-inner {
-  /* display: block; */
-}
+
 .intro-keyword-now .rank-list {
   width: 82%;
   margin: 0 auto;
@@ -552,7 +547,7 @@ body {
   /* display: flex; */
   /* flex-wrap: nowrap; */
   /* justify-content: flex-start; */
-  align-items: center;
+  /* align-items: center; */
 }
 .article-engagement .chart-area,
 .article-engagement .chart-info-area {
@@ -1457,6 +1452,29 @@ body {
 }
 
 /** USER PAGE >> USER PRESET page **/
+.article-user-setting {
+  font-size: 0;
+  vertical-align: top;
+}
+.article-user-setting .user-title-wrap,
+.article-user-setting .user-setting-wrap {
+  display: inline-block;
+  vertical-align: top;
+}
+.article-user-setting .user-title-wrap {
+  width: 15%;
+  background-color: lightcyan;
+  font-size: 20px;
+  font-weight: 600;
+}
+.article-user-setting .user-setting-wrap {
+  /* display: inline-block; */
+  width: 85%;
+  height: 600px;
+  background-color: rgb(251, 211, 217);
+  font-size: 14px;
+  /* vertical-align: top; */
+}
 
 @media all and (max-width: 1024px) {
 }

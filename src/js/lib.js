@@ -52,12 +52,10 @@ $(document).ready(function () {
     mousewheel:true,
     loop: true,
     centeredSlides: true,
-    
     autoplay: {
       delay: 5000,
       disableOnInteraction: true,
     },
-
     pagination: {
       el: "#idxTrdSwpPagination.swiper-pagination",
       clickable: true,
@@ -65,13 +63,11 @@ $(document).ready(function () {
         return '<span class="' + className + '">' + (indexTrdMenu[index]) + '</span>';
       },
     },
-    
     navigation: {
       nextEl: "#idxtrdNext.swiper-button-next",
       prevEl: "#idxtrdPrev.swiper-button-prev",
     },
     breakpoints: {
-
       481: {
         slidesPerView: 2.4,
       },
@@ -93,17 +89,6 @@ $(document).ready(function () {
     mousewheel:true,
     loop:false,
     centeredSlides: true,
-    
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: false,
-    // },
-    
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -125,17 +110,6 @@ $(document).ready(function () {
     mousewheel:true,
     loop:false,
     centeredSlides: false,
-    
-    // autoplay: {
-    //   delay: 2500,
-    //   disableOnInteraction: false,
-    // },
-
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: false,
-    // },
-    
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -162,12 +136,6 @@ $(document).ready(function () {
       delay: 3500,
       disableOnInteraction: true,
     },
-
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: false,
-    // },
-    
     navigation: {
       nextEl: false,
       prevEl: false,
@@ -194,12 +162,6 @@ $(document).ready(function () {
       delay: 4000,
       disableOnInteraction: true,
     },
-
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: false,
-    // },
-    
     navigation: {
       nextEl: false,
       prevEl: false,
