@@ -1674,7 +1674,7 @@ body {
     /* width: 5px; */
     /* height: 5px; */
     background-color: #ddd;
-    border-radius: 50%;
+    /* border-radius: 50%; */
   }
   .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 3) {
     width: 27%;
