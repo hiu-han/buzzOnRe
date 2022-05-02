@@ -1860,8 +1860,12 @@ h3.logo {
   }
   .show-origin-top .origin-top-right > .origin-id {
     display: inline-block;
-    margin-right: 6px;
+    margin-right: 10px;
   }
+  .show-origin-top > .origin-top-info {
+    width: calc(100% - 32px);
+  }
+
   .show-origin-content > .origin-content-title > h3 {
     margin-bottom: 10px;
   }

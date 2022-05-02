@@ -1636,6 +1636,24 @@ body {
     line-height: 1;
     font-size: 11px;
   }
+
+  /** CONTENT PAGE >> HOTTEST PAGE 768px **/
+  .hottest-item.item-title > .contents-area * {
+    font-size: 13px;
+  }
+  .hottest-item > .contents-area > .item-name {
+    width: 44%;
+  }
+  .hottest-item > .contents-area > .item-post-num,
+  .hottest-item > .contents-area > .item-engagement {
+    width: 28%;
+  }
+  .hottest-item.item-title > .contents-area > .item-engagement {
+    /* line-height: 1.2; */
+    /* white-space: normal; */
+    /* word-break: break-all; */
+    letter-spacing: -0.05rem;
+  }
 }
 
 @media all and (max-width: 680px) {
