@@ -1928,12 +1928,16 @@ body {
     display: inline-block;
     width: 210px;
     padding: 16px 20px;
+    margin-top: 6px;
     margin-right: 14px;
     border-radius: 10px;
     border: 1px solid #f8f8f8;
     /* background-color: #f5f5f5; */
-    box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+    box-shadow: 1px 4px 10px rgba(88, 88, 88, 0.2);
     font-size: 14px;
+  }
+  .detail-card-list > .card-item:hover {
+    /* border: 1px solid #c1e0d4; */
   }
   .detail-card-list > .card-item:last-child {
     margin-right: 0;
@@ -2026,6 +2030,7 @@ body {
     line-height: 50px;
     font-size: 17px;
     font-weight: 600;
+    color: #0ece81;
     vertical-align: top;
   }
   .card-item > .item-title-wrap > .icon-area.icon-sns {
@@ -2042,6 +2047,20 @@ body {
   }
   .card-item > .item-title-wrap > .icon-area.icon-news {
     background-image: url("../img/icon/icon-news.svg");
+  }
+
+  .card-item .more-btn-wrap {
+    width: 100%;
+  }
+  .card-item .more-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 6px 0;
+    margin-top: 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    text-align: center;
   }
 
   /* NOW page >> SENTIMENT 480px */
