@@ -492,6 +492,36 @@
                 <h3 class="add-icon">POST TOP 10</h3>
               </div>
               <div class="article-content">
+                <div class="article-content-top">
+                  <div class="channel-select">
+                    <label class="chkbox chkbox-sns">
+                      <input type="checkbox" id="postTopSnsChk">
+                      <span class="chk-wrap"></span>
+                      <span class="chk-txt">SNS</span>
+                    </label>
+                    <label class="chkbox chkbox-cafe">
+                      <input type="checkbox" id="postTopCafeChk">
+                      <span class="chk-wrap"></span>
+                      <span class="chk-txt">CAFE</span>
+                    </label>
+                    <label class="chkbox chkbox-blog">
+                      <input type="checkbox" id="postTopBlogChk" checked>
+                      <span class="chk-wrap"></span>
+                      <span class="chk-txt">BLOG</span>
+                    </label>
+                    <label class="chkbox chkbox-commu">
+                      <input type="checkbox" id="postTopCommuChk" checked>
+                      <span class="chk-wrap"></span>
+                      <span class="chk-txt">COMMUNITY</span>
+                    </label>
+                    <label class="chkbox chkbox-news">
+                      <input type="checkbox" id="postTopNewsChk" checked>
+                      <span class="chk-wrap"></span>
+                      <span class="chk-txt">NEWS</span>
+                    </label>
+                  </div>
+                </div>
+
                 <div class="article-hottest-wrap hottest-wide">
                   <ul class="hottest-list hottest-wide-list">
                     <li class="hottest-item item-title">
@@ -629,7 +659,9 @@
                       </div>
                     </li>
                   </ul>
-                  <!-- <p class="list-more-btn">더 보기</p> -->
+                  <!-- 10개씩 더 보기 >> 총 30위까지  -->
+                  <!-- onclick > 컨텐츠 21개 이상 > 버튼 비활성화 넣기 -->
+                  <p class="list-more-btn">더 보기</p>
                 </div>
               </div>
             </div>

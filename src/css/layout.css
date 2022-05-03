@@ -1689,8 +1689,7 @@ h3.logo {
     width: 82%;
   }
   .slider-inner .detail-btn-area {
-    /* width: 316px; */
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
   .detail-btn-area .detail-preset-wrap {
     width: 316px;
@@ -1698,7 +1697,6 @@ h3.logo {
     text-align: right;
   }
   .detail-btn-area .preset-btn {
-    /* width: 316px; */
     padding: 0;
   }
   .detail-btn-area .preset-btn:hover {
