@@ -229,6 +229,7 @@ header:hover {
 }
 .user-area > .link-area {
   display: inline-block;
+  font-size: 14px;
 }
 .user-area .user-profile {
   display: inline-block;
