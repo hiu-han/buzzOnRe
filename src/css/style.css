@@ -1689,10 +1689,7 @@ body {
     transform: translateX(-50%);
     width: 20%;
     height: 1px;
-    /* width: 5px; */
-    /* height: 5px; */
     background-color: #ddd;
-    /* border-radius: 50%; */
   }
   .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 3) {
     width: 27%;
@@ -2029,7 +2026,8 @@ body {
   */
 
   .card-item > .item-title-wrap {
-    margin-bottom: 10px;
+    margin-top: -4px;
+    margin-bottom: 12px;
   }
   .card-item > .item-title-wrap > .icon-area {
     float: right;
