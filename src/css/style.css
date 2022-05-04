@@ -997,6 +997,17 @@ body {
   font-size: 0;
   font-weight: 500;
 }
+.article-rank-wrap .rank-list > .item-title .cont-select {
+  width: 100%;
+  padding-left: 20px;
+}
+.article-rank-wrap .rank-list > .item-title .cont-select::before {
+  left: 10px;
+}
+.article-rank-wrap .rank-list > .item-title .cont-select .option-item {
+  padding: 6px 0px 6px 14px;
+  line-height: normal;
+}
 .article-rank-wrap .rank-list > .item-subs {
   margin-bottom: 6px;
   border-radius: 10px;

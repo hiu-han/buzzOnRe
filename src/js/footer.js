@@ -21,11 +21,6 @@ $(document).ready(function () {
 
   goTopEvent();
 
-  // // 정렬 옵션 열기
-  // $('.option-selected').on('click', function () {
-  //   $(this).parent('.sort-option').toggleClass(OPEN_CLASSNAME);
-  // })
-
   /* MODAL Handler */
   const sModHandler = {
     modOn: function (clicker, modalName) {
@@ -69,6 +64,7 @@ $(document).ready(function () {
   // ******** 컨텐츠 원문 리스트 모달 여닫기 END
 
 
+
   // ******** 컨텐츠 원문 내용 모달 여닫기 START
   function showAllModOn(e) {
     $("#showAllModal").addClass(MODALON_CLASSNAME);
@@ -82,9 +78,13 @@ $(document).ready(function () {
   // ******** 컨텐츠 원문 내용 모달 여닫기 END
 
 
+
   // ******** 셀렉트 옵션 커스텀 START
-  // main.js에 동일한 내용이 있으나 include 형식으로 footer문서를 불러올 때
-  // main.js의 내용이 적용되지 않아, 해결 방안을 찾을 때까지 동일한 내용을 본 문서에도 추가 함.
+  /* 
+    main.js에 동일한 내용이 있으나 include 형식으로 footer문서를 불러올 때
+    main.js의 내용이 적용되지 않아, 해결 방안을 찾을 때까지
+    동일한 내용을 본 문서에도 추가 함. 
+  */
 const modalLabel = document.querySelectorAll('.modal-select-label');
 
 modalLabel.forEach(function (lb) {
