@@ -26,17 +26,17 @@ $(document).ready(function () {
   })
 
 
-  // ***** 차트 방식 성정 버튼
+  // **** 차트 방식 성정 버튼
   $(".method-item").on("click", function() {
     $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
   });
-  // ***** 차트 기간 설정 버튼
+  // **** 차트 기간 설정 버튼
   $(".period-item").on("click", function() {
     $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
   });
 
   
-  // ***** 임시 데이터
+  // **** 임시 데이터
   $(".detailPostSNS").css("width", "40%");
   $(".detailPostTwit").css("width", "12%");
   $(".detailPostInsta").css("width", "50%");
@@ -51,8 +51,7 @@ $(document).ready(function () {
   
 })
 
-// ***** 셀렉트 옵션 커스텀 START
-
+// ******** 셀렉트 옵션 커스텀 START
 const label = document.querySelectorAll('.select-label');
 
 label.forEach(function (lb) {
@@ -101,5 +100,4 @@ const handleClose = e => {
 }
 
 window.addEventListener('click', e => handleClose(e));
-
-// ***** 셀렉트 옵션 커스텀 END
+// ******** 셀렉트 옵션 커스텀 END

@@ -771,6 +771,13 @@ address > .copyright {
   vertical-align: top;
 }
 
+.show-all-top .cont-select-box {
+  margin-left: 8px;
+}
+.show-all-top .cont-select-box .option-item {
+  line-height: normal;
+}
+
 /* .sort-option {
   position: relative;
   display: inline-block;

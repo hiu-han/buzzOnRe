@@ -48,7 +48,8 @@ $(document).ready(function () {
     },
   };
 
-  // 컨텐츠 원문 리스트 모달 여닫기
+
+  // ******** 컨텐츠 원문 리스트 모달 여닫기 START
   // NOW > channel details
   sModHandler.modOn(".item-sub-list", "#showAllModal");
   // HOTTEST > hot lists
@@ -65,7 +66,10 @@ $(document).ready(function () {
   $("#loginClsBtn").on("click", function () {
     console.log("clicked");
   })
+  // ******** 컨텐츠 원문 리스트 모달 여닫기 END
 
+
+  // ******** 컨텐츠 원문 내용 모달 여닫기 START
   function showAllModOn(e) {
     $("#showAllModal").addClass(MODALON_CLASSNAME);
     e.preventDefault();
@@ -75,5 +79,60 @@ $(document).ready(function () {
       return false;
     });
   };
+  // ******** 컨텐츠 원문 내용 모달 여닫기 END
+
+
+  // ******** 셀렉트 옵션 커스텀 START
+  // main.js에 동일한 내용이 있으나 include 형식으로 footer문서를 불러올 때
+  // main.js의 내용이 적용되지 않아, 해결 방안을 찾을 때까지 동일한 내용을 본 문서에도 추가 함.
+const modalLabel = document.querySelectorAll('.modal-select-label');
+
+modalLabel.forEach(function (lb) {
+  lb.addEventListener('click', e => {
+    let optionList = lb.nextElementSibling;
+    let optionItems = optionList.querySelectorAll('.option-item');
+    clickLabel(lb, optionItems);
+  })
+});
+
+const clickLabel = (lb, optionItems) => {
+  modalLabel.forEach(function(itemLb) {
+    if(lb !== itemLb) {
+      itemLb.parentNode.classList.remove('active')
+    }
+  });
+
+  if(lb.parentNode.classList.contains('active')) {
+    lb.parentNode.classList.remove('active');
+    optionItems.forEach((opt) => {
+      opt.removeEventListener('click', () => {
+        handleSelect(lb, opt)
+      })
+    })
+  } else {
+    lb.parentNode.classList.add('active');
+    optionItems.forEach((opt) => {
+      opt.addEventListener('click', () => {
+        handleSelect(lb, opt)
+      })
+    })
+  }
+}
+
+const handleSelect = (modalLabel, item) => {
+  modalLabel.innerHTML = item.textContent;
+  modalLabel.parentNode.classList.remove('active');
+}
+
+const handleClose = e => {
+  if(!e.target.classList.contains('modal-select-label') && !e.target.classList.contains('option-item')) {
+    modalLabel.forEach(function(lb) {
+      lb.parentNode.classList.remove('active');
+    })
+  }
+}
+
+window.addEventListener('click', e => handleClose(e));
+// ******** 셀렉트 옵션 커스텀 END
 
 })

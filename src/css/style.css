@@ -101,6 +101,7 @@ button:hover {
   display: inline-block;
 }
 .content-article .article-title > h3 {
+  line-height: 28px;
   font-size: 18px;
   font-weight: 700;
   font-family: "Spoqa Han Sans Neo", "Noto Sans KR", Apple Gothic, "sans-serif";
@@ -125,6 +126,11 @@ button:hover {
   font-weight: 500;
   color: #aaa;
 }
+.content-article .article-title > .title-option-wrap {
+  display: inline-block;
+  margin-left: 8px;
+}
+
 #main .content-article.width-2-1 {
   width: calc(50% - 12px);
 }
@@ -313,7 +319,7 @@ button:hover {
 .cont-select {
   position: relative;
   width: 120px;
-  height: 35px;
+  height: 28px;
   padding-left: 28px;
   border-radius: 4px;
   border: none;
@@ -346,6 +352,7 @@ button:hover {
   height: 100%;
   background-color: lightcyan;
 }
+.cont-select .modal-select-label,
 .cont-select .select-label {
   display: flex;
   align-items: center;
@@ -1498,6 +1505,7 @@ body {
 
 /* CONTENT PAGE >> HOTTEST PAGE >> hottest top10 */
 .article-content-top .channel-select {
+  display: none;
   position: absolute;
   right: 0;
   top: -30px;
