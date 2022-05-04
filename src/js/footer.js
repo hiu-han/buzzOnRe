@@ -49,11 +49,14 @@ $(document).ready(function () {
   };
 
   // 컨텐츠 원문 리스트 모달 여닫기
+  // NOW > channel details
+  sModHandler.modOn(".item-sub-list", "#showAllModal");
+  // HOTTEST > hot lists
   sModHandler.modOn(".hottest-item", "#showAllModal");
   sModHandler.modOff('#clsAllList', '#showAllModal');
   
   // 컨텐츠 원문 내용 모달 여닫기
-  sModHandler.modOn('#showAllModal .content-item', '#showOriginModal');
+  sModHandler.modOn('#showAllModal .content-subs-list', '#showOriginModal');
   sModHandler.modOff('#clsOriginList', '#showOriginModal');
 
   // INTRO page 로그인 모달 여닫기

@@ -1041,6 +1041,7 @@ address > .copyright {
   overflow-y: scroll;
 }
 .show-all-content .content-item {
+  position: relative;
   height: 53px;
   margin-bottom: 8px;
   font-size: 0;
@@ -1123,7 +1124,27 @@ address > .copyright {
   width: 9%;
 }
 .show-all-content .content-item .content-icon {
-  width: 3%;
+  /* width: 3%; */
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  border: 1px solid #f5f5f5;
+}
+.show-all-content .content-item .content-icon:hover {
+  border: 1px solid #ddd;
+  box-shadow: 1px 3px 12px rgb(128 128 128 / 20%);
+}
+.show-all-content .content-item .content-icon a {
+  display: inline-block;
+  width: 100%;
+  height: inherit;
+}
+.show-all-content .content-item .content-icon a > img {
+  vertical-align: 5px;
 }
 
 /* MODAL >> 원문 내용 모달 */

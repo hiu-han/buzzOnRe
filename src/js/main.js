@@ -26,17 +26,17 @@ $(document).ready(function () {
   })
 
 
-  // 차트 방식 성정 버튼
+  // ***** 차트 방식 성정 버튼
   $(".method-item").on("click", function() {
     $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
   });
-  // 차트 기간 설정 버튼
+  // ***** 차트 기간 설정 버튼
   $(".period-item").on("click", function() {
     $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);
   });
 
   
-  // 임시 데이터
+  // ***** 임시 데이터
   $(".detailPostSNS").css("width", "40%");
   $(".detailPostTwit").css("width", "12%");
   $(".detailPostInsta").css("width", "50%");
@@ -50,3 +50,56 @@ $(document).ready(function () {
 
   
 })
+
+// ***** 셀렉트 옵션 커스텀 START
+
+const label = document.querySelectorAll('.select-label');
+
+label.forEach(function (lb) {
+  lb.addEventListener('click', e => {
+    let optionList = lb.nextElementSibling;
+    let optionItems = optionList.querySelectorAll('.option-item');
+    clickLabel(lb, optionItems);
+  })
+});
+
+const clickLabel = (lb, optionItems) => {
+  label.forEach(function(itemLb) {
+    if(lb !== itemLb) {
+      itemLb.parentNode.classList.remove('active')
+    }
+  });
+
+  if(lb.parentNode.classList.contains('active')) {
+    lb.parentNode.classList.remove('active');
+    optionItems.forEach((opt) => {
+      opt.removeEventListener('click', () => {
+        handleSelect(lb, opt)
+      })
+    })
+  } else {
+    lb.parentNode.classList.add('active');
+    optionItems.forEach((opt) => {
+      opt.addEventListener('click', () => {
+        handleSelect(lb, opt)
+      })
+    })
+  }
+}
+
+const handleSelect = (label, item) => {
+  label.innerHTML = item.textContent;
+  label.parentNode.classList.remove('active');
+}
+
+const handleClose = e => {
+  if(!e.target.classList.contains('select-label') && !e.target.classList.contains('option-item')) {
+    label.forEach(function(lb) {
+      lb.parentNode.classList.remove('active');
+    })
+  }
+}
+
+window.addEventListener('click', e => handleClose(e));
+
+// ***** 셀렉트 옵션 커스텀 END
