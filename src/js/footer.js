@@ -22,6 +22,8 @@ $(document).ready(function () {
   goTopEvent();
 
   /* MODAL Handler */
+  // ******** 모달 핸들러 START
+
   const sModHandler = {
     modOn: function (clicker, modalName) {
       $(clicker).on("click", function (e) {
@@ -44,10 +46,9 @@ $(document).ready(function () {
   };
 
 
-  // ******** 컨텐츠 원문 리스트 모달 여닫기 START
-  // NOW > channel details
+  // 컨텐츠 원문 리스트 모달 >> NOW > channel details
   sModHandler.modOn(".item-sub-list", "#showAllModal");
-  // HOTTEST > hot lists
+  // 컨텐츠 원문 리스트 모달 >> HOTTEST > hot lists
   sModHandler.modOn(".hottest-item", "#showAllModal");
   sModHandler.modOff('#clsAllList', '#showAllModal');
   
@@ -58,24 +59,25 @@ $(document).ready(function () {
   // INTRO page 로그인 모달 여닫기
   sModHandler.modOn('#introLogin', '#loginModal');
   sModHandler.modOff('#loginClsBtn', '#loginModal');
-  $("#loginClsBtn").on("click", function () {
-    console.log("clicked");
-  })
-  // ******** 컨텐츠 원문 리스트 모달 여닫기 END
+  
+  // 검색 설정 모달 여닫기
+  sModHandler.modOn('.preset-btn', '#srchSetModal');
+  // sModHandler.modOff('');
+
+  // 컨텐츠 원문 내용 모달
+  // function showAllModOn(e) {
+  //   $("#showAllModal").addClass(MODALON_CLASSNAME);
+  //   e.preventDefault();
+  //   $("#showAllModal .modalBg").on("scroll touchmove mousewheel", function () {
+  //     e.preventDefault();
+  //     e.stopPropagation();
+  //     return false;
+  //   });
+  // };
+
+  // ******** 모달 핸들러 END
 
 
-
-  // ******** 컨텐츠 원문 내용 모달 여닫기 START
-  function showAllModOn(e) {
-    $("#showAllModal").addClass(MODALON_CLASSNAME);
-    e.preventDefault();
-    $("#showAllModal .modalBg").on("scroll touchmove mousewheel", function () {
-      e.preventDefault();
-      e.stopPropagation();
-      return false;
-    });
-  };
-  // ******** 컨텐츠 원문 내용 모달 여닫기 END
 
 
 

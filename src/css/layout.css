@@ -610,7 +610,7 @@ address > .copyright {
 
 /**  LOADING ANIMATION  **/
 #loading {
-  display: none;
+  /* display: none; */
   /* position: fixed;
   top: 0;
   right: 0;
@@ -623,8 +623,8 @@ address > .copyright {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 280px;
-  height: 180px;
+  width: 400px;
+  height: 240px;
   background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -633,9 +633,9 @@ address > .copyright {
   z-index: 300;
 }
 .loading-bg .loading-title {
-  margin-top: 50px;
-  font-size: 16px;
-  font-weight: 500;
+  margin-top: 60px;
+  font-size: 18px;
+  font-weight: 600;
   text-align: center;
   z-index: 310;
 }
@@ -1464,6 +1464,14 @@ h3.logo {
 }
 .login-box .info-user > span:hover > a {
   font-weight: 500;
+}
+
+/** 검색 설정 모달 **/
+#srchSetModal {
+  display: none;
+}
+#srchSetModal.modalOn {
+  display: block;
 }
 
 @media all and (max-width: 1400px) {

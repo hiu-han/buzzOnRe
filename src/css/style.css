@@ -1019,7 +1019,7 @@ body {
   line-height: 34px;
   font-size: 14px;
   font-weight: 500;
-  transform: skew(-0.01deg);
+  /* transform: skew(-0.01deg); */
   text-align: center;
 }
 .rank-list > .rank-item > .item-standing {
