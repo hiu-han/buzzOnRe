@@ -1727,6 +1727,10 @@ body {
   /* vertical-align: top; */
 }
 
+.usr-set-wrap {
+  font-size: 14px;
+}
+
 @media all and (max-width: 1024px) {
 }
 

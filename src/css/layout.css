@@ -608,9 +608,9 @@ address > .copyright {
   margin-top: 13px;
 }
 
-/**  LOADING ANIMATION  **/
+/**  로딩 애니메이션  **/
 #loading {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -630,7 +630,6 @@ address > .copyright {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 14px;
   box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
-  /* z-index: 300; */
 }
 .loading-bg .loading-title {
   margin-top: 60px;
@@ -744,7 +743,6 @@ address > .copyright {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 972px;
-  /* height: 75vh; */
   padding: 20px 20px 24px;
   background-color: #fff;
   border-radius: 18px;
