@@ -1743,10 +1743,15 @@ body {
 .usr-set-item {
   padding: 14px;
   border-radius: 12px;
+  border: 1px solid #fff;
   background-color: #fff;
-  transition: 0.35s ease-in;
+  /* transition: 0.3s ease-in; */
+}
+.usr-set-item:hover {
+  border: 1px solid #24cd88;
 }
 .usr-set-item.now-on {
+  border: 1px solid #24cd88;
   box-shadow: 1px 3px 12px rgb(88 88 88 / 20%);
 }
 
