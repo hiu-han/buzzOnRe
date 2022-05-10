@@ -61,7 +61,7 @@ $(document).ready(function () {
   
 })
 
-// ******** 셀렉트 옵션 커스텀 START
+// ******** select option 커스텀 START
 const label = document.querySelectorAll('.select-label');
 
 label.forEach(function (lb) {
@@ -110,4 +110,4 @@ const handleClose = e => {
 }
 
 window.addEventListener('click', e => handleClose(e));
-// ******** 셀렉트 옵션 커스텀 END
+// ******** select option 커스텀 END

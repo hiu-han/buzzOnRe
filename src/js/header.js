@@ -42,7 +42,7 @@ $(document).ready(function () {
   
 })
 
-// 채널 셀렉트 전체선택 관련, 시작
+// 채널 checkbox 전체선택 관련, 시작
 function allChked () {
   let allOfChkBox = document.querySelectorAll('.detail-channel-area input[type="checkbox"]');
   for (let i = 0, len = allOfChkBox.length; i < len; i++) {
@@ -70,7 +70,7 @@ function toggleChk(source, g) {
     e[i].checked = source.checked;
   }
 }
-// 채널 셀렉트 전체선택 관련, 끝
+// 채널 checkbox 전체선택 관련, 끝
 
 
 // 포함어, 제외어 핸들러, 시작

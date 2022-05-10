@@ -1707,7 +1707,13 @@ body {
   font-size: 0;
   vertical-align: top;
 }
-.article-user-setting .user-title-wrap,
+.article-user-setting .article-content {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 16px;
+}
+
+/* .article-user-setting .user-title-wrap,
 .article-user-setting .user-setting-wrap {
   display: inline-block;
   vertical-align: top;
@@ -1719,13 +1725,11 @@ body {
   font-weight: 600;
 }
 .article-user-setting .user-setting-wrap {
-  /* display: inline-block; */
   width: 85%;
   height: 600px;
   background-color: rgb(251, 211, 217);
   font-size: 14px;
-  /* vertical-align: top; */
-}
+} */
 
 .usr-set-wrap {
   font-size: 14px;
@@ -1734,14 +1738,18 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 30px;
+  gap: 10px;
 }
 .usr-set-item {
+  padding: 14px;
+  border-radius: 12px;
+  background-color: #fff;
   transition: 0.35s ease-in;
 }
 .usr-set-item.now-on {
-  /* transform: scale(1.07, 1.07); */
+  box-shadow: 1px 3px 12px rgb(88 88 88 / 20%);
 }
+
 .usr-set-item .set-btn-wrap > p {
   display: inline-block;
   cursor: pointer;
@@ -1751,7 +1759,8 @@ body {
 .usr-set-item .set-btn-wrap > .cancel-btn {
   display: none;
 }
-.usr-set-item.now-on .set-btn-wrap > .modify-btn {
+.usr-set-item.now-on .set-btn-wrap > .modify-btn,
+.usr-set-item.now-on .set-btn-wrap > .search-btn {
   display: none;
 }
 .usr-set-item.now-on .set-btn-wrap > .save-btn,
@@ -1770,7 +1779,6 @@ body {
 }
 
 .set-info-wrap .info-item-title {
-  /* margin-top: 10px; */
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: 600;
@@ -1790,12 +1798,13 @@ body {
   display: inline-block;
   padding: 2px 10px 2px 10px;
   border-radius: 20px;
-  border: 1px solid #888;
+  border: 1px solid #ddd;
   font-size: 13px;
 }
 .usr-set-item.now-on .included-word-wrap > .included-word,
 .usr-set-item.now-on .excluded-word-wrap > .excluded-word {
   padding-right: 4px;
+  border: 1px solid #aaa;
 }
 .usr-set-item .included-word-wrap > .included-word > span,
 .usr-set-item .excluded-word-wrap > .excluded-word > span {
@@ -1803,15 +1812,11 @@ body {
 }
 .usr-set-item .included-word-wrap > .included-word > em,
 .usr-set-item .excluded-word-wrap > .excluded-word > em {
-  /* content: ""; */
-  /* display: inline-block; */
   display: none;
   width: 18px;
   height: 18px;
   margin-left: 4px;
   border-radius: 50%;
-  /* background-color: #ddd; */
-  /* vertical-align: -2px; */
   background-image: url("../img/icon/icon-x.svg");
   background-repeat: no-repeat;
   background-size: 40%;
@@ -1842,10 +1847,8 @@ body {
   clear: both;
 }
 .usr-set-item .info-item-input .add-word-wrap .add-option {
-  /* display: inline-block; */
-  text-align: right;
-  /* float: right; */
   margin-bottom: 4px;
+  text-align: right;
 }
 .add-word-wrap .add-option > .add-option-label {
   margin-right: 4px;
@@ -1904,11 +1907,8 @@ body {
 }
 
 .info-period .searched-date-wrap {
-  /* font-size: 0; */
 }
 .info-period .searched-date-wrap > .search-date {
-  /* display: inline-block; */
-  /* width: 50%; */
   margin-bottom: 8px;
 }
 .info-period .searched-date-wrap > .search-date:last-child {
@@ -1934,6 +1934,9 @@ body {
 .usr-set-item.now-on input[type="text"] {
   border: 1px solid #bbb;
 }
+.usr-set-item .searched-date-wrap .search-date > .date-input > input {
+  cursor: pointer;
+}
 
 .info-channel .search-group-wrap {
   padding: 20px 10px;
@@ -1941,7 +1944,7 @@ body {
 }
 .search-group-wrap > .search-group {
   width: 100%;
-  padding: 24px 0 20px;
+  padding: 16px 0 10px;
   border-bottom: 1px solid #ddd;
 }
 .search-group-wrap > .search-group:first-child {
