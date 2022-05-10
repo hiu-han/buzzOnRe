@@ -45,9 +45,19 @@ $(document).ready(function () {
   
   $(".detailPostCommu").css("width", "45%");
 
-
   
+  // ******** 검색 설정 관리 START
+  $('.usr-set-item .modify-btn').on("click", function () {
+    $(this).parents('.usr-set-item').addClass('now-on').css('opacity', 1).siblings().removeClass(NOWON_CLASSNAME).css('opacity', 0.3)
+    .find('input[type="text"], input[type="date"]').attr('readonly', true);
+    $(this).parents('.usr-set-item').find('input[type="text"], input[type="date"]').attr('readonly', false);
+  });
 
+  $('.usr-set-item .cancel-btn').on("click", function () {
+    $(this).parents('.usr-set-item').removeClass(NOWON_CLASSNAME).siblings().css('opacity', 1);
+    $(this).parents('.usr-set-item').find('input[type="text"], input[type="date"]').attr('readonly', true);
+  })
+  // ******** 검색 설정 관리 END
   
 })
 

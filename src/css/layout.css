@@ -339,7 +339,8 @@ header:hover {
 .search-group-box .input-group > input {
   font-size: 13px;
 }
-.search-group-box .input-group > label {
+.search-group-box .input-group > label,
+.search-group-box .input-group > label > span {
   font-weight: 400;
   color: #666;
   vertical-align: 2px;
