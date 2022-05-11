@@ -1391,6 +1391,1638 @@
         </div>
       </section>
 
+      <section class="content-section">
+        <div class="section-inner">
+          <article class="content-article article-user-setting">
+            <div class="article-inner">
+              <div class="article-title">
+                <!-- <span class="user-page-profile"></span> -->
+                <h3 class="">검색 설정 관리</h3>
+              </div>
+              <div class="article-content">
+                <div class="usr-set-container">
+                  <div class="usr-set-wrap">
+                    <ul class="usr-set-list">
+
+                      <li class="usr-set-item">
+                        <!-- 수정 btn으로 .usr-set-item에 .now-on 토글 >> 내용 수정 모드 -->
+                        <!-- 이하 input들 수정모드 >> readnoly = false; -->
+                        <!-- but! input checkbox는 onclick="return false"로 대체 -->
+                        <div class="set-btn-wrap">
+                          <p class="modify-btn">수정</p>
+                          <p class="search-btn">검색</p>
+                          <p class="save-btn">저장</p>
+                          <p class="del-btn">삭제</p>
+                          <p class="cancel-btn">취소</p>
+                        </div>
+                        <ul class="set-info-wrap">
+                          <li class="set-info-item info-search-word">
+                            <div class="info-item-title">검색어</div>
+                            <div class="info-item-input">
+                              <div class="info-label-wrap">
+                                <label class="info-label label-search-word">
+                                  <input type="text" class="info-input input-search-word" placeholder="" readonly>
+                                  <span class="search-word-value">베개</span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-include-word">
+                            <div class="info-item-title">포함어</div>
+                            <div class="info-item-input">
+                              <div class="include-word-wrap">
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-exclude-word">
+                            <div class="info-item-title">제외어</div>
+                            <div class="info-item-input">
+                              <div class="exclude-word-wrap">
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-period">
+                            <div class="info-item-title">검색기간</div>
+                            <div class="info-item-input">
+                              <div class="searched-date-wrap">
+                                <div class="search-date date-start">
+                                  <span class="date-title">시작일</span>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-start-date" value="2022-04-10"
+                                      pattern="\d{4}-\d{2}-\d{2}" readonly>
+                                  </div>
+                                </div>
+                                <div class="search-date date-end">
+                                  <div class="date-title">종료일</div>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-end-date" value="2022-05-10"
+                                      pattern="\d{4}-\d{2}-\{2}" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-channel">
+                            <div class="info-item-title">대상 채널</div>
+                            <div class="info-item-input">
+                              <div class="search-group-wrap">
+                                <div class="search-group search-group-sns">
+                                  <h3 class="group-title">SNS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'sns');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group sns-group sns-twitter">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">트위터</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-insta">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">인스타그램</span>
+                                        </span>
+                                    </div>
+                                    <div class="input-group sns-group sns-youtube">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">유튜브</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-facebook">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">페이스북</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-cafe">
+                                  <h3 class="group-title">CAFE</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'cafe');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group cafe-group cafe-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group cafe-group cafe-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-blog">
+                                  <h3 class="group-title">BLOG</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'blog');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group blog-group blog-naver">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-tstory">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">티스토리</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-community">
+                                  <h3 class="group-title">COMMUNITY</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'commu');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group commu-group commu-ppom">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">뽐뿌</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-mlb">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">MLB파크</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-clien">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label=txxt">클리앙</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-fm">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">FM코리아</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-dc">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">DC</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-ruli">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">루리웹</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-inven">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">인벤</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-news">
+                                  <h3 class="group-title">NEWS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'news');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group news-group news-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'news');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="usr-set-item">
+                        <!-- 수정 btn으로 .usr-set-item에 .now-on 토글 >> 내용 수정 모드 -->
+                        <!-- 이하 input들 수정모드 >> readnoly = false; -->
+                        <!-- but! input checkbox는 onclick="return false"로 대체 -->
+                        <div class="set-btn-wrap">
+                          <p class="modify-btn">수정</p>
+                          <p class="search-btn">검색</p>
+                          <p class="save-btn">저장</p>
+                          <p class="del-btn">삭제</p>
+                          <p class="cancel-btn">취소</p>
+                        </div>
+                        <ul class="set-info-wrap">
+                          <li class="set-info-item info-search-word">
+                            <div class="info-item-title">검색어</div>
+                            <div class="info-item-input">
+                              <div class="info-label-wrap">
+                                <label class="info-label label-search-word">
+                                  <input type="text" class="info-input input-search-word" placeholder="" readonly>
+                                  <span class="search-word-value">베개</span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-include-word">
+                            <div class="info-item-title">포함어</div>
+                            <div class="info-item-input">
+                              <div class="include-word-wrap">
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-exclude-word">
+                            <div class="info-item-title">제외어</div>
+                            <div class="info-item-input">
+                              <div class="exclude-word-wrap">
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-period">
+                            <div class="info-item-title">검색기간</div>
+                            <div class="info-item-input">
+                              <div class="searched-date-wrap">
+                                <div class="search-date date-start">
+                                  <span class="date-title">시작일</span>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-start-date" value="2022-04-10"
+                                      pattern="\d{4}-\d{2}-\d{2}" readonly>
+                                  </div>
+                                </div>
+                                <div class="search-date date-end">
+                                  <div class="date-title">종료일</div>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-end-date" value="2022-05-10"
+                                      pattern="\d{4}-\d{2}-\{2}" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-channel">
+                            <div class="info-item-title">대상 채널</div>
+                            <div class="info-item-input">
+                              <div class="search-group-wrap">
+                                <div class="search-group search-group-sns">
+                                  <h3 class="group-title">SNS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'sns');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group sns-group sns-twitter">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">트위터</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-insta">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">인스타그램</span>
+                                        </span>
+                                    </div>
+                                    <div class="input-group sns-group sns-youtube">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">유튜브</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-facebook">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">페이스북</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-cafe">
+                                  <h3 class="group-title">CAFE</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'cafe');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group cafe-group cafe-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group cafe-group cafe-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-blog">
+                                  <h3 class="group-title">BLOG</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'blog');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group blog-group blog-naver">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-tstory">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">티스토리</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-community">
+                                  <h3 class="group-title">COMMUNITY</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'commu');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group commu-group commu-ppom">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">뽐뿌</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-mlb">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">MLB파크</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-clien">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label=txxt">클리앙</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-fm">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">FM코리아</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-dc">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">DC</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-ruli">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">루리웹</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-inven">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">인벤</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-news">
+                                  <h3 class="group-title">NEWS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'news');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group news-group news-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'news');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="usr-set-item">
+                        <!-- 수정 btn으로 .usr-set-item에 .now-on 토글 >> 내용 수정 모드 -->
+                        <!-- 이하 input들 수정모드 >> readnoly = false; -->
+                        <!-- but! input checkbox는 onclick="return false"로 대체 -->
+                        <div class="set-btn-wrap">
+                          <p class="modify-btn">수정</p>
+                          <p class="search-btn">검색</p>
+                          <p class="save-btn">저장</p>
+                          <p class="del-btn">삭제</p>
+                          <p class="cancel-btn">취소</p>
+                        </div>
+                        <ul class="set-info-wrap">
+                          <li class="set-info-item info-search-word">
+                            <div class="info-item-title">검색어</div>
+                            <div class="info-item-input">
+                              <div class="info-label-wrap">
+                                <label class="info-label label-search-word">
+                                  <input type="text" class="info-input input-search-word" placeholder="" readonly>
+                                  <span class="search-word-value">베개</span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-include-word">
+                            <div class="info-item-title">포함어</div>
+                            <div class="info-item-input">
+                              <div class="include-word-wrap">
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-exclude-word">
+                            <div class="info-item-title">제외어</div>
+                            <div class="info-item-input">
+                              <div class="exclude-word-wrap">
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-period">
+                            <div class="info-item-title">검색기간</div>
+                            <div class="info-item-input">
+                              <div class="searched-date-wrap">
+                                <div class="search-date date-start">
+                                  <span class="date-title">시작일</span>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-start-date" value="2022-04-10"
+                                      pattern="\d{4}-\d{2}-\d{2}" readonly>
+                                  </div>
+                                </div>
+                                <div class="search-date date-end">
+                                  <div class="date-title">종료일</div>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-end-date" value="2022-05-10"
+                                      pattern="\d{4}-\d{2}-\{2}" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-channel">
+                            <div class="info-item-title">대상 채널</div>
+                            <div class="info-item-input">
+                              <div class="search-group-wrap">
+                                <div class="search-group search-group-sns">
+                                  <h3 class="group-title">SNS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'sns');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group sns-group sns-twitter">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">트위터</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-insta">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">인스타그램</span>
+                                        </span>
+                                    </div>
+                                    <div class="input-group sns-group sns-youtube">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">유튜브</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-facebook">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">페이스북</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-cafe">
+                                  <h3 class="group-title">CAFE</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'cafe');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group cafe-group cafe-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group cafe-group cafe-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-blog">
+                                  <h3 class="group-title">BLOG</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'blog');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group blog-group blog-naver">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-tstory">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">티스토리</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-community">
+                                  <h3 class="group-title">COMMUNITY</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'commu');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group commu-group commu-ppom">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">뽐뿌</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-mlb">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">MLB파크</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-clien">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label=txxt">클리앙</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-fm">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">FM코리아</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-dc">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">DC</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-ruli">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">루리웹</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-inven">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">인벤</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-news">
+                                  <h3 class="group-title">NEWS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'news');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group news-group news-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'news');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="usr-set-item">
+                        <!-- 수정 btn으로 .usr-set-item에 .now-on 토글 >> 내용 수정 모드 -->
+                        <!-- 이하 input들 수정모드 >> readnoly = false; -->
+                        <!-- but! input checkbox는 onclick="return false"로 대체 -->
+                        <div class="set-btn-wrap">
+                          <p class="modify-btn">수정</p>
+                          <p class="search-btn">검색</p>
+                          <p class="save-btn">저장</p>
+                          <p class="del-btn">삭제</p>
+                          <p class="cancel-btn">취소</p>
+                        </div>
+                        <ul class="set-info-wrap">
+                          <li class="set-info-item info-search-word">
+                            <div class="info-item-title">검색어</div>
+                            <div class="info-item-input">
+                              <div class="info-label-wrap">
+                                <label class="info-label label-search-word">
+                                  <input type="text" class="info-input input-search-word" placeholder="" readonly>
+                                  <span class="search-word-value">베개</span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-include-word">
+                            <div class="info-item-title">포함어</div>
+                            <div class="info-item-input">
+                              <div class="include-word-wrap">
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-exclude-word">
+                            <div class="info-item-title">제외어</div>
+                            <div class="info-item-input">
+                              <div class="exclude-word-wrap">
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-period">
+                            <div class="info-item-title">검색기간</div>
+                            <div class="info-item-input">
+                              <div class="searched-date-wrap">
+                                <div class="search-date date-start">
+                                  <span class="date-title">시작일</span>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-start-date" value="2022-04-10"
+                                      pattern="\d{4}-\d{2}-\d{2}" readonly>
+                                  </div>
+                                </div>
+                                <div class="search-date date-end">
+                                  <div class="date-title">종료일</div>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-end-date" value="2022-05-10"
+                                      pattern="\d{4}-\d{2}-\{2}" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-channel">
+                            <div class="info-item-title">대상 채널</div>
+                            <div class="info-item-input">
+                              <div class="search-group-wrap">
+                                <div class="search-group search-group-sns">
+                                  <h3 class="group-title">SNS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'sns');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group sns-group sns-twitter">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">트위터</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-insta">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">인스타그램</span>
+                                        </span>
+                                    </div>
+                                    <div class="input-group sns-group sns-youtube">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">유튜브</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-facebook">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">페이스북</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-cafe">
+                                  <h3 class="group-title">CAFE</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'cafe');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group cafe-group cafe-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group cafe-group cafe-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-blog">
+                                  <h3 class="group-title">BLOG</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'blog');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group blog-group blog-naver">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-tstory">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">티스토리</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-community">
+                                  <h3 class="group-title">COMMUNITY</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'commu');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group commu-group commu-ppom">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">뽐뿌</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-mlb">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">MLB파크</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-clien">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label=txxt">클리앙</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-fm">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">FM코리아</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-dc">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">DC</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-ruli">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">루리웹</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-inven">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">인벤</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-news">
+                                  <h3 class="group-title">NEWS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'news');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group news-group news-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'news');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li class="usr-set-item">
+                        <!-- 수정 btn으로 .usr-set-item에 .now-on 토글 >> 내용 수정 모드 -->
+                        <!-- 이하 input들 수정모드 >> readnoly = false; -->
+                        <!-- but! input checkbox는 onclick="return false"로 대체 -->
+                        <div class="set-btn-wrap">
+                          <p class="modify-btn">수정</p>
+                          <p class="search-btn">검색</p>
+                          <p class="save-btn">저장</p>
+                          <p class="del-btn">삭제</p>
+                          <p class="cancel-btn">취소</p>
+                        </div>
+                        <ul class="set-info-wrap">
+                          <li class="set-info-item info-search-word">
+                            <div class="info-item-title">검색어</div>
+                            <div class="info-item-input">
+                              <div class="info-label-wrap">
+                                <label class="info-label label-search-word">
+                                  <input type="text" class="info-input input-search-word" placeholder="" readonly>
+                                  <span class="search-word-value">베개</span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-include-word">
+                            <div class="info-item-title">포함어</div>
+                            <div class="info-item-input">
+                              <div class="include-word-wrap">
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="include-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </li>
+                          <li class="set-info-item info-optional-word info-exclude-word">
+                            <div class="info-item-title">제외어</div>
+                            <div class="info-item-input">
+                              <div class="exclude-word-wrap">
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="담요">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="이불">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                                <div class="exclude-word">
+                                  <div class="add-option">
+                                    <label class="add-option-label add-or-label">
+                                      <input type="radio" name="addOption" value="include-or">
+                                      <span class="label-txt">또는</span>
+                                    </label>
+                                    <label class="add-option-label add-and-label">
+                                      <input type="radio" name="addOption" value="include-and">
+                                      <span class="label-txt">그리고</span>
+                                    </label>
+                                  </div>
+                                  <div class="add-input">
+                                    <input type="text" placeholder="포함어를 입력하세요.">
+                                    <p class="add-btn">+</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-period">
+                            <div class="info-item-title">검색기간</div>
+                            <div class="info-item-input">
+                              <div class="searched-date-wrap">
+                                <div class="search-date date-start">
+                                  <span class="date-title">시작일</span>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-start-date" value="2022-04-10"
+                                      pattern="\d{4}-\d{2}-\d{2}" readonly>
+                                  </div>
+                                </div>
+                                <div class="search-date date-end">
+                                  <div class="date-title">종료일</div>
+                                  <div class="date-input">
+                                    <input type="date" class="selected-end-date" value="2022-05-10"
+                                      pattern="\d{4}-\d{2}-\{2}" readonly>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="set-info-item info-channel">
+                            <div class="info-item-title">대상 채널</div>
+                            <div class="info-item-input">
+                              <div class="search-group-wrap">
+                                <div class="search-group search-group-sns">
+                                  <h3 class="group-title">SNS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'sns');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group sns-group sns-twitter">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">트위터</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-insta">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">인스타그램</span>
+                                        </span>
+                                    </div>
+                                    <div class="input-group sns-group sns-youtube">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">유튜브</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group sns-group sns-facebook">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'sns');">
+                                        <span class="label-txt">페이스북</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-cafe">
+                                  <h3 class="group-title">CAFE</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'cafe');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group cafe-group cafe-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group cafe-group cafe-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'cafe');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-blog">
+                                  <h3 class="group-title">BLOG</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'blog');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group blog-group blog-naver">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-tstory">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">티스토리</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group blog-group blog-daum">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'blog');">
+                                        <span class="label-txt">다음</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-community">
+                                  <h3 class="group-title">COMMUNITY</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'commu');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group commu-group commu-ppom">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">뽐뿌</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-mlb">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">MLB파크</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-clien">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label=txxt">클리앙</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-fm">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">FM코리아</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-dc">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">DC</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-ruli">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">루리웹</span>
+                                      </label>
+                                    </div>
+                                    <div class="input-group commu-group commu-inven">
+                                      <label>
+                                        <input type="checkbox" onclick="channelChk(this,'commu');">
+                                        <span class="label-txt">인벤</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="search-group search-group-news">
+                                  <h3 class="group-title">NEWS</h3>
+                                  <p class="all-btn">
+                                    <label>
+                                      <input type="checkbox" class="all-check-btn" onclick="toggleChk(this,'news');">
+                                      <span class="label-txt">All</span>
+                                    </label>
+                                  </p>
+                                  <div class="search-group-box">
+                                    <div class="input-group news-group news-naver">
+                                      <label>
+                                        <input type="checkbox" class="helo" onclick="channelChk(this,'news');">
+                                        <span class="label-txt">네이버</span>
+                                      </label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
     </div>
 
     <div id="footer" class="contents-page">
