@@ -434,6 +434,7 @@ body {
   box-sizing: border-box;
 }
 #main.intro-page {
+  position: relative;
   width: 1000px;
   padding: 12vh 14px 0;
 }
@@ -507,8 +508,20 @@ body {
   background-color: #24cd88;
   color: #fff;
 }
+.intro-login > button:hover {
+  border: 1px solid #27df95;
+  background-color: #27df95;
+}
 .intro-login > button.now-on {
   display: block;
+}
+.intro-login > button#introLogout {
+  border: 1px solid rgb(200, 200, 200);
+  background-color: rgb(200, 200, 200);
+}
+.intro-login > button#introLogout:hover {
+  border: 1px solid rgb(214, 214, 214);
+  background-color: rgb(214, 214, 214);
 }
 
 .intro-section .section-content .intro-login-option {
@@ -541,6 +554,16 @@ body {
 .intro-login-option > .join-us {
   width: 20%;
   text-align: right;
+}
+
+.intro-section .user-area {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: -50px;
+}
+.intro-section .user-area.now-on {
+  display: block;
 }
 
 /* INTRO PAGE > contents section */

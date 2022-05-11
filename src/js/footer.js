@@ -48,8 +48,13 @@ $(document).ready(function () {
 
   // 컨텐츠 원문 리스트 모달 >> NOW > channel details
   sModHandler.modOn(".item-sub-list", "#showAllModal");
+  // 컨텐츠 원문 리스트 모달 >> NOW > sentiemnt keyword, keyword ranking
+  sModHandler.modOn(".now-page .rank-item", "#showAllModal");
+  // 컨텐츠 원문 리스트 모달 >> TREND > keyword trend
+  sModHandler.modOn(".trend-page .rank-item", "#showAllModal");
   // 컨텐츠 원문 리스트 모달 >> HOTTEST > hot lists
   sModHandler.modOn(".hottest-item", "#showAllModal");
+  
   sModHandler.modOff('#clsAllList', '#showAllModal');
   
   // 컨텐츠 원문 내용 모달 여닫기
