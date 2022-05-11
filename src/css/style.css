@@ -1873,7 +1873,7 @@ body {
   margin-right: 0;
 }
 
-.include-word input[type="text"]::-webkit-input-placeholder {
+.article-user-setting input[type="text"]::-webkit-input-placeholder {
   color: #888;
 }
 
