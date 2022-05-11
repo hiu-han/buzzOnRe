@@ -1708,7 +1708,7 @@ body {
   vertical-align: top;
 }
 .article-user-setting .article-content {
-  padding: 10px;
+  padding: 14px;
   background-color: #f5f5f5;
   border-radius: 16px;
 }
@@ -1738,7 +1738,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 14px;
 }
 .usr-set-item {
   padding: 14px;
@@ -1775,18 +1775,30 @@ body {
 }
 
 .set-info-wrap .set-info-item {
+  position: relative;
   padding-bottom: 20px;
   margin: 20px 0;
-  border-bottom: 1px solid #ddd;
+  /* border-bottom: 1px solid #eee; */
 }
 .set-info-wrap .set-info-item:last-child {
   border-bottom: none;
 }
+/* .set-info-wrap .set-info-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 10%;
+  height: 1px;
+  background-color: #ddd;
+} */
 
 .set-info-wrap .info-item-title {
   margin-bottom: 10px;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .set-info-wrap .info-item-input {
@@ -1914,7 +1926,7 @@ body {
 .info-period .searched-date-wrap {
 }
 .info-period .searched-date-wrap > .search-date {
-  margin-bottom: 8px;
+  margin-bottom: 14px;
 }
 .info-period .searched-date-wrap > .search-date:last-child {
   margin-bottom: 0;
@@ -1951,6 +1963,9 @@ body {
   width: 100%;
   padding: 16px 0 10px;
   border-bottom: 1px solid #ddd;
+}
+.info-channel .search-group-wrap > .search-group .group-title {
+  font-size: 14px;
 }
 .search-group-wrap > .search-group:first-child {
   padding-top: 0;
