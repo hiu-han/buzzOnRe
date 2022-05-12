@@ -11,7 +11,6 @@ $(document).ready(function () {
     let itemH = $(this).parent().children("ul").length;
     console.log(itemH);
     if (itemH > 1) {
-      // $(this).addClass(NOWON_CLASSNAME).siblings().removeClass(NOWON_CLASSNAME);  
       $(this).parent().toggleClass(NOWON_CLASSNAME);
       $(this).parent().css("height", itemH * 38);
 

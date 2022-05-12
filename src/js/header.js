@@ -1,7 +1,6 @@
 $(document).ready(function () {
   const NOWON_CLASSNAME = "now-on"; 
 
-
   // detail-slider 핸들러, 시작
   const detailSlider = {
     slideToggle: function (clicker, openName) {
@@ -27,17 +26,16 @@ $(document).ready(function () {
   // detail-slider 핸들러, 끝
 
   // , 시작
-  let scrT = 0;
-  $(window).scroll(function (e) {
-    scrT = $(this).scrollTop();
-    // console.log(sT);
+  // let scrT = 0;
+  // $(window).scroll(function (e) {
+  //   scrT = $(this).scrollTop();
     
-    if(scrT > 62) {
-      $("#header").addClass(NOWON_CLASSNAME);
-    } else {
-      $("#header").removeClass(NOWON_CLASSNAME);
-    }
-  });
+  //   if(scrT > 62) {
+  //     $("#header").addClass(NOWON_CLASSNAME);
+  //   } else {
+  //     $("#header").removeClass(NOWON_CLASSNAME);
+  //   }
+  // });
   // , 끝
   
 })
@@ -71,53 +69,3 @@ function toggleChk(source, g) {
   }
 }
 // 채널 checkbox 전체선택 관련, 끝
-
-
-// 포함어, 제외어 핸들러, 시작
-
-// 포함어, 제외어 핸들러, 끝
-
-
-
-
-
-/*
-function channelChk () {
-  let allChkBox = document.getElementById("allCheckSns");
-  let e = document.querySelectorAll('.sns-group input[type="checkbox"]');
-  console.log(e.length);
-  for (let i = 0, len = e.length; i < len; i++) {
-    if (!e[i].checked) {
-      allChkBox.checked = false;
-      return;
-    }
-  }
-  allChkBox.checkd = true;
-}
-
- function toggleChk(source) {
-   let e = document.querySelectorAll('.sns-group input[type="checkbox"]');
-
-   for (let i = 0, len = e.length; i < len; i++) {
-     e[i].checked = source.checked;
-   }
- }
-*/
-
-/*
-const allChkHandler =  {
-  snsChannelChk: function () {
-
-  },
-  snsToggleChk: function () {
-
-  },
-  cafeChannelChk: function () {
-
-  },
-  cafeToggleChk: function () {
-
-  },
-  ......
-}
-*/

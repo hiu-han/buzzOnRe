@@ -29,11 +29,11 @@
   background-color: lightgreen;
 }
 
+/** COMMON **/
 .mo-section {
   display: none;
 }
 
-/** COMMON **/
 .blind {
   display: block;
   position: absolute;
