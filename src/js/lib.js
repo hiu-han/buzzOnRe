@@ -1,45 +1,8 @@
 $(document).ready(function () {
-
-  // swiperOn
-  /*
-  let $swipContainer;
-  
-  const sSwiperHandler = {
-    swiperOn : function (container, swipId) {
-      const $swipContainer = $(container);
-      const $swipWrapper = $swipContainer.children("ul"),
-            $swipSlide = $swipWrapper.children("li");
-      $swipContainer.addClass("swiper-container").attr("id", swipId);
-      $swipWrapper.addClass("swiper-wrapper");
-      $swipSlide.addClass("swiper-slide");
-    },
-    swiperOff : function () {
-      const $swipContainer = $(container);
-      const $swipWrapper = $swipContainer.children("ul"),
-            $swipSlide = $swipWrapper.children("li");
-      $swipContainer.reomveClass("swiper-container").removeAttr("id", swipId);
-      $swipWrapper.reomveClass("swiper-wrapper");
-      $swipSlide.reomveClass("swiper-slide");
-    },
-  };
-
-  let winWidth = window.innerWidth;
-  
-  console.log(winWidth);
-  function winResizeFunc () {
-    if (winWidth < 680) {
-      sSwiperHandler.swiperOn(".index-trend-rank", "idxTrdSwpContainer");
-    } else if (winWidth >= 680) {
-      sSwiperHandler.swiperOff(".index-trend-rank", "idxTrdSwpContainer");
-    }
-  }
-  winResizeFunc();
-  */
     
   $(window).on("resize", function () {
     winWidth = window.innerWidth;
     console.log(winWidth);
-    // winResizeFunc();
     return winWidth;
   });
   
