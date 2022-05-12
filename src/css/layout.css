@@ -111,7 +111,6 @@ header:hover {
   width: 900px;
   height: inherit;
   padding-top: 10px;
-  /* margin-top: 10px; */
 }
 .search-area > .search-keyword-wrap {
   display: inline-block;
@@ -119,7 +118,6 @@ header:hover {
 }
 .search-area > .search-keyword-wrap > * {
   display: inline-block;
-  /* vertical-align: middle; */
 }
 .search-keyword-wrap #detailOpen {
   position: relative;
@@ -224,7 +222,6 @@ header:hover {
   top: 10px;
   right: 14px;
   width: 145px;
-  /* margin-top: 10px; */
   text-align: right;
 }
 .user-area > .link-area {
@@ -376,7 +373,7 @@ header:hover {
 .detail-keyword-area .detail-search .detail-option label {
   vertical-align: 2px;
 }
-/* .detail-keyword-area input[type="text"] { */
+
 input[type="text"] {
   width: 100%;
   height: 32px;
@@ -491,7 +488,6 @@ input[type="date"]:hover {
 }
 .detail-btn-area .cancel-btn {
   display: none;
-  /* display: inline-block; */
   width: 100px;
   height: 40px;
   line-height: 40px;
@@ -536,7 +532,6 @@ footer {
   width: 100%;
   max-width: 1200px;
   min-width: 1000px;
-  /* padding: 10px 14px 26px; */
   padding: 36px 14px 36px;
   margin: 0 auto;
 }
@@ -1427,7 +1422,6 @@ h3.logo {
   font-size: 15px;
   font-weight: 400;
   border: none;
-  /* color: #333; */
   color: #fff;
   transition: 0.4s;
 }
