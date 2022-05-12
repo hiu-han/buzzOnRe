@@ -61,7 +61,10 @@
                               </div>
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-include-word">
+                          <li class="set-info-item info-optional-word info-include-word added">
+                            <!-- .info-optional-word > 저장된 포함어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 포함어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">포함어</div>
                             <div class="info-item-input">
                               <div class="include-word-wrap added-word-wrap">
@@ -120,7 +123,10 @@
 
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-exclude-word">
+                          <li class="set-info-item info-optional-word info-exclude-word added">
+                            <!-- .info-optional-word > 저장된 제외어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 제외어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">제외어</div>
                             <div class="info-item-input">
                               <div class="exclude-word-wrap added-word-wrap">
@@ -387,7 +393,10 @@
                               </div>
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-include-word">
+                          <li class="set-info-item info-optional-word info-include-word added">
+                            <!-- .info-optional-word > 저장된 포함어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 포함어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">포함어</div>
                             <div class="info-item-input">
                               <div class="include-word-wrap added-word-wrap">
@@ -404,23 +413,7 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="담요">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
-                                <div class="include-word add-word added">
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption202" value="include-or">
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption202" value="include-and" checked>
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="이불">
+                                    <input type="text" placeholder="아이패드">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -429,11 +422,11 @@
                                   <!-- 저장된 단어가 3개일 경우 노출되지 않음 -->
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption203" value="include-or">
+                                      <input type="radio" name="addOption202" value="include-or">
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption203" value="include-and">
+                                      <input type="radio" name="addOption202" value="include-and">
                                       <span class="label-txt">그리고</span>
                                     </label>
                                   </div>
@@ -443,58 +436,28 @@
                                   </div>
                                 </div>
                               </div>
-
                             </div>
                           </li>
                           <li class="set-info-item info-optional-word info-exclude-word">
+                            <!-- .info-optional-word > 저장된 제외어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 제외어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">제외어</div>
                             <div class="info-item-input">
                               <div class="exclude-word-wrap added-word-wrap">
-                                <div class="exclude-word add-word added">
+                                <div class="exclude-word add-word">
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
                                       <input type="radio" name="addOption204" value="include-or">
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption204" value="include-and" checked>
+                                      <input type="radio" name="addOption204" value="include-and">
                                       <span class="label-txt">그리고</span>
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="나라">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
-                                <div class="exclude-word add-word added">
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOptio205" value="include-or" checked>
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption205" value="include-and">
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="비누방울">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
-                                <div class="exclude-word add-word added">
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption206" value="include-or" checked>
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption206" value="include-and">
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="피카츄">
+                                    <input type="text" placeholder="제외어를 입력하세요.">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -714,52 +677,22 @@
                             </div>
                           </li>
                           <li class="set-info-item info-optional-word info-include-word">
+                            <!-- .info-optional-word > 저장된 포함어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 포함어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">포함어</div>
                             <div class="info-item-input">
                               <div class="include-word-wrap added-word-wrap">
-                                <div class="include-word add-word added">
-                                  <!-- 저장된 단어의 .include-word에 .added 추가  -->
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption301" value="include-or" checked>
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption301" value="include-and">
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="담요">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
-                                <div class="include-word add-word added">
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption302" value="include-or">
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption302" value="include-and" checked>
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="이불">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
                                 <div class="include-word add-word">
                                   <!-- 추가할 수 있는 입력창은 .include-word에 .added 없음. -->
                                   <!-- 저장된 단어가 3개일 경우 노출되지 않음 -->
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption303" value="include-or">
+                                      <input type="radio" name="addOption301" value="include-or">
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption303" value="include-and">
+                                      <input type="radio" name="addOption301" value="include-and">
                                       <span class="label-txt">그리고</span>
                                     </label>
                                   </div>
@@ -773,54 +706,25 @@
                             </div>
                           </li>
                           <li class="set-info-item info-optional-word info-exclude-word">
+                            <!-- .info-optional-word > 저장된 제외어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 제외어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">제외어</div>
                             <div class="info-item-input">
                               <div class="exclude-word-wrap added-word-wrap">
-                                <div class="exclude-word add-word added">
+                                <div class="exclude-word add-word">
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
                                       <input type="radio" name="addOption304" value="include-or">
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption304" value="include-and" checked>
+                                      <input type="radio" name="addOption304" value="include-and">
                                       <span class="label-txt">그리고</span>
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="나라">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
-                                <div class="exclude-word add-word added">
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption305" value="include-or" checked>
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption305" value="include-and">
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="비누방울">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
-                                <div class="exclude-word add-word added">
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption306" value="include-or" checked>
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption306" value="include-and">
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="피카츄">
+                                    <input type="text" placeholder="제외어를 입력하세요.">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -1039,7 +943,10 @@
                               </div>
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-include-word">
+                          <li class="set-info-item info-optional-word info-include-word added">
+                            <!-- .info-optional-word > 저장된 포함어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 포함어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">포함어</div>
                             <div class="info-item-input">
                               <div class="include-word-wrap added-word-wrap">
@@ -1047,32 +954,33 @@
                                   <!-- 저장된 단어의 .include-word에 .added 추가  -->
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption401" value="include-or" checked>
+                                      <input type="radio" name="addOption401" value="include-or">
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption401" value="include-and">
+                                      <input type="radio" name="addOption401" value="include-and" checked>
                                       <span class="label-txt">그리고</span>
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="담요">
+                                    <input type="text" placeholder="보안사고">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
                                 <div class="include-word add-word added">
+                                  <!-- 저장된 단어의 .include-word에 .added 추가  -->
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption402" value="include-or">
+                                      <input type="radio" name="addOption402" value="include-or" checked>
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption402" value="include-and" checked>
+                                      <input type="radio" name="addOption402" value="include-and">
                                       <span class="label-txt">그리고</span>
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="이불">
+                                    <input type="text" placeholder="조흥은행">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -1098,7 +1006,10 @@
 
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-exclude-word">
+                          <li class="set-info-item info-optional-word info-exclude-word added">
+                            <!-- .info-optional-word > 저장된 제외어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 제외어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">제외어</div>
                             <div class="info-item-input">
                               <div class="exclude-word-wrap added-word-wrap">
@@ -1114,14 +1025,14 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="나라">
+                                    <input type="text" placeholder="이벤트">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
-                                <div class="exclude-word add-word added">
+                                <div class="exclude-word add-word">
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption405" value="include-or" checked>
+                                      <input type="radio" name="addOption405" value="include-or">
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
@@ -1130,23 +1041,7 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="비누방울">
-                                    <p class="add-btn">+</p>
-                                  </div>
-                                </div>
-                                <div class="exclude-word add-word added">
-                                  <div class="add-option">
-                                    <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption406" value="include-or" checked>
-                                      <span class="label-txt">또는</span>
-                                    </label>
-                                    <label class="add-option-label add-and-label">
-                                      <input type="radio" name="addOption406" value="include-and">
-                                      <span class="label-txt">그리고</span>
-                                    </label>
-                                  </div>
-                                  <div class="add-input">
-                                    <input type="text" placeholder="피카츄">
+                                    <input type="text" placeholder="제외어를 입력하세요.">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -1365,7 +1260,10 @@
                               </div>
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-include-word">
+                          <li class="set-info-item info-optional-word info-include-word added">
+                            <!-- .info-optional-word > 저장된 포함어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 포함어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">포함어</div>
                             <div class="info-item-input">
                               <div class="include-word-wrap added-word-wrap">
@@ -1382,7 +1280,7 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="담요">
+                                    <input type="text" placeholder="스위치">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -1398,7 +1296,7 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="이불">
+                                    <input type="text" placeholder="스팀덱">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -1424,7 +1322,10 @@
 
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-exclude-word">
+                          <li class="set-info-item info-optional-word info-exclude-word added">
+                            <!-- .info-optional-word > 저장된 제외어가 없으면 기본 display: none; -->
+                            <!-- .info-optional-word > 저장된 제외어가 있으면 addClass .added > display: block; -->
+                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
                             <div class="info-item-title">제외어</div>
                             <div class="info-item-input">
                               <div class="exclude-word-wrap added-word-wrap">
@@ -1440,7 +1341,7 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="나라">
+                                    <input type="text" placeholder="컬러스케일">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
@@ -1456,14 +1357,14 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="비누방울">
+                                    <input type="text" placeholder="언더케이지">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>
-                                <div class="exclude-word add-word added">
+                                <div class="exclude-word add-word">
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
-                                      <input type="radio" name="addOption506" value="include-or" checked>
+                                      <input type="radio" name="addOption506" value="include-or">
                                       <span class="label-txt">또는</span>
                                     </label>
                                     <label class="add-option-label add-and-label">
@@ -1472,7 +1373,7 @@
                                     </label>
                                   </div>
                                   <div class="add-input">
-                                    <input type="text" placeholder="피카츄">
+                                    <input type="text" placeholder="제외어를 입력하세요.">
                                     <p class="add-btn">+</p>
                                   </div>
                                 </div>

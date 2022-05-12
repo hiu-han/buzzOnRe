@@ -1846,6 +1846,16 @@ body {
   color: #888;
 }
 
+.usr-set-item .info-optional-word {
+  display: none;
+}
+.usr-set-item .info-optional-word.added {
+  display: block;
+}
+.usr-set-item.now-on .info-optional-word {
+  display: block;
+}
+
 .added-word-wrap > .add-word {
   display: none;
   margin-bottom: 10px;
