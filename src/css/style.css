@@ -2041,6 +2041,7 @@ body {
   /** CONTENT PAGE >> NOW page 768px **/
   /* NOW page 768px */
   .tab-article .tab-list {
+    display: block;
     font-size: 0;
   }
   .tab-article .tab-list .tab-item {
@@ -2050,6 +2051,9 @@ body {
     height: 46px;
     font-size: 20px;
     padding: 9px 28px;
+  }
+  .tab-article .tab-list .tab-item.tab-preset {
+    display: none;
   }
   .tab-article .tab-list .tab-item > a {
     display: block;
