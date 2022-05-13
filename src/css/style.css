@@ -1763,6 +1763,9 @@ body {
 .set-btn-wrap > .set-btn.search-btn > span {
   background-image: url("../img/icon/icon-search-31.svg");
 }
+.set-btn-wrap > .set-btn.search-btn:hover > span {
+  background-image: url("../img/icon/icon-search-24cd88.svg");
+}
 .set-btn-wrap > .set-btn.save-btn > span {
   background-image: url("../img/icon/icon-circleCheck-green.svg");
 }
