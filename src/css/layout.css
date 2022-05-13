@@ -56,7 +56,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 /** HEADER **/
-#header {
+#header,
+#headerNav {
   position: fixed;
   top: 0;
   left: 0;
@@ -103,6 +104,40 @@ header:hover {
   margin-right: 50px;
 }
 .header-inner .logo img {
+  width: 100%;
+}
+
+/* HEADER > NAV */
+nav {
+  display: inline-block;
+  height: inherit;
+  padding-left: 18px;
+}
+nav .nav-item {
+  display: inline-block;
+  position: relative;
+  padding: 0 20px;
+  line-height: 62px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #a5a6a6;
+}
+nav .nav-item:hover {
+  color: #0ece81;
+}
+nav .nav-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  width: 0%;
+  height: 1px;
+  background-color: #24cd88;
+  transition: 0.3s ease-in;
+}
+nav .nav-item:hover::after {
   width: 100%;
 }
 
