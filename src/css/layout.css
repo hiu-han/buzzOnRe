@@ -754,7 +754,8 @@ address > .copyright {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-#showAllModal {
+#showAllModal,
+.modal-section {
   display: none;
   position: fixed;
   top: 0;
@@ -1366,9 +1367,36 @@ h3.logo {
 /** 검색 설정 모달 **/
 #srchSetModal {
   display: none;
+  /* display: block; */
 }
 #srchSetModal.modalOn {
   display: block;
+}
+
+#srchSetModal > .search-preset-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 972px;
+  padding: 20px 20px 24px;
+  background-color: #fff;
+  border-radius: 18px;
+  box-shadow: 1px 3px 12px rgba(88, 88, 88, 0.2);
+  overflow: hidden;
+}
+.modal-inner > .modal-top {
+  height: 34px;
+  margin-bottom: 14px;
+}
+.modal-top .modal-title {
+  display: inline-block;
+  line-height: 34px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal-top .modal-cls-btn {
+  float: right;
 }
 
 @media all and (max-width: 1400px) {

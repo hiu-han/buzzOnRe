@@ -60,13 +60,14 @@ $(document).ready(function () {
   // 컨텐츠 원문 내용 모달 여닫기
   sModHandler.modOn('#showAllModal .content-subs-list', '#showOriginModal');
   sModHandler.modOff('#clsOriginList', '#showOriginModal');
-
+  
   // INTRO page 로그인 모달 여닫기
   sModHandler.modOn('#introLogin', '#loginModal');
   sModHandler.modOff('#loginClsBtn', '#loginModal');
   
   // 검색 설정 모달 여닫기
   sModHandler.modOn('.preset-btn', '#srchSetModal');
+  sModHandler.modOff('#clsSrchSet', '#srchSetModal');
   // sModHandler.modOff('');
 
   // 컨텐츠 원문 내용 모달
