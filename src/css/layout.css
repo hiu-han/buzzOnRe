@@ -1484,13 +1484,22 @@ h3.logo {
 .preset-wrap .set-btn-wrap > .set-btn {
   width: auto;
   height: auto;
-  padding: 3px 8px;
+  padding: 10px 20px;
   border-radius: 8px;
   border: 1px solid #24cd88;
-  /* background-color: #0ece81; */
+  background-color: #24cd88;
+  cursor: pointer;
+}
+.preset-wrap .set-btn-wrap > .set-btn:hover {
+  background-color: #27df95;
+  border: 1px solid #27df95;
 }
 .preset-wrap .set-btn-wrap > .set-btn > em {
-  line-height: 32px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+}
+.preset-wrap .set-btn-wrap > .set-btn:hover > em {
   color: #fff;
 }
 
