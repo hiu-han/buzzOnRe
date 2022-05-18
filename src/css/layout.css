@@ -1486,9 +1486,10 @@ h3.logo {
   height: auto;
   padding: 10px 20px;
   border-radius: 8px;
-  border: 1px solid #24cd88;
-  background-color: #24cd88;
+  border: 1px solid #e7f7f0;
+  background-color: #e7f7f0;
   cursor: pointer;
+  transition: 0.2s ease-in;
 }
 .preset-wrap .set-btn-wrap > .set-btn:hover {
   background-color: #27df95;
@@ -1497,7 +1498,7 @@ h3.logo {
 .preset-wrap .set-btn-wrap > .set-btn > em {
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
+  color: #24cd88;
 }
 .preset-wrap .set-btn-wrap > .set-btn:hover > em {
   color: #fff;
@@ -1551,7 +1552,7 @@ h3.logo {
   padding: 3px 8px;
   margin-right: 5px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   font-size: 13px;
   font-weight: 500;
 }
@@ -1565,7 +1566,7 @@ h3.logo {
   height: 34px;
   padding: 0 14px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   background-color: #f7f8f8;
   font-size: 14px;
 }
@@ -1614,7 +1615,7 @@ h3.logo {
   margin-right: 5px;
   margin-bottom: 8px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid #ddd;
   background-color: #fdfdfd;
   font-size: 13px;
   font-weight: 500;
