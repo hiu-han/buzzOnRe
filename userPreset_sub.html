@@ -15,14 +15,14 @@
   <title>buzz ON</title>
 
   <link rel="stylesheet" href="./src/css/style.css">
-  <link rel="stylesheet" href="./src/css/style_dummy.css">
+  <link rel="stylesheet" href="./src/css/style_sub.css">
+  <link rel="stylesheet" href="./src/css/layout_sub.css">
 </head>
 
 <body>
   <div id="wrap" class="user-page usePreset-page">
     <div id="dummy-btn-userpreset_sub" style="position:absolute;top:100px;left:20px;font-size:18px;font-weight:700;"><a
         href="./userPreset.html">돌아가기</a></div>
-    <!-- <div id="headerNav" class="contents-page"> -->
     <div id="header" class="contents-page">
 
     </div>
@@ -134,12 +134,15 @@
                             </div>
                           </li>
                           <li class="set-info-item info-optional-word info-include-word added">
-                            <!-- .info-optional-word > 저장된 포함어가 없으면 기본 display: none; -->
-                            <!-- .info-optional-word > 저장된 포함어가 있으면 addClass .added > display: block; -->
-                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
+                            <!-- .info-optional-word > 저장된 포함어가 있으면 addClass '.added' -->
                             <div class="info-item-title">포함어</div>
                             <div class="info-item-input">
+                              <div class="include-not-yet word-not-yet">
+                                <p>지정된 포함어가 없습니다.</p>
+                              </div>
                               <div class="include-word-wrap added-word-wrap">
+                                <!-- .added-word-wrap >> 저장된 포함어가 없으면 기본인 display: none; -->
+                                <!-- .added-word-wrap >> 저장된 포함어가 있으면 .info-optional-word에 addClass '.added' >> display: block; -->
                                 <div class="include-word add-word added">
                                   <!-- 저장된 단어의 .include-word에 .added 추가  -->
                                   <div class="add-option">
@@ -195,14 +198,17 @@
 
                             </div>
                           </li>
-                          <li class="set-info-item info-optional-word info-exclude-word added">
-                            <!-- .info-optional-word > 저장된 제외어가 없으면 기본 display: none; -->
-                            <!-- .info-optional-word > 저장된 제외어가 있으면 addClass .added > display: block; -->
-                            <!-- BUT!! .info-optional-word > .modify-btn 클릭으로 .usr-set-item.now-on 상태 > display: block; -->
+                          <li class="set-info-item info-optional-word info-exclude-word">
+                            <!-- .info-optional-word > 저장된 제외어가 있으면 addClass '.added' -->
                             <div class="info-item-title">제외어</div>
                             <div class="info-item-input">
+                              <div class="exclude-not-yet word-not-yet">
+                                <p>지정된 제외어가 없습니다.</p>
+                              </div>
                               <div class="exclude-word-wrap added-word-wrap">
-                                <div class="exclude-word add-word added">
+                                <!-- .added-word-wrap >> 저장된 제외어가 없으면 기본인 display: none; -->
+                                <!-- .added-word-wrap >> 저장된 제외어가 있으면 .info-optional-word에 addClass '.added' >> display: block; -->
+                                <!-- div class="exclude-word add-word added">
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">
                                       <input type="radio" name="addOption504" value="include-or">
@@ -233,7 +239,7 @@
                                     <input type="text" placeholder="언더케이지" readonly>
                                     <p class="add-btn">+</p>
                                   </div>
-                                </div>
+                                </div -->
                                 <div class="exclude-word add-word">
                                   <div class="add-option">
                                     <label class="add-option-label add-or-label">

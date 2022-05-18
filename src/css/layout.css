@@ -1365,9 +1365,9 @@ h3.logo {
 }
 
 /** 검색 설정 모달 **/
+/*
 #srchSetModal {
   display: none;
-  /* display: block; */
 }
 #srchSetModal.modalOn {
   display: block;
@@ -1620,6 +1620,7 @@ h3.logo {
   font-size: 13px;
   font-weight: 500;
 }
+*/
 
 @media all and (max-width: 1400px) {
   /* HEADER > search area 1400px */
