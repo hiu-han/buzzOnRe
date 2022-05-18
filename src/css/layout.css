@@ -1417,7 +1417,7 @@ h3.logo {
 
 .preset-kywrd-wrap,
 .preset-wrap {
-  padding: 14px 14px;
+  padding: 20px 20px;
   border-radius: 12px;
   border: 1px solid #fff;
   background-color: #fff;
@@ -1478,15 +1478,19 @@ h3.logo {
 
 .preset-wrap .set-btn-wrap {
   position: absolute;
-  top: 14px;
+  top: 20px;
   right: 20px;
 }
 .preset-wrap .set-btn-wrap > .set-btn {
   width: auto;
+  height: auto;
   padding: 3px 8px;
-  background-color: #0ece81;
+  border-radius: 8px;
+  border: 1px solid #24cd88;
+  /* background-color: #0ece81; */
 }
-.preset-wrap .set-btn-wrap > .set-btn {
+.preset-wrap .set-btn-wrap > .set-btn > em {
+  line-height: 32px;
   color: #fff;
 }
 
@@ -1590,7 +1594,7 @@ h3.logo {
   border-bottom: 0;
 }
 .info-sub-wrap .channel-title {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-size: 15px;
   font-weight: 600;
 }

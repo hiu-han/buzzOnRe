@@ -1692,7 +1692,7 @@ body {
 .usr-set-item {
   position: relative;
   padding: 14px;
-  border-radius: 12px;
+  border-radius: 14px;
   border: 1px solid #fff;
   background-color: #fff;
   box-shadow: 1px 3px 12px rgb(88 88 88 / 20%);
@@ -1986,6 +1986,7 @@ body {
 
 .info-channel .search-group-wrap {
   padding: 20px 10px;
+  border-radius: 14px;
   background-color: #f5f5f5;
 }
 .search-group-wrap > .search-group {
