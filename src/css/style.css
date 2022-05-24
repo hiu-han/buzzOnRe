@@ -1429,6 +1429,9 @@ body {
 .hottest-item > .icon-youtube {
   background-image: url("../img/icon/icon-youtube.svg");
 }
+.hottest-item > .icon-facebook {
+  background-image: url("../img/icon/icon-facebook.svg");
+}
 .hottest-item > .contents-area {
   display: inline-block;
   width: calc(100% - 36px);

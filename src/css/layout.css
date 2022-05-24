@@ -990,11 +990,23 @@ address > .copyright {
 .show-all-content .content-item > .content-channel.sns-twitter {
   background-image: url("../img/icon/icon-twitter.svg");
 }
+.show-all-content .content-item > .content-channel.sns-youtube {
+  background-image: url("../img/icon/icon-youtube.svg");
+}
 .show-all-content .content-item > .content-channel.cafe-naver {
   background-image: url("../img/icon/icon-cafe-naver.svg");
 }
+.show-all-content .content-item > .content-channel.cafe-daum {
+  background-image: url("../img/icon/icon-cafe-daum.svg");
+}
 .show-all-content .content-item > .content-channel.blog-naver {
   background-image: url("../img/icon/icon-blog-naver.svg");
+}
+.show-all-content .content-item > .content-channel.blog-tstory {
+  background-image: url("../img/icon/icon-blog-tstory.svg");
+}
+.show-all-content .content-item > .content-channel.blog-daum {
+  background-image: url("../img/icon/icon-blog-daum.svg");
 }
 .show-all-content .content-item > .content-channel.community-all {
   background-image: url("../img/icon/icon-community.svg");
