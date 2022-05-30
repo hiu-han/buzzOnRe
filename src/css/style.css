@@ -618,13 +618,13 @@ body {
 }
 .tab-article .tab-list .tab-item {
   display: inline-block;
-  padding: 13px 34px;
+  padding: 13px 54px;
   color: #919191;
   font-size: 23px;
   font-weight: 700;
 }
 .tab-article .tab-list .tab-hottest {
-  padding: 13px 28px;
+  padding: 13px 48px;
 }
 .tab-article .tab-list .tab-item.now-on {
   border-radius: 18px;
