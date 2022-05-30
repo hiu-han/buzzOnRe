@@ -359,7 +359,7 @@ button:hover {
   border-radius: 6px;
   background-color: #fff;
   overflow: hidden;
-  transition: 0, 3s ease-in;
+  transition: 0.3s ease-in;
   box-shadow: 1px 3px 8px rgba(120, 120, 120, 0.2);
 }
 .cont-select .option-list::-webkit-scrollbar {
