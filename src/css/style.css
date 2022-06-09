@@ -2251,7 +2251,7 @@ body {
     font-size: 14px;
   }
   .chart-info-area .info-item:nth-child(n + 2):nth-child(-n + 5) > .item-num {
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: -0.05rem;
   }
 }
@@ -2383,6 +2383,9 @@ body {
   /** CONTENT PAGE >> NOW PAGE 480px **/
   #main .content-article {
     margin-bottom: 14px;
+  }
+  #main .content-article.article-engagement {
+    padding: 20px 14px 24px;
   }
 
   .tab-section article {
