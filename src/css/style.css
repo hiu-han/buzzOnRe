@@ -1785,10 +1785,37 @@ body {
   position: relative;
   top: unset;
   right: unset;
+  text-indent: unset;
 }
 .set-btn-wrap > .set-btn.cls-btn::before,
 .set-btn-wrap > .set-btn.cls-btn::after {
   height: 22px;
+}
+.set-btn-wrap > .set-btn.cls-btn > span {
+  background-image: none;
+}
+.set-btn-wrap > .set-btn > em {
+  display: block;
+  position: absolute;
+  bottom: 120%;
+  left: 0;
+  height: 0;
+  padding: 0 12px;
+  line-height: 32px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 1px 3px 12px rgba(128, 128, 128, 0.2);
+  font-weight: 400;
+  color: #666;
+  white-space: nowrap;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.2s ease-in;
+  overflow: hidden;
+}
+.set-btn-wrap > .set-btn:hover > em {
+  height: auto;
+  opacity: 1;
 }
 
 .set-info-wrap .set-info-item {

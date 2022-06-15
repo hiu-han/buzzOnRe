@@ -184,3 +184,45 @@
   padding-bottom: 0;
   vertical-align: top;
 }
+
+@media all and (max-width: 480px) {
+  .article-user-setting .article-content {
+    padding: 0;
+    background-color: unset;
+  }
+
+  .usr-set-container {
+    flex-wrap: wrap;
+    justify-content: unset;
+  }
+
+  .usr-kywrd-wrap {
+    width: 100%;
+  }
+
+  .usr-set-wrap {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 95%;
+    z-index: 300;
+  }
+  .usr-set-wrap .usr-set-item {
+    width: 100%;
+    height: 85vh;
+    overflow-y: scroll;
+  }
+
+  .usr-set-item .set-info-item.info-optional-word {
+    width: 100%;
+  }
+
+  .info-period .searched-date-wrap > .search-date {
+    /* width: 100%; */
+    width: calc(50% - 5px);
+  }
+  .usr-set-item .searched-date-wrap .search-date > .date-input > input {
+    text-align: right;
+  }
+}
