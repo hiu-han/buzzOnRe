@@ -46,6 +46,13 @@ $(document).ready(function () {
 
   
   // ******** 검색 설정 관리 START
+  $('.usr-kywrd-item').on('click', function () {
+    $('.usr-set-wrap').addClass('active');
+  })
+  $('.usr-set-item-cls').on('click', function () {
+    $('.usr-set-wrap').removeClass('active');
+  })
+
   $('.usr-set-item .modify-btn').on("click", function () {
     $(this).parents('.usr-set-item').addClass('now-on').css('opacity', 1)
     .siblings().removeClass(NOWON_CLASSNAME).css('opacity', 0.7)

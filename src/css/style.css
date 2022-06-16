@@ -2359,6 +2359,7 @@ body {
   /** MAIN 480px **/
   #main {
     width: 100%;
+    min-height: 760px;
     padding: 78px 14px 30px;
   }
   #main.intro-page {
